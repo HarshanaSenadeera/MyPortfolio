@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+</head>
+<link rel="stylesheet" href="src/assest/normalize.css">
+<style>
+
+
+    section {
+        width: 100vw;
+        height: 50vw;
+        background-color: white;
+        position: relative;
+    }
+
+    .leftTop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        background-color: red;
+    }
+    .rightTop {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 50%;
+        background-color: green;
+    }
+    .leftBottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        background-color: orange;
+    }
+    .rightBottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        height: 50%;
+        background-color: deeppink;
+    }
+    .middleCircle {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: red;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .middleSquare {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: white;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .topLeftCircle {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: white;
+        border-radius: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .topLeftSquare {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        background-color: red;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .topRightCircle {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: white;
+        border-radius: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .topRightSquare {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        background-color: red;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .bottomRightCircle {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: white;
+        border-radius: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .bottomRightSquare {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        background-color: red;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .bottomLeftCircle {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: white;
+        border-radius: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .bottomLeftSquare {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        background-color: red;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+
+    /circles/
+    .circle1 {
+        width: 150px;
+        height: 150px;
+        z-index: 4;
+        position: relative;
+        background-color: white;
+        border-radius: 100%;
+        position: absolute;
+        left: -75px;
+        top: -75px;
+    }
+
+    .circle2 {
+        width: 150px;
+        height: 150px;
+        z-index: 4;
+        position: relative;
+        background-color: white;
+        border-radius: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -75px;
+        margin: auto;
+    }
+
+    .circle3 {
+        width: 150px;
+        height: 150px;
+        z-index: 4;
+        position: relative;
+        background-color: white;
+        border-radius: 100%;
+        position: absolute;
+        right: -75px;
+        top: -75px;
+    }
+
+    .circle4 {
+        width: 150px;
+        height: 150px;
+        z-index: 4;
+        position: relative;
+        background-color: white;
+        border-radius: 100%;
+        position: absolute;
+        left: -75px;
+        bottom: -75px;
+    }
+
+    .circle5 {
+        width: 150px;
+        height: 150px;
+        z-index: 4;
+        position: relative;
+        background-color: white;
+        border-radius: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -75px;
+        margin: auto;
+    }
+
+
+    .middleCircle {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: red;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .middleSquare {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: white;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+
+    .circle6 {
+        width: 150px;
+        height: 150px;
+        z-index: 4;
+        position: relative;
+        background-color: white;
+        border-radius: 100%;
+        position: absolute;
+        right: -75px;
+        bottom: -75px;
+
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+</style>
+<body>
+<!--1-->
+<section>
+    <section class="leftTop">
+        <div class="topLeftCircle">
+            <div class="topLeftSquare"></div>
+        </div>
+    </section>
+
+    <!--2-->
+    <section class="rightTop">
+        <div class="topRightCircle">
+            <div class="topRightSquare"></div>
+        </div>
+    </section>
+
+    <!--3-->
+    <section class="leftBottom">
+        <div class="bottomRightCircle">
+            <div class="bottomRightSquare"></div>
+        </div>
+    </section>
+
+    <!--4-->
+    <section class="rightBottom">
+        <div class="bottomLeftCircle">
+            <div class="bottomLeftSquare"></div>
+        </div>
+    </section>
+
+    <!--middle-->
+    <div class="middleSquare">
+        <div class="middleCircle"></div>
+    </div>
+
+    <!--circles-->
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+    <div class="circle6"></div>
+</section>
+
+
+<!--duplicate-->
+<section>
+    <section class="leftTop">
+        <div class="topLeftCircle">
+            <div class="topLeftSquare"></div>
+        </div>
+    </section>
+
+    <!--2-->
+    <section class="rightTop">
+        <div class="topRightCircle">
+            <div class="topRightSquare"></div>
+        </div>
+    </section>
+
+    <!--3-->
+    <section class="leftBottom">
+        <div class="bottomRightCircle">
+            <div class="bottomRightSquare"></div>
+        </div>
+    </section>
+
+    <!--4-->
+    <section class="rightBottom">
+        <div class="bottomLeftCircle">
+            <div class="bottomLeftSquare"></div>
+        </div>
+    </section>
+
+    <!--middle-->
+    <div class="middleSquare">
+        <div class="middleCircle"></div>
+    </div>
+
+    <!--circles-->
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+    <div class="circle6"></div>
+</section>
+
+
+
+
+
+</body>
+</html>
