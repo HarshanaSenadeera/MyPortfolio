@@ -1,0 +1,270 @@
+/*
+--------------------------------------------SECTION 01--------------------------------------*/
+                /*-------------------Menu bar--------------*/
+header{
+    box-shadow: 4px 1px 4px 0px black;
+    background-color: #FF6462;
+    border: 1px solid #FF6462;
+    position: relative;
+    position: fixed;
+    width: 100%;
+    height: 37px;
+    top: 0;
+    z-index:1;
+}
+
+                /*-------------------Menu bar item--------------*/
+.topnav{
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    font-family: jua;
+    border: 1px solid #FF6462;
+    margin: -12px;
+    color: white;
+}
+                /*-------------------Menu bar item colour--------------*/
+a{
+    color: white;
+}
+
+                /*-------------------Side video--------------*/
+body>main>div>img{
+    position: absolute;
+    right: -9px;
+    top: 36px;
+    left: 0;
+    margin: auto;
+    width: 309px;
+    height: 324px;
+    border-radius: 9px;
+}
+
+                /*-------------------Main picture--------------*/
+
+#image{
+    position: absolute;
+    top: 0px;
+    left: 510px;
+    margin: auto;
+}
+
+                /*-------------------Main about me--------------*/
+#about_me_first{
+    font-family:"fantasy";
+    position: absolute;
+    right: 79px;
+    bottom: 10px;
+    color: white;
+    font-size: 40px;
+}
+
+                /*-------------------Main my vision--------------*/
+#my_vishion{
+    position: absolute;
+    right: 29px;
+    bottom: 3px;
+    color: white;
+    font-size: 22px;
+}
+
+
+                /*-------------------My vision small--------------*/
+#about_me_two{
+    position: absolute;
+    top: 120px;
+    bottom: 0;
+    right: 0;
+    left: 100px;
+    margin: auto;
+    font-size: 50px;
+    color: #FE1616;
+}
+
+                /*-------------------Main icons--------------*/
+.golinks{
+    position: absolute;
+    bottom: 50px;
+
+}
+
+
+#first>h1{
+    position: absolute;
+    top: 0;
+
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    margin: 0;
+}
+
+body > main{
+    position: relative;
+    width: 100%;
+    top: 40px;
+}
+
+                /*-------------------Main video bar--------------*/
+.video{
+    position: absolute;
+    bottom: 40px;
+    top: 0;
+    margin: 0;
+    background: #FF6462;
+    height: 100vh;
+    width: 360px;
+    right: 0;
+}
+
+                /*-------------------First section--------------*/
+#first{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+   /* border: 2px solid black;*/
+}
+
+
+/*--------------------------------------------SECTION 02--------------------------------------*/
+
+#second{
+    position:relative;
+    width: 100vw;
+    height: 500vh;
+    border: 2px solid black;
+}
+
+#row1{
+    position: absolute;
+    height: 100px;
+    width: 10px;
+   background-color: #FF6462;
+
+}
+
+
+#title_about_me{
+    position: absolute;
+    width: 1365px;
+    height: 30px;
+    background-color: #FF6462;
+    box-shadow: 4px 1px 4px 0px black;
+}
+#title_about_me>h2{
+    margin: 0;
+}
+#about_image{
+    position: absolute;
+    top: 90px;
+    left: 70px;
+}
+
+.Information{
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    font-family: Koulen, Rockwell;
+    font-size: 50px;
+}
+
+.aboutMyImage{
+    position: absolute;
+    left: 90px;
+    top: 200px;
+}
+
+.AboutMe{
+    position: absolute;
+    left: 100px;
+    top: 600px;
+    font-family: Koulen, Rockwell;
+    font-size: 40px;
+}
+
+.education{
+    position: absolute;
+    top: 1000px;
+}
+
+.education>.box-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:1rem 0;
+    padding-left: 3rem;
+
+}
+
+.education>.box-container>div{
+    margin-right: 45px;
+}
+
+#DownloadButton{
+   position: absolute;
+    /*right: 0;*/
+    left: 50%;
+    top: 900px;
+
+
+}
+
+.Skills{
+    position: absolute;
+    bottom: 380px;
+}
+
+.Galary{
+    position: absolute;
+    bottom: 0;
+}
+
+/*--------------------------------------------SECTION 03--------------------------------------*/
+#third{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+}
+
+/*--------------------------------------------SECTION 04--------------------------------------*/
+#fourth{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+}
+
+/*--------------------------------------------SECTION 05--------------------------------------*/
+#fifth{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+}
+
+/*--------------------------------------------SECTION 06--------------------------------------*/
+#sixth{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+}
+
+/*---------------------------------------------Footer-----------------------------------------*/
+#footer{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+    margin-top: 40px;
+    /*background-color: black;*/
+    /*filter: blur(10px);*/
+}
+
+#golinks_botom>a{
+    color: black;
+}

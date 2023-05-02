@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<head>
+<head xmlns="http://www.w3.org/1999/html">
     <meta charset="UTF-8">
 
     <title> Harshana Senadeera| My portfolio </title>
@@ -12,12 +12,15 @@
     <meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=0.5 maximum-scale=2">
     <link rel="icon" href="assests/img/image.png">
 
+
+    <link rel="stylesheet" href="assests/CSS/Main_Style.css">
+    <link rel="stylesheet" href="assests/CSS/normalize.css">
+
 </head>
 
 <body>
-    <main>
-
         <header>
+
             <div class="topnav">
                 <b><a class="active" href="#home" style="font-size: 18px">Home</a></b>&nbsp;
                 <b><a href="#About" style="font-size: 18px">About Me</a></b>&nbsp;
@@ -28,57 +31,57 @@
                 <b><a href="#Contact" style="font-size: 18px">Contact</a></b>&nbsp;
             </div>
 
-
-
-            <img src="vedio/giphy.gif">
-
         </header>
+
+        <main>
+            <div class="video">
+                <img src="vedio/giphy.gif">
+            </div>
+
         <!-- 1 -->
-        <section>
+        <section id="first">
             <h1><dfn id="home"Home></dfn></h1>
-            <section>
-                <article>
-                    <img src="assests/img/image.png" width="600" height="300">
-                </article>
-                <aside><video src=""></video></aside>
-                <h1>Your legal advisers <br>for the problems<br> of this century</h1>
-                <h6>We offer  solutions to todays <br>needs</h6>
+                <div id="image">
+                    <img src="assests/img/img.png" width="500" height="450">
+                </div>
+
+
+
+            <p id="about_me_first"><b>Your legal<br> advisers <br>for the <br>problems<br> of this century</b></p>
+                <p id="my_vishion">We offer  solutions to todays needs</p>
 
                 <div class="golinks">
 
-                        <b><a href=""><img src="assests/img/Facebook.png" width="30" height="30"></a></b>
-                        <b><a href="https://github.com/HarshanaSenadeera"><img src="assests/img/GitHub.png" width="30" height="30"></a></b>
-                        <b><a href=""><img src="assests/img/Twittr.png" width="30" height="30"></a></b>
-                        <b><a href=""><img src="assests/img/Telgram.png" width="30" height="30"></a></b>
-                        <b><a href="https://www.linkedin.com/in/harshana-senadeera-a21827216/"><img src="assests/img/Linkdin.png" width="30" height="30"></a></b>
-                        <b><a href=""><img src="assests/img/Instergram.png" width="50" height="50"></a></b>
+                        <b><a href=""><img src="assests/img/Facebook.png" width="60" height="60"></a></b>
+                        <b><a href="https://github.com/HarshanaSenadeera"><img src="assests/img/github.png" width="60" height="60"></a></b>
+                        <b><a href=""><img src="assests/img/tweeter.png" width="60" height="60"></a></b>
+                        <b><a href=""><img src="assests/img/Telgram.png" width="60" height="60"></a></b>
+                        <b><a href="https://www.linkedin.com/in/harshana-senadeera-a21827216/"><img src="assests/img/linkedin.png" width="60" height="60"></a></b>
+                        <b><a href=""><img src="assests/img/instagram.png" width="80" height="60"></a></b>
 
                 </div>
 
-                <p> 
+                <p id="about_me_two"><b>
                     I AM <br>
                     HARSHANA SENADEERA <br>
                     SOFTWARE ENGINEERING <br>
-                    IN SRI LANKA </p>
+                    IN SRI LANKA </b></p>
             </section>
 
-            <!--1.1-->
-            <section>
-                <article></article>
-            </section>
-        </section>
+
         
         <!-- 2 -->
-        <section>
-            
+        <section id="second">
             <!-- 2.1 -->
-            <section>
-                <h2><dfn id="About">About Me</dfn></h2>
-                <section>
-                    <img src="assests/img/School.png" width="100" height="50">
-                    <img src="assests/img/ijse-removebg-preview.png" width="100" height="50">
-
-                    <ul>
+            <div>
+                <div id="title_about_me">
+                <h2 class="aboutHeader"><dfn id="About">About Me</dfn></h2>
+                </div>
+                <div id="about_image">
+                    <img src="assests/img/School.png" width="150" height="100">
+                    <img src="assests/img/ijse-removebg-preview.png" width="150" height="100">
+                </div>
+                   <div> <ul class="Information">
                         <li>Name : Harshana Senadeera</li>
                         <li>Age :21 Years</li>
                         <li>Birthday :27-02-2001</li>
@@ -86,83 +89,117 @@
                         <li>Phone : 0777454885</li>
                         <li>City :Galle</li>
                     </ul>
+                   </div>
 
-                    <img src="assests/img/SecondImg.png" width="600" height="300">
+                <div id="row1"></div>
+                <div id="row2"></div>
+                   <div class="aboutMyImage"> <img src="assests/img/img_2.png" width="400" height="400"></div>
 
-                    <p>
+                   <div class="AboutMe"> <p>
                         <i>I am a student in Mahinda College and I am a software engineering student at<br> IJSE(Institute of java Software Engineering).</i><br>
 
                         <i>have only one dream which build my way go to excellent software company in<br> Sri Lanka. So that I did join “IJSE” . I know that is only way to success my<br> dream.</i> 
 
                         <i>I am willing to improve my skills and take a big step forward.</i>
                     </p>
+                   </div>
 
-                    <aside></aside>
-                </section>
-            </section>
+
+            </div>
 
             
             <!-- 2.2 -->
-            <section>
+            <div class="education">
                 <h2>Education</h2>
-                <hr>
 
-                <img src="assests/img/DigreeHat.png" width="40" height="40">
-                <b>2007-2017</b>
-                <p>Ordinary Level -<br>
-                    G/Mahinda College Galle
-                    </p>
+<!--                <img src="assests/img/DigreeHat.png" width="40" height="40">-->
+<!--                <b>2007-2017</b>-->
+<!--                <p>Ordinary Level -<br>-->
+<!--                    G/Mahinda College Galle-->
+<!--                    </p>-->
 
-                <img src="assests/img/DigreeHat.png" width="40" height="40">
-                    <b>2018-2020</b>
-                <p>Advanced Level -<br>
-                    G/Mahinda College Galle
-                    </p>
+<!--                <img src="assests/img/DigreeHat.png" width="40" height="40">-->
+<!--                    <b>2018-2020</b>-->
+<!--                <p>Advanced Level -<br>-->
+<!--                    G/Mahinda College Galle-->
+<!--                    </p>-->
 
-                <img src="assests/img/DigreeHat.png" width="40" height="40">
-                    <b>2022-2024</b>
-                <p>HND Level-<br>
-                    Institute of software <br>Engineering
-                    </p>
+<!--                <img src="assests/img/DigreeHat.png" width="40" height="40">-->
+<!--                    <b>2022-2024</b>-->
+<!--                <p>HND Level-<br>-->
+<!--                    Institute of software <br>Engineering-->
+<!--                    </p>-->
 
-                <img src="assests/img/DigreeHat.png" width="40" height="40">
-                    <b>2024-2025</b>
-                <p>Degree Level -<br>
-                    Institute of software <br>Engineering
-                    </p>
+<!--                <img src="assests/img/DigreeHat.png" width="40" height="40">-->
+<!--                    <b>2024-2025</b>-->
+<!--                <p>Degree Level -<br>-->
+<!--                    Institute of software <br>Engineering-->
+<!--                    </p>-->
 
-                <button style="background-color:royalblue; -webkit-text-fill-color: white">Download CV</button>
-            </section>
+                <div class="box-container">
+
+                    <div>
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>2017</span>
+                        <h3>Ordinary Level</h3>
+                        <p>2017/O/L | Sinhala Medium |<br>
+                            G/Sri/ Devananda Collage</p>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>2020</span>
+                        <h3>Advance Level</h3>
+                        <p>2017/O/L | Sinhala Medium |<br>
+                            G/Sri/ Devananda Collage</p>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>2022</span>
+                        <h3>Student of IJSE</h3>
+                        <p>2022 institute of Software Engineering |<br>
+                            GDSE 60 Batch</p>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>2024</span>
+                        <h3>Degree Level</h3>
+                        <p>2024 institute of Software Engineering</p>
+                    </div>
+
+                </div>
+            </div>
+               <div id="DownloadButton"> <button style="background-color:royalblue; -webkit-text-fill-color: white">Download CV</button></div>
+
 
             
             <!-- 2.3 -->
-            <section>
+            <div class="Skills">
                 <h2>Skills</h2>
-                <hr>
                 <div>
                     <img src="assests/img/Languages.PNG" width="200" height="300">
                     <img src="assests/img/Tools.PNG" width="200" height="300">
                 </div>
-            </section>
+            </div>
 
             
             <!-- 2.5 -->
-            <section>
+            <div class="Galary">
                 <h2>Album</h2>
-                <hr>
                 <img src="assests/img/I%20in%20gall%20fort%202.jpeg" width="200" height="300">
                 <img src="assests/img/I%20in%20Galle%20fort.jpeg" width="200" height="300">
                 <img src="assests/img/I%20with%20car.jpeg" width="200" height="300">
                 <img src="assests/img/I%20while%20work.jpeg" width="250" height="300">
                 <img src="assests/img/I%20in%20my%20school.jpeg" width="200" height="300">
-            </section>
+            </div>
         </section>
 
         
         <!-- 3 -->
-        <section>
+        <section id="third">
             <h2><dfn id="Projects"></dfn></dfn>Progects</h2>
-            <hr>
             <img src="assests/img/Hotel%20Project.PNG" width="300" height="200">
             <img src="assests/img/Library%20management%20System.PNG" width="300" height="200">
 
@@ -175,9 +212,8 @@
 
         
         <!-- 4 -->
-        <section>
+        <section id="fourth">
             <h2><dfn id="Assignments"></dfn>Assignments</h2>
-            <hr>
             <img src="assests/img/Battle%20Field%20Game.PNG" width="200" height="300">
             <img src="" alt="">
             <img src="" alt="">
@@ -186,9 +222,8 @@
 
         
         <!-- 5 -->
-        <section>
+        <section id="fifth">
             <h2><dfn id="Services" ></dfn>Services</h2>
-            <hr>
             <img src="assests/img/Application_skils.PNG" width="300" height="300">
             <img src="assests/img/Web_Skil.PNG" width="300" height="300">
             <img src="assests/img/App_skills.PNG" width="300" height="300">
@@ -197,7 +232,7 @@
 
         
         <!-- 6 -->
-        <section>
+        <section id="sixth">
             <h2><dfn id="Achievement"></dfn> Achivments</h2>
             <hr>
             <img src="assests/img/HTML.jpeg" width="400" height="300">
@@ -206,13 +241,13 @@
 
     </main>
 
-    <footer>
+    <footer id="footer">
 
         <section>
             <h2><dfn id="Contact"></dfn>Contact</h2>
 
             <address>
-                <ul>
+                <ul id="golinks_botom">
 
                     <li><img src="assests/img/call.png" width="20" height="20"><a href="tel:0777454885"> &nbsp;+94 777454885 </a></li>
                     <br>
@@ -224,13 +259,16 @@
                 </ul>
             </address>
 
-            <b><a href="https://www.linkedin.com/in/harshana-senadeera-a21827216/"><img src="assests/img/Linkdin.png" width="30" height="30"></a></b>
-            <b><a href=""><img src="assests/img/Instergram.png" width="50" height="50"></a></b>
-            <b><a href="https://github.com/HarshanaSenadeera"><img src="assests/img/GitHub.png" width="30" height="30"></a></b>
-            <b><a href=""><img src="assests/img/Twittr.png" width="30" height="30"></a></b>
-            <b><a href=""><img src="assests/img/Facebook.png" width="30" height="30"></a></b>
-            <b><a href=""><img src="assests/img/Telgram.png" width="30" height="30"></a></b>
 
+            <div >
+            <b><a href="https://www.linkedin.com/in/harshana-senadeera-a21827216/" target="_blank"><img src="assests/img/linkedin.png" width="30" height="30"></a></b>
+            <b><a href=""><img src="assests/img/instagram.png" width="50" height="50"></a></b>
+            <b><a href="https://github.com/HarshanaSenadeera" target="_blank"><img src="assests/img/github.png" width="30" height="30"></a></b>
+            <b><a href=""><img src="assests/img/tweeter.png" width="30" height="30" target="_blank"></a></b>
+            <b><a href=""><img src="assests/img/Facebook.png" width="30" height="30" target="_blank"></a></b>
+            <b><a href=""><img src="assests/img/Telgram.png" width="30" height="30" target="_blank"></a></b>
+
+            </div>
             <form action="submit" method="post">
 
                 <input type="text" id="name" placeholder="name">
