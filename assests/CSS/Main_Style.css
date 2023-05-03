@@ -3,11 +3,11 @@
                 /*-------------------Menu bar--------------*/
 header{
     box-shadow: 4px 1px 4px 0px black;
-    background-color: #FF6462;
-    border: 1px solid #FF6462;
+    background-color: #f55b58;
+    border: 1px solid #f55b58;
     position: relative;
     position: fixed;
-    width: 100%;
+    width: 98vw;
     height: 37px;
     top: 0;
     z-index:1;
@@ -19,7 +19,7 @@ header{
     right: 20px;
     top: 16px;
     font-family: jua;
-    border: 1px solid #FF6462;
+    border: 1px solid #f55b58;
     margin: -12px;
     color: white;
 }
@@ -31,12 +31,12 @@ a{
                 /*-------------------Side video--------------*/
 body>main>div>img{
     position: absolute;
-    right: -9px;
-    top: 36px;
+    right: 0px;
+    top: 25px;
     left: 0;
     margin: auto;
     width: 309px;
-    height: 324px;
+    height: 250px;
     border-radius: 9px;
 }
 
@@ -45,7 +45,7 @@ body>main>div>img{
 #image{
     position: absolute;
     top: 0px;
-    left: 510px;
+    left: 500px;
     margin: auto;
 }
 
@@ -53,7 +53,7 @@ body>main>div>img{
 #about_me_first{
     font-family:"fantasy";
     position: absolute;
-    right: 79px;
+    right: 80px;
     bottom: 10px;
     color: white;
     font-size: 40px;
@@ -78,14 +78,26 @@ body>main>div>img{
     left: 100px;
     margin: auto;
     font-size: 50px;
-    color: #FE1616;
+    color: #f55b58;
 }
+
 
                 /*-------------------Main icons--------------*/
 .golinks{
-    position: absolute;
-    bottom: 50px;
 
+    position: absolute;
+    bottom: 0;
+    top: 500px;
+
+    height: 600px;
+    width: 600px;
+    display: grid;
+
+    grid-template-rows: repeat(1,1fr);
+
+    grid-template-columns:repeat(6,1fr);
+
+    grid-gap: 4px;
 }
 
 
@@ -110,122 +122,302 @@ body > main{
                 /*-------------------Main video bar--------------*/
 .video{
     position: absolute;
-    bottom: 40px;
+    bottom:0px;
     top: 0;
     margin: 0;
-    background: #FF6462;
+    background: #fd3836;
     height: 100vh;
-    width: 360px;
-    right: 0;
+    width: 25vw;
+    right: 25px;
 }
 
                 /*-------------------First section--------------*/
 #first{
     position: relative;
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
-   /* border: 2px solid black;*/
+    /*border: 2px solid black;*/
 }
 
 
 /*--------------------------------------------SECTION 02--------------------------------------*/
 
+                        /*-------------------second section--------------*/
 #second{
     position:relative;
-    width: 100vw;
+    width: 98vw;
     height: 500vh;
     border: 2px solid black;
 }
 
+                        /*-------------------2 first bars--------------*/
 #row1{
     position: absolute;
-    height: 100px;
-    width: 10px;
-   background-color: #FF6462;
+    height: 450px;
+    width: 20px;
+    background-color: #fd3836;
+    top: 100px;
+    left: 50px;
+
+}
+
+#row2{
+    position: absolute;
+    height: 280px;
+    width: 20px;
+    background-color: #fd3836;
+    top: 600px;
+    left: 250px;
 
 }
 
 
+                            /*-------------------about me title--------------*/
 #title_about_me{
     position: absolute;
-    width: 1365px;
+    width: 98vw;
     height: 30px;
-    background-color: #FF6462;
+    background-color:#f55b58;
     box-shadow: 4px 1px 4px 0px black;
 }
+
+                                /*-------------------about me title h2--------------*/
 #title_about_me>h2{
     margin: 0;
+    color: white;
+    font-family:Koulen, Rockwell ;
 }
+
+                                /*-------------------logos-------------*/
 #about_image{
     position: absolute;
     top: 90px;
-    left: 70px;
+    left: 90px;
 }
 
+                                /*-------------------basic information--------------*/
 .Information{
     position: absolute;
-    right: 20px;
-    top: 80px;
+    right: 200px;
+    top: 200px;
     font-family: Koulen, Rockwell;
-    font-size: 50px;
+    font-size: 30px;
 }
 
+                        /*-------------------my image--------------*/
 .aboutMyImage{
     position: absolute;
-    left: 90px;
+    left: 250px;
     top: 200px;
 }
 
+                            /*-------------------vision information--------------*/
 .AboutMe{
     position: absolute;
-    left: 100px;
+    left: 300px;
     top: 600px;
     font-family: Koulen, Rockwell;
-    font-size: 40px;
+    font-size: 25px;
 }
 
+                            /*-------------------my education--------------*/
 .education{
     position: absolute;
-    top: 1000px;
+    top: 1200px;
 }
 
-.education>.box-container{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding:1rem 0;
-    padding-left: 3rem;
-
-}
-
-.education>.box-container>div{
-    margin-right: 45px;
-}
-
+                            /*-------------------download button--------------*/
 #DownloadButton{
    position: absolute;
     /*right: 0;*/
     left: 50%;
     top: 900px;
-
-
 }
 
+                            /*-------------------my skills--------------*/
 .Skills{
     position: absolute;
     bottom: 380px;
 }
 
+
+                            /*-------------------my galary--------------*/
 .Galary{
     position: absolute;
     bottom: 0;
 }
 
+                            /*-------------------education title bar--------------*/
+#education_title{
+    position: absolute;
+    width: 98vw;
+    height: 30px;
+    background-color: #f55b58;
+    box-shadow: 4px 1px 4px 0px black;
+    top: -229px;
+}
+
+
+                            /*-------------------education title h2--------------*/
+#education_title>h2{
+    position: absolute;
+    margin: 0;
+    color: white;
+    font-family:Koulen, Rockwell ;
+    left: 600px;
+}
+
+                            /*-------------------education description--------------*/
+.education{
+    position: absolute;
+    font-family: Koulen, Rockwell;
+}
+
+
+
+                            /*-------------------education hat--------------*/
+.education>div>img{
+    position: absolute;
+    right: 200px;
+
+
+}
+
+                        /*-------------------education years--------------*/
+#ol_year{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    border-radius: 5%;
+    background-color: #f55b58;
+    top: -27px;
+
+}
+
+#al_year{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    border-radius: 5%;
+    background-color: #f55b58;
+    top: -27px;
+}
+
+#ijse_year{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    border-radius: 5%;
+    background-color: #f55b58;
+    top: -27px;
+}
+
+#degree_year{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    border-radius: 5%;
+    background-color: #f55b58;
+    top: -27px;
+}
+
+                        /*-------------------education sets--------------*/
+#ol{
+    position: absolute;
+    left: 300px;
+    top: -100px;
+    font-size: 30px;
+
+}
+
+#al{
+    position: absolute;
+    left: 850px;
+    top: -100px;
+    font-size: 30px;
+}
+
+#ijse{
+    position: absolute;
+    left: 300px;
+    top: 250px;
+    font-size: 30px;
+}
+
+#degree{
+    position: absolute;
+    left: 850px;
+    top: 250px;
+    font-size: 30px;
+}
+
+
+                            /*-------------------education hats--------------*/
+#ol_hat{
+    position: absolute;
+    top: -91px;
+    right: 200px;
+}
+
+#al_hat{
+    position: absolute;
+    top:-91px;
+    right: 200px;
+}
+
+#ijse_hat{
+    position: absolute;
+    top: -91px;
+    right: 200px;
+}
+
+#degreee_hat{
+    position: absolute;
+    top: -91px;
+    right: 200px;
+}
+
+                            /*-------------------education bars--------------*/
+
+#ol_bar{
+    position: absolute;
+    width: 14px;
+    height: 200px;
+    top: 0;
+    left: -93px;
+    background-color: #f55b58;
+}
+
+#al_bar{
+    position: absolute;
+    width: 14px;
+    height: 200px;
+    top: 0;
+    left: -93px;
+    background-color: #f55b58;
+}
+
+#ijse_bar{
+    position: absolute;
+    width: 14px;
+    height: 200px;
+    top: 0;
+    left: -80px;
+    background-color: #f55b58;
+}
+
+#degree_bar{
+    position: absolute;
+    width: 14px;
+    height: 200px;
+    top: 0;
+    left: -80px;
+    background-color: #f55b58;
+}
 /*--------------------------------------------SECTION 03--------------------------------------*/
 #third{
     position: relative;
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
     border: 2px solid black;
 }
@@ -233,7 +425,7 @@ body > main{
 /*--------------------------------------------SECTION 04--------------------------------------*/
 #fourth{
     position: relative;
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
     border: 2px solid black;
 }
@@ -241,7 +433,7 @@ body > main{
 /*--------------------------------------------SECTION 05--------------------------------------*/
 #fifth{
     position: relative;
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
     border: 2px solid black;
 }
@@ -249,7 +441,7 @@ body > main{
 /*--------------------------------------------SECTION 06--------------------------------------*/
 #sixth{
     position: relative;
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
     border: 2px solid black;
 }
@@ -257,7 +449,7 @@ body > main{
 /*---------------------------------------------Footer-----------------------------------------*/
 #footer{
     position: relative;
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
     border: 2px solid black;
     margin-top: 40px;
