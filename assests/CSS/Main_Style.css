@@ -23,6 +23,8 @@ header{
     margin: -12px;
     color: white;
 }
+
+
                 /*-------------------Menu bar item colour--------------*/
 a{
     color: white;
@@ -45,7 +47,7 @@ body>main>div>img{
 #image{
     position: absolute;
     top: 0px;
-    left: 500px;
+    left: 750px;
     margin: auto;
 }
 
@@ -77,8 +79,38 @@ body>main>div>img{
     right: 0;
     left: 100px;
     margin: auto;
-    font-size: 50px;
+    font-size: 68px;
     color: #f55b58;
+}
+
+#about_me_two
+{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+            -225deg,
+            #ef5b5b 0%,
+            #ff1361 29%,
+            #ffffff 67%,
+            #000000 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+   /* font-size: 50px;*/
+
+}
+
+@keyframes textclip {
+    to {
+        background-position: 300% center;
+    }
 }
 
 
@@ -89,8 +121,8 @@ body>main>div>img{
     bottom: 0;
     top: 500px;
 
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
     display: grid;
 
     grid-template-rows: repeat(1,1fr);
@@ -99,6 +131,8 @@ body>main>div>img{
 
     grid-gap: 4px;
 }
+
+
 
 
 #first>h1{
@@ -135,8 +169,533 @@ body > main{
 #first{
     position: relative;
     width: 98vw;
-    height: 100vh;
+    height: 85vh;
     /*border: 2px solid black;*/
+}
+
+/*--------------------------------------bubelssssssssss--------------------------------*/
+#one{
+    width: 98vw;
+    height: 85vh;
+    background: red;
+    position: absolute;
+    left: 0;
+    animation:testOne;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 100%;
+    animation-direction: alternate;
+
+}
+
+#two{
+    width: 98vw;
+    height: 85vh;
+    background: red;
+    position: absolute;
+    left: 0;
+    animation:testTwo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    border-radius: 100%;
+    animation-direction: alternate;
+
+}
+
+#three{
+    width: 98vw;
+    height: 85vh;
+    background: red;
+    position: absolute;
+    left: 0;
+    animation:testThree;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 100%;
+    animation-direction: alternate;
+
+}
+
+#four{
+    width: 98vw;
+    height: 85vh;
+    background: red;
+    position: absolute;
+    left: 0;
+    animation:testFour;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    border-radius: 100%;
+    animation-direction: alternate;
+
+}
+
+#five{
+    width: 98vw;
+    height: 85vh;
+    background: red;
+    position: absolute;
+    left: 0;
+    animation:testFive;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    border-radius: 100%;
+    animation-direction: alternate;
+}
+
+#six{
+    width: 98vw;
+    height: 85vh;
+    background: red;
+    position: absolute;
+    left: 0;
+    animation:testSix;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border-radius: 100%;
+    animation-direction: alternate;
+}
+
+#seven{
+    width: 98vw;
+    height: 85vh;
+    background: red;
+    position: absolute;
+    left: 0;
+    animation:testSeven;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    border-radius: 100%;
+    animation-direction: alternate;
+}
+
+#eihth{
+    width: 98vw;
+    height: 85vh;
+    background: red;
+    position: absolute;
+    left: 0;
+    animation:testEigth;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    border-radius: 100%;
+    animation-direction: alternate;
+}
+
+@keyframes testOne {
+    0% {
+        width: 30px;
+        height: 30px;
+        background: red;
+        top: 30px;
+        left: 60px;
+    }
+    25% {
+        width: 30px;
+        height: 30px;
+        background: green;
+        border-radius: 100%;
+        left: 300px;
+        top: 60px;
+    }
+
+    50% {
+        width: 50px;
+        height: 50px;
+        background: blue;
+        border-radius: 100%;
+        top: 30px;
+        left: 300px;
+    }
+
+    60% {
+        width: 50px;
+        height: 50px;
+        background: blue;
+        border-radius: 100%;
+        top: 30px;
+        left: 800px;
+    }
+    75% {
+        width: 50px;
+        height: 50px;
+        background: deeppink;
+        border-radius: 100%;
+        top: 400px;
+        left: 50px;
+    }
+    100% {
+        width: 30px;
+        height: 30px;
+        background: cyan;
+        border-radius: 100%;
+        top: 400px;
+        left: 900px;
+    }
+}
+
+@keyframes testTwo{
+    0%{
+        width: 30px;
+        height: 30px;
+        background: green;
+        top: 300px;
+        left: 60px;
+    }
+    25%{
+        width: 50px;
+        height: 50px;
+        background: gold;
+        border-radius: 100%;
+        left: 300px;
+        top: 600px;
+    }
+
+    50%{
+        width: 30px;
+        height: 30px;
+        background: darkmagenta;
+        border-radius: 100%;
+        top: 450px;
+        left: 200px;
+    }
+
+    60%{
+        width: 50px;
+        height: 50px;
+        background: pink;
+        border-radius: 100%;
+        top: 150px;
+        left: 870px;
+    }
+    75%{
+        width: 50px;
+        height: 50px;
+        background: yellow;
+        border-radius: 100%;
+        top: 800px;
+        left: 550px;
+    }
+    100% {
+        width: 50px;
+        height: 50px;
+        background: orange;
+        border-radius: 100%;
+        top: 470px;
+        left: 500px;
+    }
+}
+
+@keyframes testThree{
+    0%{
+        width: 50px;
+        height: 50px;
+        background: red;
+        top: 300px;
+        left: 600px;
+    }
+    25%{
+        width: 50px;
+        height: 50px;
+        background: yellow;
+        border-radius: 100%;
+        left: 450px;
+        top: 100px;
+    }
+
+    50%{
+        width: 50px;
+        height: 50px;
+        background: coral;
+        border-radius: 100%;
+        top: 400px;
+        left: 230px;
+    }
+
+    60%{
+        width: 50px;
+        height: 50px;
+        background: navy;
+        border-radius: 100%;
+        top: 650px;
+        left: 200px;
+    }
+    75%{
+        width: 50px;
+        height: 50px;
+        background: magenta;
+        border-radius: 100%;
+        top: 450px;
+        left: 390px;
+    }
+    100% {
+        width: 50px;
+        height: 50px;
+        background: chocolate;
+        border-radius: 100%;
+        top: 40px;
+        left: 50px;
+    }
+}
+
+@keyframes testFour{
+    0%{
+        width: 50px;
+        height: 50px;
+        background: green;
+        top: 300px;
+        left: 50px;
+    }
+    25%{
+        width: 50px;
+        height: 50px;
+        background: pink;
+        border-radius: 100%;
+        left: 450px;
+        top: 390px;
+    }
+
+    50%{
+        width: 50px;
+        height: 50px;
+        background: yellow;
+        border-radius: 100%;
+        top: 40px;
+        left: 230px;
+    }
+
+    60%{
+        width: 50px;
+        height: 50px;
+        background: sienna;
+        border-radius: 100%;
+        top: 650px;
+        left: 200px;
+    }
+    75%{
+        width: 50px;
+        height: 50px;
+        background: rebeccapurple;
+        border-radius: 100%;
+        top: 450px;
+        left: 4px;
+    }
+    100% {
+        width: 50px;
+        height: 50px;
+        background: chocolate;
+        border-radius: 100%;
+        top: 480px;
+        left: 50px;
+    }
+}
+
+@keyframes testFive{
+    0%{
+        width: 50px;
+        height: 50px;
+        background: deeppink;
+        top: 380px;
+        left: 510px;
+    }
+    25%{
+        width: 50px;
+        height: 50px;
+        background: yellow;
+        border-radius: 100%;
+        left: 60px;
+        top: 390px;
+    }
+
+    50%{
+        width: 60px;
+        height: 60px;
+        background: greenyellow;
+        border-radius: 100%;
+        top: 40px;
+        left: 230px;
+    }
+
+    60%{
+        width: 50px;
+        height: 50px;
+        background: darkgoldenrod;
+        border-radius: 100%;
+        top: 650px;
+        left: 4px;
+    }
+    75%{
+        width: 50px;
+        height: 50px;
+        background: black;
+        border-radius: 100%;
+        top: 450px;
+        left: 400px;
+    }
+    100% {
+        width: 50px;
+        height: 50px;
+        background: chocolate;
+        border-radius: 100%;
+        top: 440px;
+        left: 50px;
+    }
+}
+
+@keyframes testSix{
+    0%{
+        width: 90px;
+        height: 90px;
+        background: deeppink;
+        top: 390px;
+        left: 450px;
+    }
+    25%{
+        width: 50px;
+        height: 50px;
+        background: yellow;
+        border-radius: 100%;
+        left: 60px;
+        top: 390px;
+    }
+
+    50%{
+        width: 40px;
+        height: 40px;
+        background: greenyellow;
+        border-radius: 100%;
+        top: 430px;
+        left: 230px;
+    }
+
+    60%{
+        width: 10px;
+        height: 10px;
+        background: darkgoldenrod;
+        border-radius: 100%;
+        top: 650px;
+        left: 490px;
+    }
+    75%{
+        width: 50px;
+        height: 50px;
+        background: green;
+        border-radius: 100%;
+        top: 20px;
+        left: 400px;
+    }
+    100% {
+        width: 60px;
+        height: 60px;
+        background: chocolate;
+        border-radius: 100%;
+        top: 440px;
+        left: 500px;
+    }
+}
+
+@keyframes testSeven{
+    0%{
+        width: 90px;
+        height: 90px;
+        background: darkred;
+        top: 100px;
+        left: 450px;
+    }
+    25%{
+        width: 20px;
+        height: 20px;
+        background: yellow;
+        border-radius: 100%;
+        left: 600px;
+        top: 390px;
+    }
+
+    50%{
+        width: 40px;
+        height: 40px;
+        background: greenyellow;
+        border-radius: 100%;
+        top: 80px;
+        left: 230px;
+    }
+
+    60%{
+        width: 10px;
+        height: 10px;
+        background: darkgoldenrod;
+        border-radius: 100%;
+        top: 60px;
+        left: 560px;
+    }
+    75%{
+        width: 50px;
+        height: 50px;
+        background: black;
+        border-radius: 100%;
+        top: 200px;
+        left:600px;
+    }
+    100% {
+        width: 60px;
+        height: 60px;
+        background: chocolate;
+        border-radius: 100%;
+        top: 540px;
+        left: 900px;
+    }
+}
+
+@keyframes testEigth{
+    0%{
+        width: 90px;
+        height: 90px;
+        background: darkred;
+        top: 640px;
+        left: 200px;
+    }
+    25%{
+        width: 20px;
+        height: 20px;
+        background: yellow;
+        border-radius: 100%;
+        left: 460px;
+        top: 308px;
+    }
+
+    50%{
+        width: 40px;
+        height: 40px;
+        background: greenyellow;
+        border-radius: 100%;
+        top: 20px;
+        left: 230px;
+    }
+
+    60%{
+        width: 10px;
+        height: 10px;
+        background: darkgoldenrod;
+        border-radius: 100%;
+        top: 60px;
+        left: 890px;
+    }
+    75%{
+        width: 50px;
+        height: 50px;
+        background: black;
+        border-radius: 100%;
+        top: 280px;
+        left:40px;
+    }
+    100% {
+        width: 60px;
+        height: 60px;
+        background: chocolate;
+        border-radius: 100%;
+        top: 329px;
+        left: 982px;
+    }
 }
 
 
@@ -198,16 +757,25 @@ body > main{
                                 /*-------------------basic information--------------*/
 .Information{
     position: absolute;
-    right: 200px;
-    top: 200px;
+    right: 0px;
+    top: 270px;
+    left: 700px;
     font-family: Koulen, Rockwell;
-    font-size: 30px;
+    font-size: 28px;
+}
+.Information{
+    animation-name: rightToLeft;
+    animation-timing-function: linear;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+
 }
 
                         /*-------------------my image--------------*/
 .aboutMyImage{
     position: absolute;
-    left: 250px;
+    left: 268px;
     top: 200px;
 }
 
@@ -228,10 +796,68 @@ body > main{
 
                             /*-------------------download button--------------*/
 #DownloadButton{
-   position: absolute;
-    /*right: 0;*/
-    left: 50%;
-    top: 900px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 1712px;
+}
+
+#DownloadButton {
+    align-items: center;
+    background-color: #fd3836;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 200px;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#DownloadButton:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+#DownloadButton:hover:after {
+    transform: translate(0, 0);
+}
+
+#DownloadButton:active {
+    background-color: blue;
+    outline: 0;
+}
+
+#DownloadButton:hover {
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    #DownloadButton {
+        padding: 0 40px;
+    }
 }
 
                             /*-------------------my skills--------------*/
@@ -414,6 +1040,42 @@ body > main{
     left: -80px;
     background-color: #f55b58;
 }
+
+                            /*-------------------Skills title bar--------------*/
+
+.Skills{
+    position: absolute;
+    width: 98vw;
+    height: 30px;
+    background-color: #f55b58;
+    box-shadow: 4px 1px 4px 0px black;
+    top: 1794px;
+}
+
+.Skills>h2{
+    position: absolute;
+    margin: 0;
+    color: white;
+    font-family:Koulen, Rockwell ;
+    left: 650px;
+}
+
+
+                            /*-------------------Skills details--------------*/
+#language_title{
+    position: absolute;
+    left: 300px;
+    right: 300px;
+    top: 44px;
+    text-align: center;
+    color: black;
+    font-family: Koulen, Rockwell;
+
+
+}
+
+
+
 /*--------------------------------------------SECTION 03--------------------------------------*/
 #third{
     position: relative;
