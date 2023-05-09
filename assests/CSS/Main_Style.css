@@ -129,11 +129,8 @@ body>main>div>img{
 
     grid-template-columns:repeat(6,1fr);
 
-    grid-gap: 4px;
+    column-gap: 4px;
 }
-
-
-
 
 #first>h1{
     position: absolute;
@@ -705,8 +702,8 @@ body > main{
 #second{
     position:relative;
     width: 98vw;
-    height: 500vh;
-    border: 2px solid black;
+    height: 390vh;
+    /*border: 2px solid black;*/
 }
 
                         /*-------------------2 first bars--------------*/
@@ -735,16 +732,19 @@ body > main{
 #title_about_me{
     position: absolute;
     width: 98vw;
-    height: 30px;
+    height: 40px;
     background-color:#f55b58;
     box-shadow: 4px 1px 4px 0px black;
 }
 
                                 /*-------------------about me title h2--------------*/
 #title_about_me>h2{
+    position: absolute;
     margin: 0;
     color: white;
-    font-family:Koulen, Rockwell ;
+    font-family:Koulen, Rockwell;
+    font-size: 35px;
+    left:600px;
 }
 
                                 /*-------------------logos-------------*/
@@ -1061,53 +1061,238 @@ body > main{
 }
 
 
-                            /*-------------------Skills details--------------*/
+
+                    /*-------------------Skills details--------------*/
+
+/*-------------------Languages--------------*/
 #language_title{
     position: absolute;
     left: 300px;
     right: 300px;
-    top: 44px;
+    top: 20px;
     text-align: center;
     color: black;
     font-family: Koulen, Rockwell;
 
+}
+
+#lan_impl{
+    position: absolute;
+    top: 120px;
+    right: 420px;
+    display: flex;
+    gap: 30px;
+}
+
+#lan_impl>img:hover{
+    transform: scale(1.20) ;
+}
+
+/*-------------------Tools--------------*/
+
+#tool_title{
+    position: absolute;
+    left: 300px;
+    right: 300px;
+    top: 2035px;
+    text-align: center;
+    color: black;
+    font-family: Koulen, Rockwell;
 
 }
 
+#tool_impl{
+    position: absolute;
+    top: 2132px;
+    right: 420px;
+    display: flex;
+    gap: 30px;
+}
 
+#tool_impl>img:hover{
+    transform: scale(1.20) ;
+}
+
+                            /*-------------------Photo title bar--------------*/
+#Photo_title{
+    position: absolute;
+    width: 98vw;
+    height: 30px;
+    background-color: #f55b58;
+    box-shadow: 4px 1px 4px 0px black;
+    top: -231px;
+}
+
+#title_content{
+    position: absolute;
+    margin: 0;
+    color: white;
+    font-family:Koulen, Rockwell ;
+    left: 650px;
+}
+
+.Galary{
+    position: absolute;
+    top: 2499px;
+}
+
+#photo{
+    position: relative;
+    bottom: 140px;
+    left: 80px;
+}
+
+#photo>img:hover{
+    transform: scale(1.08);
+}
 
 /*--------------------------------------------SECTION 03--------------------------------------*/
-#third{
+#third {
     position: relative;
     width: 98vw;
-    height: 100vh;
-    border: 2px solid black;
+    height: 63vh;
+    /*border: 2px solid black;*/
+}
+
+#Projects_title{
+    position: absolute;
+    width: 98vw;
+    height: 30px;
+    background-color: #f55b58;
+    box-shadow: 4px 1px 4px 0px black;
+    top: 0;
+}
+/*-------------------Project Title--------------*/
+#Projects{
+    position: absolute;
+    margin: 0;
+    color: white;
+    font-family:Koulen, Rockwell ;
+    left: 650px;
+}
+
+/*-------------------Project Images--------------*/
+#projets_content{
+    position: absolute;
+    top: 100px;
+    right: 350px;
+    display: flex;
+    gap: 30px;
+}
+
+#projets_content>img:hover{
+    transform: scale(1.08);
+}
+
+#git_hub{
+    position: absolute;
+    top: 350px;
+    left: 650px;
+}
+
+#git_link{
+    position: absolute;
+    top: 290px;
+    left: 580px;
+    color: blue;
+}
+
+
+#git_link>a>p{
+    color: #001eff;
 }
 
 /*--------------------------------------------SECTION 04--------------------------------------*/
 #fourth{
     position: relative;
     width: 98vw;
-    height: 100vh;
-    border: 2px solid black;
+    height: 78vh;
+    /*border: 2px solid black;*/
 }
 
-/*--------------------------------------------SECTION 05--------------------------------------*/
-#fifth{
-    position: relative;
+#assignment_title{
+    position: absolute;
     width: 98vw;
-    height: 100vh;
-    border: 2px solid black;
+    height: 30px;
+    background-color: #f55b58;
+    box-shadow: 4px 1px 4px 0px black;
+    top: 0;
+}
+
+#assignment{
+    position: absolute;
+    margin: 0;
+    color: white;
+    font-family:Koulen, Rockwell ;
+    left: 650px;
+}
+
+#assignment_content{
+    position: absolute;
+    top: 100px;
+    right: 450px;
+    display: flex;
+    gap: 30px;
+}
+
+#assignment_content>img:hover{
+    transform: scale(1.08);
+}
+
+#git_hub_a{
+    position: absolute;
+    top: 450px;
+    left: 650px;
+}
+
+#git_link_a{
+    position: absolute;
+    top: 390px;
+    left: 580px;
+    color: blue;
+}
+
+
+#git_link_a>a>p{
+    color: #001eff;
 }
 
 /*--------------------------------------------SECTION 06--------------------------------------*/
 #sixth{
     position: relative;
     width: 98vw;
-    height: 100vh;
-    border: 2px solid black;
+    height: 67vh;
+    /*border: 2px solid black;*/
 }
 
+#achevment_title{
+    position: absolute;
+    width: 98vw;
+    height: 30px;
+    background-color: #f55b58;
+    box-shadow: 4px 1px 4px 0px black;
+    top: 0;
+}
+
+#Achievement{
+    position: absolute;
+    margin: 0;
+    color: white;
+    font-family:Koulen, Rockwell ;
+    left: 650px;
+}
+
+#achewment_content{
+    position: absolute;
+    top: 100px;
+    right: 240px;
+    display: flex;
+    gap: 30px;
+}
+
+#achewment_content>img:hover{
+    transform: scale(1.08);
+}
 /*---------------------------------------------Footer-----------------------------------------*/
 #footer{
     position: relative;
@@ -1115,10 +1300,38 @@ body > main{
     height: 100vh;
     border: 2px solid black;
     margin-top: 40px;
-    /*background-color: black;*/
-    /*filter: blur(10px);*/
+    background-color: #566573;
 }
 
-#golinks_botom>a{
-    color: black;
+#contact_title{
+    position: absolute;
+    width: 98vw;
+    height: 30px;
+    background-color: #f55b58;
+    box-shadow: 4px 1px 4px 0px black;
+    top: 0;
+}
+
+#contact{
+    position: absolute;
+    margin: 0;
+    color: white;
+    font-family:Koulen, Rockwell ;
+    left: 650px;
+}
+
+#golinks_botom{
+    position: absolute;
+    top: 300px;
+
+}
+
+#icon_botom{
+    position: absolute;
+    top: 400px;
+}
+
+#form_content{
+    position: absolute;
+    top: 500px;
 }

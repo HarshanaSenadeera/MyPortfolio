@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case_Five</title>
+</head>
+
+<style>
+    body{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        box-shadow: 1px 1px 10px 2px black;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: 20px 20px 5px 5px;
+        overflow-x: hidden;
+    }
+
+
+    body>section{
+        height: 100%;
+        width: 400%;
+        display: flex;
+        background-position: center;
+        animation-name:animation;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate-reverse;
+
+    }
+
+    body>section>div{
+        height: 100%;
+        width: 100%;
+
+    }
+
+    body>section>div:nth-child(1) {
+        background: url("../img/beeek.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    body>section>div:nth-child(2) {
+        background: url("../img/tiger.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    body>section>div:nth-child(3) {
+        background: url("../img/cute-baby-animals-1558535060.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    body>section>div:nth-child(4) {
+        background: url("../img/bear.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    @keyframes animation {
+
+        0%,
+        25% {
+            transform: translateX(0);
+        }
+
+        25%,
+        50% {
+            transform: translateX(-25%);
+        }
+
+        50%,
+        75% {
+            transform: translateX(-50%);
+        }
+
+        75%,
+        100% {
+            transform: translateX(-75%);
+        }
+    }
+
+</style>
+<body>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>

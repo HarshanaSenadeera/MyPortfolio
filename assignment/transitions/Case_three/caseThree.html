@@ -1,10 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case_Three</title>
 </head>
+
+<style>
+
+    div {
+        width: 200px;
+        height: 100px;
+        border-radius: 10px;
+        animation-name: caseThree;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        background-color: aqua;
+        animation-direction: alternate;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+
+    }
+
+    @keyframes caseThree {
+
+        0% {
+            background-color: blue;
+            margin: 0px 0px 0px 0px;
+        }
+
+        25% {
+            background-color: yellow;
+            margin: 0px 0px 0px 1000px;
+            transform: rotate(90deg);
+        }
+
+        50% {
+            background-color: red;
+            margin: 490px 0px 0px 1000px;
+            transform: rotate(180deg);
+        }
+
+        75% {
+            background-color: deeppink;
+            margin: 490px 0px 0px 0px;
+            transform: rotate(270deg);
+        }
+
+        100% {
+            background-color: orange;
+            transform: rotate(360deg);
+        }
+    }
+
+</style>
 <body>
-$END$
+<div></div>
 </body>
 </html>
