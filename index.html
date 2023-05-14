@@ -13,8 +13,9 @@
     <link rel="icon" href="assests/img/image.png">
 
 
-    <link rel="stylesheet" href="assests/CSS/Main_Style.css">
+    <!--<link rel="stylesheet" href="assests/CSS/Main_Style.css">-->
     <link rel="stylesheet" href="assests/CSS/normalize.css">
+    <link rel="stylesheet" href="assests/CSS/MainStyle2.css">
 
 </head>
 
@@ -35,18 +36,20 @@
 <body>
         <header>
 
-            <div class="topnav">
-                <b><a class="active" href="#home" style="font-size: 18px">Home</a></b>&nbsp;
-                <b><a href="#About" style="font-size: 18px">About Me</a></b>&nbsp;
-                <b><a href="#Projects" style="font-size: 18px">Projects</a></b>&nbsp;
-                <b><a href="#Assignments" style="font-size: 18px">Assignments</a></b>&nbsp;
-                <b><a href="#Achievement" style="font-size: 18px">Achievement</a></b>&nbsp;
-                <b><a href="#Contact" style="font-size: 18px">Contact</a></b>&nbsp;
-            </div>
+            <div class="top_name">My Portfo<span>lio.</span></div>
+            <nav class="navbar">
+                <div class="max-width"></div>
+                <menu class="menu">
+                    <li><b><a href="#home" class="menu-btn hoverText">Home</a></b></li>
+                    <li><a href="#about" class="menu-btn hoverText">About Me</a></li>
+                    <li><a href="#projects" class="menu-btn hoverText">projects</a></li>
+                    <li><a href="#Assignments" class="menu-btn hoverText">Assignments</a></li>
+                    <li><a href="#Achievements" class="menu-btn hoverText">Achievements</a></li>
+                    <li><a href="#Contact" class="menu-btn hoverText">Contact</a></li>
+                </menu>
 
-            <div id="top_name_portfolio">
-                <p><b>My Portfolio</b></p>
-            </div>
+                </div>
+            </nav>
 
         </header>
 
@@ -64,16 +67,12 @@
             <section id="eihth"></section>
         <!-- 1 -->
         <section id="first">
-            <h1><dfn id="home"Home></dfn></h1>
-                <div id="image">
-                    <img src="assests/img/img.png" width="600" height="550">
-                </div>
-
-
+            <img id="mainImg" src="assests/img/img.png" >
             <!--<p id="about_me_first"><b>Your legal<br> advisers <br>for the <br>problems<br> of this century</b></p>
                 <p id="my_vishion">We offer  solutions to todays needs</p>-->
 
-                <div class="golinks">
+                <!--<section class="golinks">
+
 
                         <a href=""><img src="assests/img/Facebook.png" width="60" height="60"></a>
                         <a href="https://github.com/HarshanaSenadeera"><img src="assests/img/github.png" width="60" height="60"></a>
@@ -83,17 +82,20 @@
                         <a href=""><img src="assests/img/instagram.png" width="80" height="60"></a>
 
 
-                </div>
+                </section>-->
+                <p class="about_me_two"><b>
+                </b>
+                <b>SOFTWARE ENGINEERING <br>
+                    IN SRI LANKA</b>
+                </p>
 
-                <p id="about_me_two"><b>
-                    I AM <br>
+            <span id="about_me">
+                   <b> I AM <br>
                     HARSHANA SENADEERA <br>
-                     </b></p>
+                       </b>
+                 </span>
 
-            <span>
-                <b><p>SOFTWARE ENGINEERING <br>
-                    IN SRI LANKA</p></b>
-            </span>
+            
             </section>
 
 
@@ -103,7 +105,7 @@
             <!-- 2.1 -->
             <div>
                 <div id="title_about_me">
-                    <h2 class="aboutHeader"><dfn id="About"><b>About Me</b></dfn></h2>
+                    <h2 class="aboutHeader"><dfn id="about"><b>About Me</b></dfn></h2>
                 </div>
                 <div id="about_image">
                     <img src="assests/img/School.png" width="150" height="100">
@@ -258,7 +260,7 @@
         <!-- 3 -->
         <section id="third">
             <div id="Projects_title">
-            <h2 id="Projects">Projects</h2>
+            <h2 id="projects">Projects</h2>
             </div>
 
             <div id="projets_content">
@@ -315,7 +317,7 @@
         <!-- 6 -->
         <section id="sixth">
             <div id="achevment_title">
-            <h2 id="Achievement">Achivments</h2>
+            <h2 id="Achievements">Achivments</h2>
             </div>
 
             <div id="achewment_content">

@@ -1,0 +1,186 @@
+/*-----------Header styles---------*/
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 29px;
+    background-color: #000000;
+    color: #14192B;
+}
+
+/*----------------header nav-------------*/
+header > nav {
+    padding-right: 10px;
+}
+
+/*----------------header manu-------------*/
+header menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------manu li------------*/
+header menu li {
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+/*----------------manu href-------------*/
+header menu li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.hoverText {
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+}
+
+/* hover state */
+.hoverText:hover {
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+/* Underline Text */
+.menu-btn {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/*----------------animation-------------*/
+.menu-btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #fe0202;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu-btn:hover::after {
+    width: 100%;
+}
+
+header{
+    position: relative;
+    z-index: 999;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.top_name{
+    padding: 20px;
+    color: #f1f1f1;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header span{
+    color: #ff310f;
+;
+}
+
+/*-------------Section first----------*/
+
+#first{
+    position: relative;
+    height: 95vh;
+    border: 2px solid black;
+    background-color: #282626;
+
+}
+
+#mainImg{
+    position: absolute;
+    height: 90vh;
+    top: 0;
+    right: 0;
+}
+
+.about_me_two{
+    position: absolute;
+    top: 329px;
+    bottom: 0;
+    right: 0;
+    left: 60px;
+    margin: auto;
+    font-size: 50px;
+    color: black;
+    font-family:"Arial Black";
+}
+
+.about_me_two
+{
+    position: absolute;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+            -225deg,
+            #0e0e0e 0%,
+            #58f346 29%,
+            #f80606 67%,
+            #ffffff 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 6s reverse infinite;
+    display: inline-block;
+    font-size: 60px;
+    font-family:"Arial Black";
+
+}
+
+#about_me{
+    position: absolute;
+    top: 193px;
+    left: 76px;
+    font-size: 50px;
+    color: white;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 300% center;
+    }
+}
+
+
+/*--------------Hire Me Button-------------*/
+#hire_me{
+    position: absolute;
+    bottom: 70px;
+    left: 90px;
+    color: yellow;
+    font-family: Rockwell;
+    font-size: 20px;
+    border-radius: 10%;
+
+}
+
+
