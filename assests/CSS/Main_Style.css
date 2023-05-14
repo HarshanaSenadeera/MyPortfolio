@@ -3,8 +3,8 @@
                 /*-------------------Menu bar--------------*/
 header{
     box-shadow: 4px 1px 4px 0px black;
-    background-color: #f55b58;
-    border: 1px solid #f55b58;
+    background-color: #58f346;
+    border: 1px solid #58f346;
     position: relative;
     position: fixed;
     width: 98vw;
@@ -18,37 +18,36 @@ header{
     position: absolute;
     right: 20px;
     top: 16px;
-    font-family: jua;
-    border: 1px solid #f55b58;
+    font-family: Koulen, Rockwell;
+    /*border: 1px solid #6aef5b;*/
     margin: -12px;
     color: white;
 }
 
+#top_name_portfolio{
+    position: absolute;
+    top: -10px;
+    left: 0;
+    color: white;
+    font-family: Koulen, Rockwell;
+    font-size: 20px;
+
+}
 
                 /*-------------------Menu bar item colour--------------*/
 a{
     color: white;
 }
 
-                /*-------------------Side video--------------*/
-body>main>div>img{
-    position: absolute;
-    right: 0px;
-    top: 25px;
-    left: 0;
-    margin: auto;
-    width: 309px;
-    height: 250px;
-    border-radius: 9px;
-}
 
                 /*-------------------Main picture--------------*/
 
 #image{
     position: absolute;
     top: 0px;
-    left: 750px;
+    left: 908px;
     margin: auto;
+    width: 500px;
 }
 
                 /*-------------------Main about me--------------*/
@@ -80,18 +79,22 @@ body>main>div>img{
     left: 100px;
     margin: auto;
     font-size: 68px;
-    color: #f55b58;
+    color: #58f346;
 }
 
-#about_me_two
+#first>span
 {
+    position: absolute;
+    top: 190px;
+    left: 100px;
+    font-size: 68px;
     text-transform: uppercase;
     background-image: linear-gradient(
             -225deg,
-            #ef5b5b 0%,
-            #ff1361 29%,
-            #ffffff 67%,
-            #000000 100%
+            #0e0e0e 0%,
+            #58f346 29%,
+            #f80606 67%,
+            #ffffff 100%
     );
     background-size: auto auto;
     background-clip: border-box;
@@ -101,9 +104,9 @@ body>main>div>img{
     text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
+    animation: textclip 3s reverse infinite;
     display: inline-block;
-   /* font-size: 50px;*/
+    font-size: 80px;
 
 }
 
@@ -119,17 +122,21 @@ body>main>div>img{
 
     position: absolute;
     bottom: 0;
-    top: 500px;
-
-    height: 500px;
+    top: 562px;
+    height: 52px;
     width: 500px;
-    display: grid;
+    display: flex;
+    gap: 20px;
 
-    grid-template-rows: repeat(1,1fr);
+    /*grid-template-rows: repeat(1,1fr);
 
     grid-template-columns:repeat(6,1fr);
 
-    column-gap: 4px;
+    column-gap: 4px;*/
+}
+
+img:hover{
+    transform: scale(1.08);
 }
 
 #first>h1{
@@ -702,7 +709,7 @@ body > main{
 #second{
     position:relative;
     width: 98vw;
-    height: 390vh;
+    height: 351vh;
     /*border: 2px solid black;*/
 }
 
@@ -711,7 +718,7 @@ body > main{
     position: absolute;
     height: 450px;
     width: 20px;
-    background-color: #fd3836;
+    background-color: #58f346;
     top: 100px;
     left: 50px;
 
@@ -721,7 +728,7 @@ body > main{
     position: absolute;
     height: 280px;
     width: 20px;
-    background-color: #fd3836;
+    background-color: #58f346;
     top: 600px;
     left: 250px;
 
@@ -730,10 +737,11 @@ body > main{
 
                             /*-------------------about me title--------------*/
 #title_about_me{
+
     position: absolute;
     width: 98vw;
-    height: 40px;
-    background-color:#f55b58;
+    height: 30px;
+    background-color: #58f346;
     box-shadow: 4px 1px 4px 0px black;
 }
 
@@ -742,9 +750,8 @@ body > main{
     position: absolute;
     margin: 0;
     color: white;
-    font-family:Koulen, Rockwell;
-    font-size: 35px;
-    left:600px;
+    font-family:Koulen, Rockwell ;
+    left: 660px;
 }
 
                                 /*-------------------logos-------------*/
@@ -804,7 +811,7 @@ body > main{
 
 #DownloadButton {
     align-items: center;
-    background-color: #fd3836;
+    background-color: #58f346;
     border: 2px solid #111;
     border-radius: 8px;
     box-sizing: border-box;
@@ -868,17 +875,17 @@ body > main{
 
 
                             /*-------------------my galary--------------*/
-.Galary{
+/*.Galary{
     position: absolute;
     bottom: 0;
-}
+}*/
 
                             /*-------------------education title bar--------------*/
 #education_title{
     position: absolute;
     width: 98vw;
     height: 30px;
-    background-color: #f55b58;
+    background-color: #58f346;
     box-shadow: 4px 1px 4px 0px black;
     top: -229px;
 }
@@ -890,7 +897,7 @@ body > main{
     margin: 0;
     color: white;
     font-family:Koulen, Rockwell ;
-    left: 600px;
+    left: 660px;
 }
 
                             /*-------------------education description--------------*/
@@ -915,7 +922,7 @@ body > main{
     width: 150px;
     height: 30px;
     border-radius: 5%;
-    background-color: #f55b58;
+    background-color: #58f346;
     top: -27px;
 
 }
@@ -925,7 +932,7 @@ body > main{
     width: 150px;
     height: 30px;
     border-radius: 5%;
-    background-color: #f55b58;
+    background-color: #58f346;
     top: -27px;
 }
 
@@ -934,7 +941,7 @@ body > main{
     width: 150px;
     height: 30px;
     border-radius: 5%;
-    background-color: #f55b58;
+    background-color: #58f346;
     top: -27px;
 }
 
@@ -943,7 +950,7 @@ body > main{
     width: 150px;
     height: 30px;
     border-radius: 5%;
-    background-color: #f55b58;
+    background-color: #6aef5b;
     top: -27px;
 }
 
@@ -1011,7 +1018,7 @@ body > main{
     height: 200px;
     top: 0;
     left: -93px;
-    background-color: #f55b58;
+    background-color: #58f346;
 }
 
 #al_bar{
@@ -1020,7 +1027,7 @@ body > main{
     height: 200px;
     top: 0;
     left: -93px;
-    background-color: #f55b58;
+    background-color: #58f346;
 }
 
 #ijse_bar{
@@ -1029,7 +1036,7 @@ body > main{
     height: 200px;
     top: 0;
     left: -80px;
-    background-color: #f55b58;
+    background-color: #58f346;
 }
 
 #degree_bar{
@@ -1038,7 +1045,7 @@ body > main{
     height: 200px;
     top: 0;
     left: -80px;
-    background-color: #f55b58;
+    background-color: #58f346;
 }
 
                             /*-------------------Skills title bar--------------*/
@@ -1047,7 +1054,7 @@ body > main{
     position: absolute;
     width: 98vw;
     height: 30px;
-    background-color: #f55b58;
+    background-color: #58f346;
     box-shadow: 4px 1px 4px 0px black;
     top: 1794px;
 }
@@ -1057,7 +1064,7 @@ body > main{
     margin: 0;
     color: white;
     font-family:Koulen, Rockwell ;
-    left: 650px;
+    left: 660px;
 }
 
 
@@ -1069,7 +1076,7 @@ body > main{
     position: absolute;
     left: 300px;
     right: 300px;
-    top: 20px;
+    top: 60px;
     text-align: center;
     color: black;
     font-family: Koulen, Rockwell;
@@ -1078,7 +1085,7 @@ body > main{
 
 #lan_impl{
     position: absolute;
-    top: 120px;
+    top: 164px;
     right: 420px;
     display: flex;
     gap: 30px;
@@ -1094,7 +1101,7 @@ body > main{
     position: absolute;
     left: 300px;
     right: 300px;
-    top: 2035px;
+    top: 2078px;
     text-align: center;
     color: black;
     font-family: Koulen, Rockwell;
@@ -1103,7 +1110,7 @@ body > main{
 
 #tool_impl{
     position: absolute;
-    top: 2132px;
+    top: 2159px;
     right: 420px;
     display: flex;
     gap: 30px;
@@ -1118,7 +1125,7 @@ body > main{
     position: absolute;
     width: 98vw;
     height: 30px;
-    background-color: #f55b58;
+    background-color: #58f346;
     box-shadow: 4px 1px 4px 0px black;
     top: -231px;
 }
@@ -1128,7 +1135,7 @@ body > main{
     margin: 0;
     color: white;
     font-family:Koulen, Rockwell ;
-    left: 650px;
+    left: 660px;
 }
 
 .Galary{
@@ -1139,7 +1146,7 @@ body > main{
 #photo{
     position: relative;
     bottom: 140px;
-    left: 80px;
+    left: 150px;
 }
 
 #photo>img:hover{
@@ -1151,14 +1158,15 @@ body > main{
     position: relative;
     width: 98vw;
     height: 63vh;
+
     /*border: 2px solid black;*/
 }
 
 #Projects_title{
     position: absolute;
-    width: 98vw;
+    width: 100%;
     height: 30px;
-    background-color: #f55b58;
+    background-color: #58f346;
     box-shadow: 4px 1px 4px 0px black;
     top: 0;
 }
@@ -1168,7 +1176,7 @@ body > main{
     margin: 0;
     color: white;
     font-family:Koulen, Rockwell ;
-    left: 650px;
+    left: 660px;
 }
 
 /*-------------------Project Images--------------*/
@@ -1186,14 +1194,14 @@ body > main{
 
 #git_hub{
     position: absolute;
-    top: 350px;
-    left: 650px;
+    top: 369px;
+    left: 778px;
 }
 
 #git_link{
     position: absolute;
-    top: 290px;
-    left: 580px;
+    top: 315px;
+    left: 701px;
     color: blue;
 }
 
@@ -1206,7 +1214,7 @@ body > main{
 #fourth{
     position: relative;
     width: 98vw;
-    height: 78vh;
+    height: 59vh;
     /*border: 2px solid black;*/
 }
 
@@ -1214,25 +1222,34 @@ body > main{
     position: absolute;
     width: 98vw;
     height: 30px;
-    background-color: #f55b58;
+    background-color: #58f346;
     box-shadow: 4px 1px 4px 0px black;
     top: 0;
 }
 
-#assignment{
+#Assignments{
     position: absolute;
     margin: 0;
     color: white;
     font-family:Koulen, Rockwell ;
-    left: 650px;
+    left: 660px;;
 }
 
 #assignment_content{
-    position: absolute;
+    position: relative;
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+   /* position: absolute;*/
     top: 100px;
     right: 450px;
-    display: flex;
-    gap: 30px;
+    /*display: flex;
+    gap: 30px;*/
+}
+
+#assignment_content>img{
+    position: absolute;
 }
 
 #assignment_content>img:hover{
@@ -1241,14 +1258,14 @@ body > main{
 
 #git_hub_a{
     position: absolute;
-    top: 450px;
-    left: 650px;
+    top: 369px;
+    left: 778px;
 }
 
 #git_link_a{
     position: absolute;
-    top: 390px;
-    left: 580px;
+    top: 315px;
+    left: 701px;
     color: blue;
 }
 
@@ -1269,7 +1286,7 @@ body > main{
     position: absolute;
     width: 98vw;
     height: 30px;
-    background-color: #f55b58;
+    background-color: #58f346;
     box-shadow: 4px 1px 4px 0px black;
     top: 0;
 }
@@ -1298,7 +1315,7 @@ body > main{
     position: relative;
     width: 98vw;
     height: 100vh;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     margin-top: 40px;
     /*background-color:  #f55b58;*/
 }
@@ -1307,31 +1324,65 @@ body > main{
     position: absolute;
     width: 98vw;
     height: 30px;
-    background-color: #f55b58;
+    background-color: #58f346;
     box-shadow: 4px 1px 4px 0px black;
     top: 0;
 }
 
-#contact{
+#Contact{
     position: absolute;
     margin: 0;
     color: white;
     font-family:Koulen, Rockwell ;
-    left: 650px;
+    left: 660px;
 }
 
 #golinks_botom{
     position: absolute;
-    top: 300px;
+    top: 60px;
 
+}
+
+#golinks_botom>a{
+    color: black;
+    font-family:Koulen, Rockwell;
+    font-size: 25px;
 }
 
 #icon_botom{
     position: absolute;
-    top: 400px;
+    top: 350px;
+    left: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+#icon_botom>a>img:hover{
+    transform: scale(1.20);
 }
 
 #form_content{
     position: absolute;
-    top: 500px;
+    top: 450px;
+    left: 30px;
+}
+
+#connet_pic{
+    position: absolute;
+    left: 539px;
+    bottom: 30px;
+}
+
+@media all and (max-width: 1440px){
+    header{
+        width: 158vw;
+    }
+
+    .topnav{
+        right: 166px;
+    }
+
+    #top_name_portfolio{
+        left: 476px;
+    }
 }
