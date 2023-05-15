@@ -10,7 +10,12 @@ header{
     padding: 29px;
     background-color: #000000;
     color: #14192B;
+    top: 0;
+    position: relative;
+    z-index: 999;
+
 }
+
 
 /*----------------header nav-------------*/
 header > nav {
@@ -73,10 +78,6 @@ header menu li a {
     width: 100%;
 }
 
-header{
-    position: relative;
-    z-index: 999;
-}
 
 *{
     margin: 0;
@@ -105,8 +106,7 @@ header span{
 
 #first{
     position: relative;
-    height: 95vh;
-    border: 2px solid black;
+    height: 98vh;
     background-color: #282626;
 
 }
@@ -136,9 +136,10 @@ header span{
     text-transform: uppercase;
     background-image: linear-gradient(
             -225deg,
-            #0e0e0e 0%,
+            #f8f8f8 10%,
             #58f346 29%,
             #f80606 67%,
+            #ffffff 70%,
             #ffffff 100%
     );
     background-size: auto auto;
@@ -149,7 +150,7 @@ header span{
     text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 6s reverse infinite;
+    animation: textclip 2s reverse infinite;
     display: inline-block;
     font-size: 60px;
     font-family:"Arial Black";
@@ -176,11 +177,314 @@ header span{
     position: absolute;
     bottom: 70px;
     left: 90px;
+    width: 8vw;
     color: yellow;
     font-family: Rockwell;
     font-size: 20px;
-    border-radius: 10%;
+    border-radius: 8%;
+    border-color: #14192B;
+    background-color: #14192B;
+    height: 50px;
+}
+
+
+/*-----------Second session---------*/
+
+.second{
+    position: relative;
+    height: 400vh;
+    border: 2px solid black;
 
 }
 
+.aboutMyImage{
+    position: absolute;
+    width: 30vw;
+    height: 60vh;
+    left: 190px;
+    top: 90px;
+}
+
+#title_about_me{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    right: 0;
+    font-size: 50px;
+    font-family: Koulen, Rockwell;
+    margin: auto;
+}
+
+#title_about_me span{
+    color: red;
+}
+
+#school_img{
+    position: absolute;
+    height: 150px;
+    width: 200px;
+    top: 1001px;
+    left: 350px;
+}
+
+#ijse_png{
+    position: absolute;
+    height: 150px;
+    width: 200px;
+    top: 1150px;
+    left: 800px;
+}
+
+.Information{
+    position: absolute;
+    right: 0;
+    top:160px;
+    left: 900px;
+    font-size:27px;
+    font-family: Koulen, Rockwell;
+
+}
+
+/*-----------------bars---------------*/
+#row1{
+    position: absolute;
+    height: 250px;
+    width: 20px;
+    background-color: #ff0000;
+    top: 140px;
+    left: 857px;
+
+}
+
+#row2{
+    position: absolute;
+    height: 280px;
+    width: 20px;
+    background-color: #000000;
+    top: 550px;
+    left: 100px;
+
+}
+
+#AboutMe{
+    position: absolute;
+    right: 0;
+    left: 170px;
+    top: 600px;
+    font-size:20px;
+    font-family: Koulen, Rockwell;
+    color: red;
+
+}
+
+#education_title{
+    position: absolute;
+    top: 900px;
+    left: 40%;
+    font-size: 50px;
+    font-family: Koulen, Rockwell;
+    margin: auto;
+}
+
+#education_title span{
+    color: red;
+}
+
+
+
+#mahinda_college{
+    position: absolute;
+    font-size: 20px;
+    top:1030px ;
+    left: 50px;
+
+}
+
+#mahinda_college span{
+    font-size: 40px;
+
+}
+
+#ijse{
+    position: absolute;
+    font-size: 20px;
+    top: 1175px;
+    left: 1020px;
+}
+
+#ijse span{
+    font-size: 40px;
+}
+
+#row3{
+    position: absolute;
+    height: 300px;
+    width: 20px;
+    background-color: #ff0000;
+    top: 1000px;
+    left: 650px;
+
+}
+
+#DownloadButton{
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 1340px;
+}
+
+#DownloadButton {
+    align-items: center;
+    background-color: red;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 200px;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#DownloadButton:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+#DownloadButton:hover:after {
+    transform: translate(0, 0);
+}
+
+#DownloadButton:active {
+    background-color: blue;
+    outline: 0;
+}
+
+#DownloadButton:hover {
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    #DownloadButton {
+        padding: 0 40px;
+    }
+}
+
+.skill-title{
+    position: absolute;
+    bottom: 0;
+    font-size: 50px;
+    font-family: Koulen, Rockwell;
+    left: 45%;
+    top: 1450px;
+}
+
+.skill-title span{
+    color: red;
+}
+
+.title_bar_about{
+    position: absolute;
+    height: 8px;
+    width: 1345px;
+    top: 0px;
+    background: linear-gradient(to right, red 51%, black 50%);
+}
+
+.title_bar_edu{
+    position: absolute;
+    height: 8px;
+    width: 1345px;
+    top: 874px;
+    background: linear-gradient(to right, red 51%, black 50%);
+}
+
+.title_bar_skills{
+    position: absolute;
+    height: 8px;
+    width: 1345px;
+    top: 1428px;
+    background: linear-gradient(to right, red 51%, black 50%);
+}
+
+
+#tools{
+    position: absolute;
+    top: 1542px;
+    right: 400px;
+    display: flex;
+    gap: 60px;
+}
+
+#tools>img:hover{
+    transform: scale(1.30)
+}
+
+.language-title{
+    position: absolute;
+    bottom: 0;
+    font-size: 50px;
+    font-family: Koulen, Rockwell;
+    left: 42%;
+    top: 1680px;
+}
+
+.language-title span{
+    color: red;
+}
+
+#language{
+    position: absolute;
+    top: 1783px;
+    right: 400px;
+    display: flex;
+    gap: 60px;
+}
+
+#language>img:hover{
+    transform: scale(1.30)
+}
+
+#simbol_mark{
+    position: absolute;
+    top: 1630px;
+    bottom: 0;
+    left: 650px;
+    right: 0;
+    margin: auto;
+    font-size: 40px;
+    font-family: "Koulen, Rockwell";
+    color: red;
+}
+
+.title_bar_photo{
+    position: absolute;
+    height: 8px;
+    width: 1345px;
+    top: 1893px;
+    background: linear-gradient(to right, red 51%, black 50%);
+}
+
+/*-----------Third session---------*/
 
