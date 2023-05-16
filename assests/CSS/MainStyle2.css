@@ -11,7 +11,7 @@ header{
     background-color: #000000;
     color: #14192B;
     top: 0;
-    position: relative;
+    /*position: relative;*/
     z-index: 999;
 
 }
@@ -98,79 +98,46 @@ html{
 }
 
 header span{
-    color: #ff310f;
+    color: #ff0000;
 ;
 }
 
 /*-------------Section first----------*/
 
-#first{
+.first{
     position: relative;
     height: 98vh;
     background-color: #282626;
+    border: 5px  solid white;
 
 }
 
 #mainImg{
     position: absolute;
     height: 90vh;
-    top: 0;
+    top: 40px;
     right: 0;
 }
 
-.about_me_two{
-    position: absolute;
-    top: 380px;
-    bottom: 0;
-    right: 0;
-    left: 60px;
-    margin: auto;
-    font-size: 50px;
-    color: black;
-    font-family:"Arial Black";
-}
-
-.hii{
-    position: absolute;
-    top: 0px;
-    bottom: 0;
-    right: 0;
-    left: 57px;
-    margin: auto;
-    font-size: 170px;
+.soft{
     color: white;
-    font-family:"Arial Black";
-}
-
-.hii span{
-    color: red;
-}
-.about_me_two
-{
     position: absolute;
-    text-transform: uppercase;
-    background-image: linear-gradient(
-            -225deg,
-            #f8f8f8 10%,
-            #ff0000 29%,
-            #f80606 67%,
-            #ffffff 70%,
-            #ffffff 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s reverse infinite;
-    display: inline-block;
+    top: 200px;
     font-size: 60px;
-    font-family:"Arial Black";
+    left: 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.name_two_span{
+    font-family: DialogInput;
+    font-size: 40px;
 
 }
+.name_span{
+    font-size:70px ;
+    color: #FB313E;
+}
+
 
 #about_me{
     position: absolute;
@@ -193,13 +160,15 @@ header span{
     bottom: 70px;
     left: 90px;
     width: 8vw;
-    color: yellow;
-    font-family: Rockwell;
+    height: 5px;
+    color: red;
+    font-family: Koulen, Rockwelll;
     font-size: 20px;
-    border-radius: 8%;
-    border-color: #14192B;
-    background-color: #14192B;
+    border-radius: 5%;
+    border-color: #ffffff;
+    background-color: #ffffff;
     height: 50px;
+    box-shadow: white;
 }
 
 
@@ -207,8 +176,9 @@ header span{
 
 .second{
     position: relative;
-    height: 397vh;
+    height: 382vh;
     background-color: #282626;
+    border: 5px  solid white;
     /*border: 2px solid black;*/
 
 }
@@ -218,12 +188,12 @@ header span{
     width: 300px;
     height: 400px;
     left: 190px;
-    top: 90px;
+    top: 153px;
 }
 
 #title_about_me{
     position: absolute;
-    top: 0;
+    top: 51px;
     left: 40%;
     right: 0;
     font-size: 50px;
@@ -255,9 +225,9 @@ header span{
 .Information{
     position: absolute;
     right: 0;
-    top:160px;
-    left: 900px;
-    font-size:27px;
+    top:205px;
+    left: 725px;
+    font-size:20px;
     font-family: Koulen, Rockwell;
     color: white;
 
@@ -266,11 +236,11 @@ header span{
 /*-----------------bars---------------*/
 #row1{
     position: absolute;
-    height: 250px;
+    height: 391px;
     width: 20px;
     background-color: #ff0000;
     top: 140px;
-    left: 857px;
+    left: 685px;
 
 }
 
@@ -357,7 +327,6 @@ header span{
 #DownloadButton {
     align-items: center;
     background-color: red;
-    border: 2px solid #111;
     border-radius: 8px;
     box-sizing: border-box;
     color: white;
@@ -428,24 +397,24 @@ header span{
 
 .title_bar_about{
     position: absolute;
-    height: 8px;
-    width: 1345px;
+    height: 4px;
+    width:1338px;
     top: 0px;
     background: linear-gradient(to right, red 51%, black 50%);
 }
 
 .title_bar_edu{
     position: absolute;
-    height: 8px;
-    width: 1345px;
+    height: 4px;
+    width:1338px;
     top: 874px;
     background: linear-gradient(to right, red 51%, black 50%);
 }
 
 .title_bar_skills{
     position: absolute;
-    height: 8px;
-    width: 1345px;
+    height: 4px;
+    width: 1338px;
     top: 1428px;
     background: linear-gradient(to right, red 51%, black 50%);
 }
@@ -503,8 +472,8 @@ header span{
 
 .title_bar_photo{
     position: absolute;
-    height: 8px;
-    width: 1345px;
+    height: 4px;
+    width: 1338px;
     top: 1893px;
     background: linear-gradient(to right, red 51%, black 50%);
 }
@@ -527,7 +496,7 @@ header span{
     width: 75vw;
     height: 70vh;
     position: absolute;
-    top: 317vh;
+    top: 292vh;
     left: 0;
     right: 0;
     margin: auto;
@@ -593,8 +562,9 @@ header span{
 .third{
     position: relative;
     height: 83vh;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     background-color: #2f2e2e;
+    border: 5px  solid white;
 
 }
 
@@ -604,7 +574,7 @@ header span{
     font-size: 50px;
     font-family: Koulen, Rockwell;
     left: 42%;
-    top:0;
+    top:18px;
     color: white;
 }
 
@@ -687,6 +657,7 @@ header span{
     position: relative;
     height: 85vh;
     background-color: #282626;
+    border: 5px  solid white;
 }
 
 .title_assignment{
@@ -695,7 +666,7 @@ header span{
     font-size: 50px;
     font-family: Koulen, Rockwell;
     left: 42%;
-    top:0;
+    top:20px;
     color: white;
 }
 
@@ -732,7 +703,7 @@ header span{
     position: relative;
     width: 25vw;
     height: 45vh;
-    background-color: #000000;
+    background-color: #2a2929;
     border-radius: 15px;
     box-shadow: 1px 2px 4px 0px white;
 }
@@ -777,8 +748,8 @@ header span{
 .fifth{
     position: relative;
     height: 80vh;
-    border: 2px solid black;
     background-color:#2f2e2e ;
+    border: 5px  solid white;
 }
 
 .title_achievements{
@@ -787,7 +758,7 @@ header span{
     font-size: 50px;
     font-family: Koulen, Rockwell;
     left: 40%;
-    top:0;
+    top:20px;
     color: white;
 }
 
@@ -816,7 +787,8 @@ header span{
 .footer{
     position: relative;
     height: 100vh;
-    background-color: #282626
+    background-color: #282626;
+    border: 5px  solid white;
 }
 
 .title_footer{
@@ -825,7 +797,7 @@ header span{
     font-size: 50px;
     font-family: Koulen, Rockwell;
     left: 45%;
-    top:0;
+    top:20px;
     color: white;
 }
 

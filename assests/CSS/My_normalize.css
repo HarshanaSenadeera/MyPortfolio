@@ -1,0 +1,110 @@
+@media all and (max-width: 1440px){
+    .navbar{
+        padding-right: 260px;
+    }
+
+    #mainImg{
+        right: 252px;
+    }
+
+    .soft{
+        top: 358px;
+    }
+
+    #title_about_me{
+        left: 35%;
+    }
+
+    #education_title{
+        left: 35%;
+    }
+
+    #row3{
+        left: 621px;
+    }
+
+    #ijse_png{
+        left: 699px;
+    }
+
+    #ijse{
+        left: 928px;
+    }
+
+    #DownloadButton{
+        left: -90px;
+    }
+
+    .skill-title{
+        left: 40%;
+    }
+
+    .language-title{
+        left: 37%;
+    }
+
+    #tools{
+        right: 506px;
+    }
+
+    #language{
+        right: 506px;
+    }
+
+    .gallery-title{
+        left: 40%;
+    }
+
+    .gallery{
+        top: 224vh;
+        left: -253px;
+    }
+
+    .second{
+        height: 305vh;
+    }
+
+    .name_span{
+        font-size: 50px;
+    }
+
+    .title_projects{
+        left: 38%;
+    }
+
+    .Project_Flex{
+        right: 255px;
+    }
+
+    .title_assignment{
+        left: 471px;
+    }
+
+    .Assignment_Flex{
+        right: 260px;
+    }
+
+    .title_achievements{
+        left: 33%;
+    }
+
+    #certificates{
+        left: 133px;
+    }
+
+    #Achievements{
+        height: 61vh;
+    }
+
+    .title_footer{
+        left: 37%;
+    }
+
+    #contact_details{
+        left: 80px;
+    }
+
+    #form_content{
+        right: 343px;
+    }
+}
