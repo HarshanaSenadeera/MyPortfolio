@@ -207,15 +207,16 @@ header span{
 
 .second{
     position: relative;
-    height: 366vh;
+    height: 397vh;
+    background-color: #282626;
     /*border: 2px solid black;*/
 
 }
 
 .aboutMyImage{
     position: absolute;
-    width: 30vw;
-    height: 60vh;
+    width: 300px;
+    height: 400px;
     left: 190px;
     top: 90px;
 }
@@ -228,6 +229,7 @@ header span{
     font-size: 50px;
     font-family: Koulen, Rockwell;
     margin: auto;
+    color: white;
 }
 
 #title_about_me span{
@@ -257,6 +259,7 @@ header span{
     left: 900px;
     font-size:27px;
     font-family: Koulen, Rockwell;
+    color: white;
 
 }
 
@@ -275,7 +278,7 @@ header span{
     position: absolute;
     height: 280px;
     width: 20px;
-    background-color: #000000;
+    background-color: red;
     top: 550px;
     left: 100px;
 
@@ -288,7 +291,7 @@ header span{
     top: 600px;
     font-size:20px;
     font-family: Koulen, Rockwell;
-    color: red;
+    color: white;
 
 }
 
@@ -299,6 +302,7 @@ header span{
     font-size: 50px;
     font-family: Koulen, Rockwell;
     margin: auto;
+    color: white;
 }
 
 #education_title span{
@@ -312,6 +316,7 @@ header span{
     font-size: 20px;
     top:1030px ;
     left: 50px;
+    color: white;
 
 }
 
@@ -325,6 +330,7 @@ header span{
     font-size: 20px;
     top: 1175px;
     left: 1020px;
+    color: white;
 }
 
 #ijse span{
@@ -413,6 +419,7 @@ header span{
     font-family: Koulen, Rockwell;
     left: 45%;
     top: 1450px;
+    color: white;
 }
 
 .skill-title span{
@@ -463,6 +470,7 @@ header span{
     font-family: Koulen, Rockwell;
     left: 42%;
     top: 1680px;
+    color: white;
 }
 
 .language-title span{
@@ -490,7 +498,7 @@ header span{
     margin: auto;
     font-size: 40px;
     font-family: "Koulen, Rockwell";
-    color: red;
+    color: white;
 }
 
 .title_bar_photo{
@@ -508,6 +516,7 @@ header span{
     font-family: Koulen, Rockwell;
     left: 42%;
     top: 1925px;
+    color: white;
 }
 
 .gallery-title span{
@@ -518,7 +527,7 @@ header span{
     width: 75vw;
     height: 70vh;
     position: absolute;
-    top: 289vh;
+    top: 317vh;
     left: 0;
     right: 0;
     margin: auto;
@@ -572,12 +581,12 @@ header span{
     background-position: center;
 }
 .gallery div{
-    box-shadow: 1px 2px 4px 0px red;
+    box-shadow: 1px 2px 4px 0px #ffffff;
     border-radius: 6px;
 }
 .gallery div:hover{
     transform: scale(1.08);
-    box-shadow: 0 0 30px red; ;
+    box-shadow: 0 0 20px #ffffff; ;
 }
 /*-----------Third session---------*/
 
@@ -596,6 +605,7 @@ header span{
     font-family: Koulen, Rockwell;
     left: 42%;
     top:0;
+    color: white;
 }
 
 .title_projects span{
@@ -676,6 +686,7 @@ header span{
 .fourth{
     position: relative;
     height: 85vh;
+    background-color: #282626;
 }
 
 .title_assignment{
@@ -685,6 +696,7 @@ header span{
     font-family: Koulen, Rockwell;
     left: 42%;
     top:0;
+    color: white;
 }
 
 .title_assignment span{
@@ -722,7 +734,7 @@ header span{
     height: 45vh;
     background-color: #000000;
     border-radius: 15px;
-    box-shadow: 1px 2px 4px 0px #ff0000;
+    box-shadow: 1px 2px 4px 0px white;
 }
 
 .Assignment_Flex{
@@ -776,6 +788,7 @@ header span{
     font-family: Koulen, Rockwell;
     left: 40%;
     top:0;
+    color: white;
 }
 
 .title_achievements span{
@@ -793,18 +806,17 @@ header span{
 
 #certificates img:hover{
     transform: scale(1.20);
-    border: 2px solid red;
+    /*border: 2px solid #ffffff;*/
     border-radius: 5%;
-    box-shadow: 0 0 30px red;
+    box-shadow: 0 0 7px white;
 }
 
 /*----------------Footer-----------*/
 
 .footer{
     position: relative;
-    height: 80vh;
-    border: 2px solid black;
-    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    background-color: #282626
 }
 
 .title_footer{
@@ -812,8 +824,9 @@ header span{
     bottom: 0;
     font-size: 50px;
     font-family: Koulen, Rockwell;
-    left: 40%;
+    left: 45%;
     top:0;
+    color: white;
 }
 
 .title_footer span{
@@ -822,8 +835,9 @@ header span{
 
 #contact_details{
     position: absolute;
-    top: 80px;
+    top: 160px;
     left: 80px;
+
 }
 /*.info{
     position: absolute;
@@ -834,7 +848,8 @@ header span{
 }*/
 #form_content{
     position: absolute;
-    right: 0;
+    right: 100px;
+    top: 150px;
 }
 #massage{
     position:absolute;
@@ -847,3 +862,49 @@ header span{
     top: 50px;
     font-size: 40px;
 }
+
+#form_content input{
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 0;
+    background-color: #ffffff;
+    color: #44444C;
+}
+
+#form_content textarea{
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 0;
+    background-color: #ffffff;
+    color: #44444C;
+}
+
+
+
+#contact_details span{
+    color: white;
+    left: 40px;
+    padding-left: 50px;
+    font-size: 30px;
+    font-family:Koulen, Rockwell ;
+
+}
+
+#send{
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 7px white;
+    width: 80px;
+    height: 30px;
+    border-radius: 5%;
+    border-color: white;
+    font-family:Koulen, Rockwell ;
+
+}
+
