@@ -1,4 +1,214 @@
+/*-----------------------------1440 px--------------------------------*/
 
+@media all and (max-width: 1440px) {
+
+
+    .second {
+        height: 346vh;
+    }
+
+    #ijse_png{
+        left: 367px;
+    }
+
+    #ijse{
+        left: 612px;
+    }
+
+    #mainImg {
+        width: 658px;
+        height: 659px;
+        top: 62px;
+    }
+
+    .name_span {
+        font-size: 80px;
+    }
+
+    .name_two_span {
+        font-family: DialogInput;
+        font-size: 60px;
+    }
+
+    .soft {
+        top: 240px;
+    }
+
+    #hire_me{
+        width: 15vw;
+    }
+
+    #row1 {
+        top: 152px;
+        left: 743px;
+    }
+
+    .Information {
+        left: 827px;
+        font-size: 28px;
+        top: 172px;
+    }
+
+    #mahinda_college {
+        font-size: 26px;
+        left: 47px;
+        top: 1032px;
+    }
+
+    #mahinda_college>span{
+        font-size: 35px;
+    }
+
+    #school_img {
+        height: 158px;
+        width: 221px;
+        top: 1001px;
+        left: 452px;;
+    }
+
+    #row2{
+        top: 582px;
+        left: 111px;
+    }
+
+    #row3 {
+        position: absolute;
+        height: 300px;
+        width: 20px;
+        top: 1000px;
+        left: 721px;
+    }
+
+    #AboutMe{
+        font-size: 26px;
+    }
+
+    .aboutMyImage {
+        width: 332px;
+        height: 412px;
+        left: 249px;
+        top: 153px;
+    }
+
+    #ijse_png {
+        position: absolute;
+        height: 160px;
+        width: 235px;
+        top: 1150px
+    ;
+        left: 800px;
+    }
+
+    #ijse {
+        font-size: 26px;
+        left: 1056px;
+        top: 1186px;
+    }
+
+    #ijse>span{
+        font-size: 35px;
+    }
+
+    #DownloadButton{
+        left: 29px;
+    }
+
+    #tools{
+        right: 359px;
+        gap: 90px;
+    }
+
+    #simbol_mark{
+        left: 518px;
+    }
+
+    #language{
+        right: 171px;
+    }
+    .gallery{
+        left: -183px;
+    }
+
+    .Project_Flex{
+        top: 25vh;
+        width: 78vw;
+        left: -169px;
+    }
+
+    .Project_Flex>figure{
+        height: 50vh;
+    }
+
+    .third{
+        height: 92vh;
+    }
+
+    .Assignment_Flex {
+        top: 25vh;
+        width: 78vw;
+        left: -169px;
+    }
+
+    #contact_details>div>a>span{
+        font-size: 20px;
+    }
+
+    #contact_details>div>span{
+        font-size: 20px;
+    }
+
+    .footer {
+        height: 122vh;
+    }
+
+    #DownloadButton {
+        left: 12px;
+    }
+
+    .skill-title{
+        left: 48%;
+    }
+
+    #tools{
+        right: 270px;
+        gap: 90px;
+    }
+
+    #simbol_mark {
+        left: 727px;
+    }
+
+    #language {
+        right: 277px;
+        gap: 80px;
+    }
+
+    .gallery {
+        top: 261vh;
+    }
+
+    #certificates {
+        height: 299px;
+    }
+
+    #contact_details>div>a>span {
+        font-size: 35px;
+    }
+
+    #contact_details>div>span {
+        font-size: 35px;
+    }
+
+    .footer {
+        height: 92vh;
+    }
+
+    #form_content {
+        position: absolute;
+        right: 266px;
+        top: 150px;
+    }
+}
 /*-----------------------------1024px--------------------------------*/
 
 @media all and (max-width: 1024px) {
@@ -25,21 +235,38 @@
         font-size: 60px;
     }
 
+    #AboutMe{
+        font-size: 20px;
+        top: 628px;
+    }
+
     .soft{
         top: 141px;
     }
 
+    .name_two_span{
+        font-size: 40px;
+    }
+
     #hire_me{
         width: 15vw;
+        bottom: 27px;
     }
 
     #row1{
         top: 140px;
         left: 581px;
+        height: 334px;
+    }
+
+    .aboutMyImage{
+        left: 110px;
+        height: 379px
     }
 
     .Information{
         left: 652px;
+        font-size: 20px;
     }
 
     #mahinda_college{
@@ -60,12 +287,14 @@
 
     #ijse_png{
         left: 573px;
+        height: 131px;
+        width: 193px;
     }
 
     #ijse{
         font-size: 15px;
         left: 787px;
-        top: 1186px;
+        top: 1175px;
     }
 
     #ijse>span{
@@ -89,11 +318,13 @@
     }
     .gallery{
         top: 370vh;
+        left: 0px;
     }
 
     .Project_Flex{
         width: 91vw;
         top: 25vh;
+        left: 0px;
     }
 
     .Project_Flex>figure{
@@ -107,6 +338,7 @@
     .Assignment_Flex{
         top: 25vh;
         width: 91vw;
+        left: 0px;
     }
 
     #contact_details>div>a>span{
@@ -119,6 +351,14 @@
 
     .footer {
         height: 122vh;
+    }
+
+    #certificates {
+        height: 222px;
+    }
+
+    #form_content{
+        right: 111px;
     }
 }
 
@@ -182,9 +422,9 @@
 
     #ijse_png {
         height: 86px;
-        left: 429px;
         width: 143px;
         top: 1167px;
+        left: 439px;
     }
 
     #ijse {
@@ -236,23 +476,35 @@
     }
 
     .title_assignment {
-        left: 15%;
+        left: 33%;
     }
 
     .title_projects {
-        left: 27%;
+        left: 38%;
     }
 
     .menu > li {
         margin-left: 26px;
     }
 
-    #ijse_png {
-        left: 34px;
-    }
-
     #form_content {
         right: 37px;
+    }
+
+    #certificates {
+        height: 212px;
+    }
+
+    .Project_Flex >figure{
+        height: 53vh;
+    }
+
+    .Assignment_Flex >figure{
+        height: 53vh;
+    }
+
+    .title_footer{
+        left: 40%;
     }
 }
 
@@ -359,14 +611,656 @@
     .Information {
         font-size: 15px;
         left: 49px;
-        top: 473px;
+        top: 450px;
     }
 
     #row1 {
         left: 15px;
-        top: 449px;
+        top: 419px;
         width: 12px;
         height: 243px;
     }
 
+    #AboutMe {
+        font-size: 13px;
+        left: 104px;
+        top: 670px;
+    }
+
+    #row2 {
+        width: 11px;
+        height: 201px;
+        top: 660px;
+        left: 78px;
+    }
+
+    #education_title{
+        left: 35%;
+        font-size: 30px;
+    }
+
+    #row3{
+        width: 0px;
+    }
+
+    #ijse{
+        left: 203px;
+    }
+
+    #Skills{
+        left: 43%;
+        font-size: 30px;
+    }
+
+
+    #tools{
+        flex-direction: column;
+        right: 174px;
+        top: 1508px;
+    }
+
+    .second {
+        height: 570vh;
+    }
+
+    .gallery {
+        top: 489vh;
+    }
+
+    .gallery-title {
+        font-size: 35px;
+        left: 35%;
+        top: 2586px;
+    }
+
+    .language-title {
+        left: 35%;
+        top: 2058px;
+        font-size: 30px;
+    }
+
+    .title_bar_photo{
+        top: 2558px;
+    }
+
+    #language {
+        flex-direction: column;
+        right: 174px;
+        top: 2130px;
+    }
+
+    #simbol_mark{
+        top: 1976px;
+    }
+
+    .third {
+        height: 235vh;
+    }
+
+    .Project_Flex{
+        flex-direction: column;
+    }
+
+    .Project_Flex {
+        width: 71vw;
+        height: 201vh;
+        top: 21vh;
+    }
+
+    .Project_Flex figure {
+        height: 58vh;
+        width: 83vw;
+
+    }
+
+    .Project_Flex figure div {
+        width: 76vw;
+
+    }
+
+
+    .Project_Flex figure figcaption{
+        top: 44vh;
+        width: 61vw;
+    }
+
+    .title_projects {
+        font-size: 40px;
+        left: 32%;
+        top: 35px;
+    }
+
+    .fourth{
+        height: 233vh;
+
+    }
+
+    .title_assignment{
+        font-size: 35px;
+        left: 25%;
+    }
+
+    .Assignment_Flex{
+        flex-direction: column;
+    }
+
+    .Assignment_Flex {
+        width: 71vw;
+        height: 201vh;
+        top: 21vh;
+    }
+
+    .Assignment_Flex figure {
+        height: 58vh;
+        width: 83vw;
+
+    }
+
+    .Assignment_Flex figure div {
+        width: 76vw;
+
+    }
+
+
+    .Assignment_Flex figure figcaption{
+        top: 44vh;
+        width: 61vw;
+    }
+
+    .title_achievements{
+        font-size: 35px;
+        left: 20%;
+    }
+
+    .title_footer{
+        font-size: 40px;
+        left: 35%;
+    }
+
+    #form_content {
+        right: 84px;
+        top: 491px;
+    }
+
+    .footer{
+        height: 196vh;
+    }
+
+    #ijse_png{
+        left: 36px;
+    }
+
+    #DownloadButton{
+        left: 1px;
+    }
+
 }
+
+/*------------------------375 px------------------------------*/
+
+@media all and (max-width: 375px) {
+
+    .soft {
+        font-size: 20px;
+        left: 13px;
+    }
+
+    .name_two_span {
+        font-size: 15px;
+    }
+
+    .title_achievements {
+        left: 10%;
+    }
+
+    #certificates {
+        left: 52px;
+    }
+
+    #certificates>img:nth-child(1){
+        top: 0;
+        left: 43px;
+        position: absolute;
+        width: 242px;
+        height: 184px;
+    }
+
+    #certificates>img:nth-child(2){
+        top: 216px;
+        left: 43px;;
+        right: 60px;
+        position: absolute;
+        width: 242px;
+        height: 184px;
+    }
+
+    .fifth {
+        height: 112vh;
+
+    }
+
+    #tools {
+        right: 6px;
+        gap: 11px;
+    }
+
+    #simbol_mark {
+        left: 211px;
+    }
+
+    .skill-title{
+        left: 37%;
+    }
+
+    .language-title{
+        left: 25%;
+    }
+
+    #language{
+        right: 6px;
+        gap: 7px;
+    }
+
+    .Information {
+        left: 185px;
+    }
+
+    #mainImg {
+        width: 204px;
+        height: 196px;
+        top: 62px;
+    }
+
+    .name_span {
+        font-size: 20px;
+    }
+
+    .first {
+        height: 59vh;
+    }
+
+    #hire_me {
+        width: 26vw;
+        height: 35px;
+        left: 43px;
+    }
+
+    #title_about_me{
+        left: 35%;
+        font-size: 30px;
+    }
+
+    .aboutMyImage {
+        left: 35px;
+        top: 131px;
+        width: 298px;
+        height: 290px;
+    }
+
+    .Information {
+        font-size: 15px;
+        left: 49px;
+        top: 450px;
+    }
+
+    #row1 {
+        left: 15px;
+        top: 419px;
+        width: 12px;
+        height: 243px;
+    }
+
+    #AboutMe {
+        font-size: 13px;
+        left: 45px;
+        top: 677px;
+    }
+
+    #row2 {
+        width: 11px;
+        height: 201px;
+        top: 668px;
+        left: 15px;
+    }
+
+    #education_title{
+        left: 35%;
+        font-size: 30px;
+    }
+
+    #row3{
+        width: 0px;
+    }
+
+    #ijse{
+        left: 203px;
+    }
+
+    #Skills{
+        left: 40%;
+        font-size: 30px;
+    }
+
+
+    #tools{
+        flex-direction: column;
+        right: 155px;
+        top: 1508px;
+    }
+
+    .second {
+        height: 570vh;
+    }
+
+    .gallery {
+        top: 489vh;
+        right: 0px;
+
+    }
+
+    .gallery-title {
+        font-size: 35px;
+        left: 35%;
+        top: 2586px;
+    }
+
+    .language-title {
+        left: 32%;
+        top: 2058px;
+        font-size: 30px;
+    }
+
+    .title_bar_photo{
+        top: 2558px;
+    }
+
+    #language {
+        flex-direction: column;
+        right: 158px;
+        top: 2130px;
+    }
+
+    #simbol_mark{
+        left: 168px;
+    }
+
+    .third {
+        height: 235vh;
+    }
+
+    .Project_Flex{
+        flex-direction: column;
+    }
+
+    .Project_Flex {
+        width: 71vw;
+        height: 201vh;
+        top: 21vh;
+        left: 0px;
+    }
+
+    .Project_Flex figure {
+        height: 58vh;
+        width: 78vw;
+
+    }
+
+    .Project_Flex figure div {
+        width: 65vw;
+
+    }
+
+
+    .Project_Flex figure figcaption{
+        top: 44vh;
+        width: 61vw;
+    }
+
+    .title_projects {
+        font-size: 40px;
+        left: 32%;
+        top: 35px;
+    }
+
+    .fourth{
+        height: 233vh;
+
+    }
+
+    .title_assignment{
+        font-size: 35px;
+        left: 25%;
+    }
+
+    .Assignment_Flex{
+        flex-direction: column;
+    }
+
+    .Assignment_Flex {
+        width: 71vw;
+        height: 201vh;
+        top: 21vh;
+        left: 0px;
+    }
+
+    .Assignment_Flex figure {
+        height: 58vh;
+        width: 78vw;
+
+    }
+
+    .Assignment_Flex figure div {
+        width: 65vw;
+
+    }
+
+
+    .Assignment_Flex figure figcaption{
+        top: 44vh;
+        width: 61vw;
+    }
+
+    .title_achievements{
+        font-size: 35px;
+        left: 20%;
+    }
+
+    .title_footer{
+        font-size: 40px;
+        left: 35%;
+    }
+
+    #form_content {
+        right: 53px;
+        top: 491px;
+    }
+
+    .footer{
+        height: 196vh;
+    }
+
+    #mahinda_college {
+        font-size: 12px;
+        left: 27px;
+    }
+
+    #school_img {
+        height: 86px;
+        left: 204px;
+        width: 143px;
+        top: 1010px;
+    }
+
+    #certificates{
+        left: 20px;
+    }
+
+    #contact_details > div > a > span {
+        font-size: 13px;
+    }
+
+    #contact_details > div:nth-child(5) > span {
+        font-size: 12px;
+    }
+
+    #DownloadButton{
+        left: 5px;
+    }
+}
+
+/*------------------------320 px------------------------------*/
+
+@media all and (max-width: 320px) {
+
+    .name_span {
+        font-size: 15px;
+    }
+
+    .name_two_span {
+        font-size: 12px;
+    }
+
+    #hire_me {
+        width: 35vw;
+        height: 35px;
+        left: 43px;
+    }
+
+    .aboutMyImage {
+        left: 31px;
+        top: 131px;
+        width: 249px;
+        height: 268px;
+    }
+
+    .title_bar_edu{
+        top: 897px;
+    }
+
+    #education_title {
+        left: 29%;
+        top: 918px;
+    }
+
+    #mahinda_college {
+        top: 989px;
+        font-size: 12px;
+        left: 12px;
+    }
+
+    #school_img {
+        height: 76px;
+        left: 187px;
+        width: 116px;
+        top: 977px;
+    }
+
+    #ijse_png {
+        height: 86px;
+        width: 143px;
+        top: 1127px;
+        left: 12px;
+    }
+
+    #ijse {
+        font-size: 13px;
+        top: 1145px;
+        left: 169px;
+    }
+
+    #DownloadButton{
+        top: 1256px;
+    }
+
+    .title_bar_skills{
+        top: 1357px;
+    }
+
+    .skill-title{
+        top: 1389px;
+    }
+
+    #tools {
+        right: 122px;
+        top: 1448px;
+        gap: 30px;
+    }
+
+    #simbol_mark {
+        left: 144px;
+        top: 1988px;
+    }
+
+    #language {
+        right: 122px;
+        top: 2130px;
+        gap: 30px;
+    }
+
+    .second {
+        height: 594vh;
+    }
+
+    .gallery-title {
+        left: 30%;
+        top: 2737px;
+    }
+
+    .gallery-title {
+        left: 30%;
+        top: 2737px;
+    }
+
+    .title_bar_photo {
+        top: 2697px;
+    }
+
+    .title_assignment {
+        font-size: 35px;
+        left: 16%;
+    }
+
+    .title_projects {
+        font-size: 40px;
+        left: 27%;
+        top: 18px;
+    }
+
+    .title_achievements {
+        font-size: 35px;
+        left: 10%;
+    }
+
+    #certificates {
+        left: 0px;
+        top: 130px;
+    }
+
+    .title_footer {
+        font-size: 40px;
+        left: 26%;
+    }
+
+    #form_content {
+        right: 22px;
+        top: 546px;
+    }
+
+    #contact_details > div:nth-child(5) > span {
+        font-size: 10px;
+    }
+
+    #contact_details > div > a > span {
+        font-size: 11px;
+    }
+
+    #contact_details {
+        left: 14px;
+    }
+
+    .gallery {
+        top: 514vh;
+        right: 0px;
+    }
+}
+
