@@ -398,7 +398,7 @@ header span{
 .title_bar_about{
     position: absolute;
     height: 4px;
-    width:1338px;
+    width:100%;
     top: 0px;
     background: linear-gradient(to right, red 51%, black 50%);
 }
@@ -406,7 +406,7 @@ header span{
 .title_bar_edu{
     position: absolute;
     height: 4px;
-    width:1338px;
+    width:100%;
     top: 874px;
     background: linear-gradient(to right, red 51%, black 50%);
 }
@@ -414,7 +414,7 @@ header span{
 .title_bar_skills{
     position: absolute;
     height: 4px;
-    width: 1338px;
+    width: 100%;
     top: 1428px;
     background: linear-gradient(to right, red 51%, black 50%);
 }
@@ -473,7 +473,7 @@ header span{
 .title_bar_photo{
     position: absolute;
     height: 4px;
-    width: 1338px;
+    width: 100%;
     top: 1893px;
     background: linear-gradient(to right, red 51%, black 50%);
 }
@@ -772,6 +772,8 @@ header span{
     left: 200px;
     display: flex;
     gap: 30px;
+    height: 200px;
+    width: 300px;
 
 }
 
