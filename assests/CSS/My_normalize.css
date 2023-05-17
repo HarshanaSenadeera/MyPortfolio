@@ -4,7 +4,7 @@
 
 
     .second {
-        height: 346vh;
+        height: 376vh;
     }
 
     #ijse_png{
@@ -16,18 +16,18 @@
     }
 
     #mainImg {
-        width: 658px;
-        height: 659px;
-        top: 62px;
+        width: 647px;
+        height: 638px;
+        top: 30px;
     }
 
     .name_span {
-        font-size: 80px;
+        font-size: 70px;
     }
 
     .name_two_span {
         font-family: DialogInput;
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .soft {
@@ -39,31 +39,32 @@
     }
 
     #row1 {
-        top: 152px;
-        left: 743px;
+        top: 176px;
+        left: 731px;
+        height: 352px;
     }
 
     .Information {
-        left: 827px;
-        font-size: 28px;
-        top: 172px;
+        left: 801px;
+        font-size: 20px;
+        top: 219px;
     }
 
     #mahinda_college {
         font-size: 26px;
-        left: 47px;
+        left: 30px;
         top: 1032px;
     }
 
-    #mahinda_college>span{
-        font-size: 35px;
+    #mahinda_college>span {
+        font-size: 30px;
     }
 
     #school_img {
-        height: 158px;
-        width: 221px;
+        height: 128px;
+        width: 203px;
         top: 1001px;
-        left: 452px;;
+        left: 420px;
     }
 
     #row2{
@@ -76,63 +77,62 @@
         height: 300px;
         width: 20px;
         top: 1000px;
-        left: 721px;
+        left: 674px;
     }
 
-    #AboutMe{
-        font-size: 26px;
+    #AboutMe {
+        font-size: 20px;
+        top: 623px;
     }
 
     .aboutMyImage {
-        width: 332px;
-        height: 412px;
-        left: 249px;
+        width: 449px;
+        height: 439px;
+        left: 166px;
         top: 153px;
     }
 
     #ijse_png {
         position: absolute;
-        height: 160px;
-        width: 235px;
-        top: 1150px
-    ;
-        left: 800px;
+        height: 100px;
+        width: 163px;
+        top: 1171px;
+        left: 750px;
     }
 
     #ijse {
-        font-size: 26px;
-        left: 1056px;
-        top: 1186px;
+        font-size: 22px;
+        left: 940px;
+        top: 1175px;
     }
 
-    #ijse>span{
-        font-size: 35px;
+    #ijse>span {
+        font-size: 30px;
     }
 
-    #DownloadButton{
-        left: 29px;
+    #DownloadButton {
+        left: 65px;
     }
 
-    #tools{
-        right: 359px;
+    #tools {
+        right: 250px;
         gap: 90px;
     }
 
-    #simbol_mark{
-        left: 518px;
+    #simbol_mark {
+        left: 660px;
     }
 
-    #language{
-        right: 171px;
-    }
-    .gallery{
-        left: -183px;
+
+    .gallery {
+        top: 291vh;
+        left: 0;
     }
 
     .Project_Flex{
         top: 25vh;
-        width: 78vw;
-        left: -169px;
+        width: 94vw;
+        left: 0;
     }
 
     .Project_Flex>figure{
@@ -143,10 +143,14 @@
         height: 92vh;
     }
 
+    .title_assignment{
+        left: 38%;
+    }
+
     .Assignment_Flex {
         top: 25vh;
-        width: 78vw;
-        left: -169px;
+        width: 94vw;
+        left: 0;
     }
 
     #contact_details>div>a>span{
@@ -165,48 +169,49 @@
         left: 12px;
     }
 
-    .skill-title{
-        left: 48%;
-    }
-
-    #tools{
-        right: 270px;
-        gap: 90px;
-    }
-
-    #simbol_mark {
-        left: 727px;
+    .language-title{
+        left: 42%;
     }
 
     #language {
-        right: 277px;
+        right: 250px;;
         gap: 80px;
     }
 
-    .gallery {
-        top: 261vh;
+
+    .skill-title {
+        left: 45%;
     }
+
 
     #certificates {
         height: 299px;
+        left: 113px;
+    }
+
+    .title_achievements{
+        left: 38%;
     }
 
     #contact_details>div>a>span {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     #contact_details>div>span {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .footer {
-        height: 92vh;
+        height: 98vh;
     }
 
     #form_content {
-        position: absolute;
-        right: 266px;
-        top: 150px;
+        right: 56px;
+
+    }
+
+    #contact_details {
+        left: 33px;
     }
 }
 /*-----------------------------1024px--------------------------------*/
@@ -1262,5 +1267,7 @@
         top: 514vh;
         right: 0px;
     }
+
+
 }
 

@@ -134,9 +134,13 @@ header span{
 
 }
 .name_span{
-    font-size:70px ;
     color: #FB313E;
 }
+
+.name_span {
+    font-size: 58px;
+}
+
 
 
 #about_me{
