@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+  <link rel="stylesheet" href="assests/pos/css/bootstrap.css">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+
+</head>
+<body>
+<a class="btn btn-primary" href="POS.html" role="button" style="background-color: red; border: 1px solid red">close</a>
+<div style="width: 500px" class="mt-5">
+
+  <form>
+    <div class="mb-3" >
+      <label for="cusID" class="form-label">Order ID</label>
+      <input type="text" class="form-control" id="cusID">
+    </div>
+    <div class="mb-3">
+      <label for="cusName" class="form-label">Order Name</label>
+      <input type="text" class="form-control" id="cusName">
+    </div>
+    <div class="mb-3">
+      <label for="cusAddress" class="form-label">Order QTY</label>
+      <input type="text" class="form-control" id="cusAddress">
+    </div>
+
+    <button type="button" class="btn btn-primary">Save Order</button>
+    <button type="button" class="btn btn-danger">Unregister</button>
+    <button type="button" class="btn btn-warning">Update</button>
+    <button type="button" class="btn btn-success">Get All</button>
+  </form>
+</div>
+<table class="mt-5 table table-hover table-bordered">
+  <thead>
+  <tr>
+    <th>Order ID</th>
+    <th>Order Name</th>
+    <th>Order QTY</th>
+    <th>Edit</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>O001</td>
+    <td>Mouse</td>
+    <td>5</td>
+    <td>
+      <button class="btn btn-danger">Edit</button>
+    </td>
+  </tr>
+  <tr>
+    <td>O002</td>
+    <td>Key board</td>
+    <td>2</td>
+    <td>
+      <button class="btn btn-danger">Edit</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<script src="assests/pos/js/bootstrap.js"></script>
+</body>
+</html>
