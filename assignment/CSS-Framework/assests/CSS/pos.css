@@ -65,11 +65,9 @@
     margin: auto;
 }
 
-.mb-3{
-    position: absolute;
-    right: 0;
-}
+
 
 .btn-primary{
     background-color: red;
 }
+

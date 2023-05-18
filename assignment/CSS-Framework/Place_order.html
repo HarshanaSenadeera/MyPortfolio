@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="assests/pos/css/bootstrap.css">
+  <link rel="stylesheet" href="assests/CSS/pos.css">
+  <link rel="stylesheet" href="assests/pos/normalize.css">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+
+<header>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="assests/img/trolli-removebg-preview.png" alt="">
+      Senadeera<span>Group</span> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+
+            </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="POS.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Customer.html">Customer</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Item.html">Item</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Order.html">Order</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Place_order.html">Order details</a>
+        </li>
+
+      </ul>
+
+      <form class="log" role="search">
+        <button class="btn_outline_log" type="button">Login</button>
+        <button class="btn_outline_logout" type="button">Logout</button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+</header>
+
+
+<section class="row me-3" >
+  <p class="fs-2 text-center fw-semibold">Place Order Form</p>
+  <section  class="col-7 p-3 mb-2 bg-primary-subtle text-emphasis-primary border border-light-subtle rounded-3 shadow
+     p-3 mb-5 bg-body-tertiary rounded w-50 m-auto mt-4 m" style="background-color: #0a0a0a !important;">
+    <h2 style="color: white">Invoice Details</h2>
+    <form style="color: white" class="row g-3">
+      <div class="col-md-6">
+        <label for="orderId" class="form-label">OrderId</label>
+        <select id="orderId" class="form-select">
+          <option selected>O001</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="date" class="form-label">Oder Date</label>
+        <input type="date" class="form-control" id="date">
+      </div>
+      <div class="col-md-6">
+        <label for="CusId" class="form-label">CustomerId</label>
+        <select id="CusId" class="form-select">
+          <option selected>C001</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="CusName" class="form-label">Customer Name</label>
+        <input type="text" class="form-control" id="CusName" >
+      </div>
+      <div class="col-md-3">
+        <label for="code" class="form-label">Code</label>
+        <select id="code" class="form-select">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label for="dec" class="form-label">Description</label>
+        <input type="text" class="form-control" id="dec">
+      </div>
+      <div class="col-md-3">
+        <label for="qtyhl" class="form-label">Unit price</label>
+        <input type="number" class="form-control" id="qtyhl">
+      </div>
+      <div class="col-md-2">
+        <label for="qtyh" class="form-label">Qty. On Hand</label>
+        <input type="number" class="form-control" id="qtyh">
+      </div>
+      <div class="col-md-1">
+        <label for="qty" class="form-label">Qty</label>
+        <input type="number" class="form-control" id="qty">
+      </div>
+
+      <div class="col-12">
+        <button style="color: white" type="submit" class="btn btn-primary" >Add to cart</button>
+      </div>
+    </form>
+  </section>
+  <section class="col-5 mt-4 me-4 border border-primary rounded-3" >
+
+    <div class="row px-lg-0 px-sm-5 px-xxl-3 mt-2">
+      <div class="col-5">
+        <div class="mb-2 ">
+          <label for="total" class="form-label fs-5">Total(RS)</label>
+        </div>
+      </div>
+      <div class="col">
+        <div class="mb-2">
+          <input type="number" readonly class="form-control p-1 fs-6 fw-bolder " id="total" value="00000.00">
+        </div>
+      </div>
+
+      <div class="row px-lg-0 px-sm-5 px-xxl-4">
+        <div class="col-5">
+          <div class="mb-2">
+            <label for="subTotal" class="form-label fs-5">Sub Total(RS)</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-2">
+            <input type="number" readonly class="form-control p-1 fs-6 fw-bolder " id="subTotal" value="00000.00">
+          </div>
+        </div>
+      </div>
+
+      <div class="row gx-3 mt-4">
+        <div class="col">
+          <div class="mb-3">
+            <label for="cash" class="form-label">Cash</label>
+            <input type="text" class="form-control" id="cash" placeholder="0000.00">
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="mb-3 mb-xl-5 mb-xxl-4">
+          <label for="balance" class="form-label">Balance</label>
+          <input type="text" class="form-control" id="balance" placeholder="0000.00">
+        </div>
+        <div class="mt-1 d-grid col-6 mt-xl-2 mx-auto">
+          <button style="background-color: #423ade; color: white" type="button" class="btn btn-success">Purchase</button>
+        </div>
+      </div>
+
+      <div>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<table class="table table-dark table-striped-columns" style="width: 100vw;
+    position: absolute;top: 54vw;">
+  <thead class="bg-primary">
+  <tr>
+    <th  scope="col">Order Id</th>
+    <th scope="col">Cus ID</th>
+    <th scope="col">Item Code</th>
+    <th scope="col">Description</th>
+    <th scope="col">Unit Price</th>
+    <th scope="col">QTY</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <th scope="row">0001</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th scope="row">0002</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+
+  </tr>
+  <tr>
+    <th scope="row">0003</th>
+
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+
+  </tr>
+  <tr>
+    <th scope="row">0004</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+
+  </tr>
+  <tr>
+    <th scope="row">0005</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
