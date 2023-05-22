@@ -1,0 +1,47 @@
+.my_Assignment{
+    background-color: black;
+}
+.my_Assignment .box-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:4rem 0;
+}
+
+.my_Assignment .box-container .box{
+    height: 14rem;
+    width: 16rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    margin:2rem;
+}
+
+.my_Assignment .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.my_Assignment .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+.my_Assignment .box-container .assignment-title {
+    font-size: 20px;
+    color: #f1f3f5;
+    font-weight: 500;
+    margin: 10px 0 15px 0;
+}
+
+h1{
+    position: absolute;
+    left: 40vw;
+    color: white;
+}
+
+h1>span{
+    color: #095cec;
+}

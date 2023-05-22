@@ -390,10 +390,13 @@
     .aboutMyImage {
         left: 59px;
         top: 131px;
+        height: 405px;
+        width: 313px
     }
 
     #row1 {
         left: 400px;
+        top: 185px;
     }
 
     .Information {
@@ -401,7 +404,7 @@
     }
 
     #AboutMe {
-        font-size: 16px;
+        font-size: 17px;
         left: 140px;
     }
 
