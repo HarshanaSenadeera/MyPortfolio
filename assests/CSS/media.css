@@ -1,0 +1,289 @@
+@media all and (min-width: 320px) {
+    #mainImg {
+        position: absolute;
+        height: 44vh;
+        top: 52px;
+        right: 0;
+    }
+
+    .name_span {
+        font-size: 20px;
+        right: 20px;
+    }
+
+   /* header > nav {
+        display: none;
+    }
+*/
+    .soft {
+        top: 257px;
+        font-size: 20px;
+        left: 22px;
+    }
+
+    .name_two_span {
+        font-size: 16px;
+    }
+
+    #hire_me{
+        left: 17px;
+        width: 44vw;
+    }
+
+    #title_about_me {
+        left: 30%;
+        font-size: 30px;
+
+    }
+
+    .aboutMyImage {
+        position: absolute;
+        width: 266px;
+        height: 345px;
+        left: 23px;
+        top: 119px;
+    }
+
+    #row2{
+        display: none;
+    }
+    #row1{
+        display: none;
+    }
+
+    #row3{
+        display: none;
+    }
+
+    #AboutMe {
+        left: 22px;
+        top: 505px;
+        font-size: 17px;
+    }
+
+    #education_title {
+        top: 900px;
+        left: 30%;
+        font-size: 30px;
+
+    }
+
+    #mahinda_college span {
+        font-size: 25px;
+    }
+
+    #mahinda_college {
+        font-size: 16px;
+        top: 965px;
+        left: 13px;
+    }
+
+    #school_img {
+        position: absolute;
+        height: 89px;
+        width: 182px;
+        top: 1019px;
+        left: 101px;
+    }
+
+    #ijse span {
+        font-size: 20px;
+    }
+
+    #ijse {
+        position: absolute;
+        font-size: 18px;
+        top: 1147px;
+        left: 83px;
+        color: white;
+    }
+
+    #ijse_png {
+        height: 87px;
+        width: 168px;
+        top: 1207px;
+        left: 15px;
+    }
+
+    #DownloadButton{
+        top: 1358px;
+    }
+
+    .second{
+        height: 3475px;
+    }
+
+    .gallery{
+        top: 3060px;
+    }
+
+    #tools {
+        position: absolute;
+        top: 1503px;
+        right: 109px;
+        display: flex;
+        gap: 60px;
+        flex-direction: column;
+    }
+
+    .skill-title {
+        font-size: 30px;
+        left: 40%;
+    }
+
+    .gallery-title {
+        font-size: 30px;
+        left: 37%;
+        top: 4500px;
+
+    }
+
+    .language-title {
+        font-size: 30px;
+        left: 30%;
+        top: 2222px;
+
+    }
+
+    #simbol_mark {
+        top: 2164px;
+        bottom: 0;
+        left: 156px;
+        font-size: 40px;
+
+    }
+
+    #language {
+        position: absolute;
+        top: 2274px;
+        left: 135px;
+        display: flex;
+        gap: 60px;
+        flex-direction: column;
+    }
+
+    .title_bar_photo {
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        top: 2961px;
+        background: linear-gradient(to right, red 51%, black 50%);
+    }
+
+    .gallery-title {
+        font-size: 30px;
+        left: 37%;
+        top: 3000px;
+    }
+
+    .title_projects {
+        font-size: 30px;
+        left: 34%;
+        top: 18px;
+    }
+
+    .Project_Flex {
+        flex-direction: column;
+    }
+
+    .third{
+        height: 246vh;
+    }
+
+    .Project_Flex figure {
+        width: 281px;
+        height: 59vh;
+    }
+
+    .Project_Flex{
+        height: 207vh;
+    }
+
+    .Project_Flex figure div{
+        width: 75vw;
+    }
+
+    .Project_Flex figure figcaption {
+        width: 51vw;
+    }
+
+    .title_assignment {
+        font-size: 30px;
+        left: 20%;
+    }
+
+    .Assignment_Flex{
+        flex-direction: column;
+    }
+
+    .Assignment_Flex figure {
+        width: 85vw;
+        height: 51vh;
+    }
+
+    .Assignment_Flex  {
+        height: 177vh;
+    }
+
+    .Assignment_Flex figure div {
+        width: 79vw;
+    }
+
+    .fourth{
+        height: 225vh;
+    }
+
+    .Assignment_Flex figure figcaption {
+        width:65vw;
+    }
+
+    .btn_assignment{
+        top: 984px;
+    }
+
+    .title_achievements {
+        font-size: 30px;
+        left: 18%;
+    }
+
+    #certificates {
+        top: 87px;
+        left: 43px;
+        display: flex;
+        height: 139px;
+        width: 230px;
+        flex-direction: column;
+    }
+
+    .fifth{
+        height: 99vh;
+    }
+
+    .title_footer {
+        font-size: 30px;
+        left: 35%;
+    }
+
+    .footer{
+        height: 182vh;
+    }
+
+    #form_content {
+        right: 25px;
+        top: 377px;
+    }
+
+    #contact_details img {
+        width: 36px;
+    }
+
+    #contact_details span{
+        font-size: 12px;
+    }
+
+    #contact_details {
+        position: absolute;
+        top: 101px;
+        left: 15px;
+    }
+}

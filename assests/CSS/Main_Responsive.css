@@ -1,4 +1,4 @@
-/*-----------------------------1440 px--------------------------------*/
+/*------------------------------1440------------------------------*/
 
 @media all and (max-width: 1440px) {
 
@@ -214,9 +214,10 @@
         left: 33px;
     }
 }
-/*-----------------------------1024px--------------------------------*/
 
-@media all and (max-width: 1024px) {
+/*-------------------------------1024---------------------------*/
+
+@media all and (max-width: 1024px){
 
 
     .second{
@@ -367,9 +368,9 @@
     }
 }
 
-/*------------------------768 px------------------------------*/
+/*-------------------------------768---------------------------*/
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 768px){
     .top_name {
         padding: 0;
         font-size: 13px;
@@ -516,9 +517,9 @@
     }
 }
 
-/*------------------------425 px------------------------------*/
+/*-------------------------------425---------------------------*/
 
-@media all and (max-width: 425px){
+@media all and (max-width: 425px) {
     .soft {
         font-size: 20px;
         left: 13px;
@@ -804,9 +805,9 @@
 
 }
 
-/*------------------------375 px------------------------------*/
+/*-------------------------------375---------------------------*/
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 375px){
 
     .soft {
         font-size: 20px;
@@ -1111,17 +1112,90 @@
         font-size: 12px;
     }
 
+    #contact_details {
+        left: 14px;
+    }
+
     #DownloadButton{
         left: 5px;
     }
+
+    .btn_assignment{
+        top: 1096px;
+    }
+
+    #contact_details div img{
+        height: 50px;
+        width: 50px;
+
+    }
 }
 
-/*------------------------320 px------------------------------*/
+/*-------------------------------320---------------------------*/
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 320px){
 
     .name_span {
         font-size: 15px;
+    }
+
+    .soft {
+        top: 102px;
+        font-size: 30px;
+        left: 8px;
+    }
+
+    .top_name {
+        padding: -12px;
+        color: #f1f1f1;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    #certificates {
+        left: -6px;
+        top: 125px;
+        height: 118px;
+    }
+
+    .first {
+        height: 54vh;
+    }
+
+    #title_about_me{
+        font-size: 30px;
+        left: 30%;
+    }
+
+    #mainImg {
+        width: 204px;
+        height: 196px;
+        top: 57px;
+    }
+
+    .Information {
+        font-size: 15px;
+        left: 49px;
+        top: 450px;
+    }
+
+    #row1 {
+        left: 15px;
+        top: 419px;
+        width: 12px;
+        height: 243px;
+    }
+
+    #row2 {
+        width: 11px;
+        height: 201px;
+        top: 668px;
+        left: 15px;
+    }
+
+    #row3{
+        left: 156px;
+        width:0;
     }
 
     .name_two_span {
@@ -1132,6 +1206,7 @@
         width: 35vw;
         height: 35px;
         left: 43px;
+        top: 227px;
     }
 
     .aboutMyImage {
@@ -1139,6 +1214,12 @@
         top: 131px;
         width: 249px;
         height: 268px;
+    }
+
+    #AboutMe {
+        font-size: 13px;
+        left: 45px;
+        top: 677px;
     }
 
     .title_bar_edu{
@@ -1152,8 +1233,12 @@
 
     #mahinda_college {
         top: 989px;
-        font-size: 12px;
+        font-size: 11px;
         left: 12px;
+    }
+
+    #mahinda_college>span {
+        font-size: 25px;
     }
 
     #school_img {
@@ -1170,6 +1255,11 @@
         left: 12px;
     }
 
+    #education_title {
+        left: 29%;
+        top: 918px;
+        font-size: 30px;
+    }
     #ijse {
         font-size: 13px;
         top: 1145px;
@@ -1184,40 +1274,102 @@
         top: 1357px;
     }
 
-    .skill-title{
-        top: 1389px;
+    .skill-title {
+        left: 40%;
+        font-size: 30px;
+        top: 1400px;
+    }
+
+    .language-title {
+        left: 27%;
+        top: 2075px;
+        font-size: 35px;
     }
 
     #tools {
-        right: 122px;
-        top: 1448px;
-        gap: 30px;
+        right: 120px;
+        top: 1465px;
+        gap: 39px;
+        flex-direction: column;
     }
 
     #simbol_mark {
         left: 144px;
-        top: 1988px;
+        top: 2035px;
     }
 
     #language {
         right: 122px;
-        top: 2130px;
+        top: 2149px;
         gap: 30px;
+        flex-direction: column;
     }
 
     .second {
-        height: 594vh;
+        height: 597vh;
+    }
+
+    .third {
+        height: 241vh;
+    }
+
+
+    .Project_Flex {
+        width: 71vw;
+        height: 201vh;
+        top: 19vh;
+        left: 0px;
+        flex-direction: column;
+    }
+
+    .Project_Flex figure {
+        width: 79vw;
+    }
+
+    .Project_Flex figure div {
+        width: 72vw;
+    }
+
+    .Project_Flex figure figcaption{
+        width: 71vw;
+    }
+
+    .Assignment_Flex {
+        width: 71vw;
+        height: 201vh;
+        top: 21vh;
+        left: 0px;
+
+    }
+
+
+    .btn_assignment {
+        position: absolute;
+        top: 1109px;
+        width: 100px;
+        height: 45px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 0px 2px 2px rgb(255, 255, 255);
     }
 
     .gallery-title {
         left: 30%;
         top: 2737px;
+        font-size: 35px;
     }
 
-    .gallery-title {
-        left: 30%;
-        top: 2737px;
+    .gallery {
+        top: 514vh;
+        right: 0px;
     }
+
 
     .title_bar_photo {
         top: 2697px;
@@ -1237,11 +1389,6 @@
     .title_achievements {
         font-size: 35px;
         left: 10%;
-    }
-
-    #certificates {
-        left: 0px;
-        top: 130px;
     }
 
     .title_footer {
@@ -1266,11 +1413,19 @@
         left: 14px;
     }
 
-    .gallery {
-        top: 514vh;
-        right: 0px;
+
+    .fifth {
+        height: 110vh;
     }
 
+    .fourth {
+        height: 239vh;
+    }
 
+    #contact_details img{
+        height: 50px;
+        width: 50px;
+    }
 }
+
 
