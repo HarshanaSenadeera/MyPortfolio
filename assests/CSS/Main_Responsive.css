@@ -4,7 +4,7 @@
 
 
     .second {
-        height: 376vh;
+        height: 349vh;
     }
 
     #ijse_png{
@@ -22,20 +22,24 @@
     }
 
     .name_span {
-        font-size: 70px;
+        font-size: 80px;
     }
 
     .name_two_span {
-        font-family: DialogInput;
-        font-size: 40px;
+        font-size: 49px;
     }
 
     .soft {
         top: 240px;
+        font-size: 80px;
     }
 
     #hire_me{
         width: 15vw;
+    }
+
+    #title_about_me{
+        left: 45%;
     }
 
     #row1 {
@@ -46,8 +50,8 @@
 
     .Information {
         left: 801px;
-        font-size: 20px;
-        top: 219px;
+        font-size: 28px;
+        top: 181px;
     }
 
     #mahinda_college {
@@ -67,6 +71,12 @@
         left: 420px;
     }
 
+    #row1 {
+        top: 146px;
+        left: 731px;
+        height: 432px;
+    }
+
     #row2{
         top: 582px;
         left: 111px;
@@ -81,7 +91,7 @@
     }
 
     #AboutMe {
-        font-size: 20px;
+        font-size: 25px;
         top: 623px;
     }
 
@@ -115,18 +125,25 @@
     }
 
     #tools {
-        right: 250px;
-        gap: 90px;
+        right: 185px;
+        gap: 140px;
+    }
+
+    #language {
+        right: 191px;
+        gap: 137px;
     }
 
     #simbol_mark {
         left: 660px;
     }
 
+    .title_projects{
+        left: 46%;
+    }
 
-    .gallery {
-        top: 291vh;
-        left: 0;
+    .Project_Flex figcaption{
+        font-size: 20px;
     }
 
     .Project_Flex{
@@ -140,18 +157,38 @@
     }
 
     .third{
-        height: 92vh;
+        height: 96vh
+    }
+
+    .fourth{
+        height: 100vh;
     }
 
     .title_assignment{
-        left: 38%;
+        left: 43%;
+    }
+
+    .Assignment_Flex figcaption{
+        font-size: 20px;
     }
 
     .Assignment_Flex {
         top: 25vh;
-        width: 94vw;
+        width: 106vw;
         left: 0;
     }
+
+    .Assignment_Flex>figure{
+        height: 50vh;
+    }
+
+    .btn_assignment {
+        font-size: 25px;
+        width: 167px;
+        height: 76px;
+        top: 491px;
+    }
+
 
     #contact_details>div>a>span{
         font-size: 20px;
@@ -159,10 +196,6 @@
 
     #contact_details>div>span{
         font-size: 20px;
-    }
-
-    .footer {
-        height: 122vh;
     }
 
     #DownloadButton {
@@ -173,24 +206,18 @@
         left: 42%;
     }
 
-    #language {
-        right: 250px;;
-        gap: 80px;
-    }
-
-
     .skill-title {
         left: 45%;
     }
 
 
     #certificates {
-        height: 299px;
-        left: 113px;
+        height: 354px;
+        left: 205px;
     }
 
-    .title_achievements{
-        left: 38%;
+    .title_achievements {
+        left: 43%;
     }
 
     #contact_details>div>a>span {
@@ -206,12 +233,35 @@
     }
 
     #form_content {
+        width: 462px;
         right: 56px;
-
     }
 
     #contact_details {
         left: 33px;
+    }
+
+    #contact_details div img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .Assignment_Flex {
+        top: 25vh;
+        width: 98vw;
+        left: 0;
+    }
+
+    .btn_assignment{
+        top: 453px;
+    }
+
+    .gallery {
+        top: 293vh;
+    }
+
+    .second {
+        height: 367vh;
     }
 }
 
@@ -265,9 +315,9 @@
         height: 334px;
     }
 
-    .aboutMyImage{
+    .aboutMyImage {
         left: 110px;
-        height: 379px
+        height: 409px;
     }
 
     .Information{
@@ -311,26 +361,25 @@
         left: 29px;
     }
 
-    #tools{
-        right: 190px;
+    #tools {
+        right: 96px;
     }
 
     #simbol_mark{
         left: 518px;
     }
 
-    #language{
-        right: 171px;
+    #language {
+        right: 120px;
     }
+
     .gallery{
         top: 370vh;
-        left: 0px;
     }
 
     .Project_Flex{
         width: 91vw;
         top: 25vh;
-        left: 0px;
     }
 
     .Project_Flex>figure{
@@ -344,7 +393,34 @@
     .Assignment_Flex{
         top: 25vh;
         width: 91vw;
-        left: 0px;
+    }
+
+    .Assignment_Flex figure{
+        height: 52vh;
+    }
+
+    .Assignment_Flex figure figcaption {
+        width: 17vw;
+    }
+
+    .title_achievements {
+        left: 35%;
+    }
+
+    .btn_assignment{
+        top: 331px;
+    }
+
+    .fourth{
+        height: 101vh;
+    }
+
+    .third {
+        height: 100vh;
+    }
+
+    .fifth{
+        height: 86vh;
     }
 
     #contact_details>div>a>span{
@@ -355,16 +431,55 @@
         font-size: 20px;
     }
 
+    .title_footer{
+        left: 43%;
+    }
+
     .footer {
         height: 122vh;
     }
 
     #certificates {
-        height: 222px;
+        height: 250px;
+        left: 133px;
     }
 
     #form_content{
         right: 111px;
+    }
+
+    #contact_details div img{
+        height: 50px;
+        width: 50px;
+    }
+
+    #tools {
+        right: 96px;
+        gap: 97px;
+    }
+
+    #language {
+        right: 120px;
+        gap: 89px;
+    }
+
+    .Project_Flex figure figcaption {
+        font-size: 16px;
+    }
+
+    .Assignment_Flex figure figcaption {
+        width: 17vw;
+        font-size: 16px;
+    }
+
+    .btn_assignment {
+        top: 350px;
+        height: 50px;
+    }
+
+    #form_content {
+        right: 66px;
+        width: 340px;
     }
 }
 
@@ -378,6 +493,10 @@
 
     .menu > li {
         margin-left: 38px;
+    }
+
+    .name_span {
+        font-size: 30px;
     }
 
     .name_two_span {
@@ -402,10 +521,12 @@
 
     .Information {
         left: 444px;
+        font-size: 17px;
+        top: 240px;
     }
 
     #AboutMe {
-        font-size: 17px;
+        font-size: 16px;
         left: 140px;
     }
 
@@ -446,6 +567,10 @@
         right: 57px;
     }
 
+    .third {
+        height: 100vh;
+    }
+
     #simbol_mark {
         left: 396px;
     }
@@ -467,7 +592,8 @@
     }
 
     #certificates {
-        left: 92px;
+        height: 181px;
+        left: 66px;
     }
 
     #contact_details > div > a > span {
@@ -508,12 +634,88 @@
         height: 53vh;
     }
 
+    .Assignment_Flex {
+        top: 25vh;
+        width: 96vw;
+        left: 25px;
+    }
+
     .Assignment_Flex >figure{
         height: 53vh;
     }
 
     .title_footer{
         left: 40%;
+    }
+
+    .btn_assignment{
+        top: 335px;
+    }
+
+    #contact_details div img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .soft {
+        top: 172px;
+        font-size: 50px;
+    }
+
+    #tools {
+        right: 57px;
+        gap: 60px;
+    }
+
+    #language {
+        right: 59px;
+        gap: 59px;
+    }
+
+    .Project_Flex >figure {
+        height: 57vh;
+    }
+
+    .Project_Flex {
+        width: 91vw;
+        top: 34vh;
+    }
+
+    .Assignment_Flex figure figcaption {
+        width: 22vw;
+        font-size: 16px;
+    }
+
+    .Project_Flex figure figcaption {
+        font-size: 15px;
+    }
+
+    .btn_assignment {
+        top: 350px;
+        height: 50px;
+    }
+
+    #form_content {
+        width: 280px;
+        left: 444px;
+    }
+
+    #mainImg {
+        width: 400px;
+        height: 400px;
+        top: 48px;
+    }
+
+    #hire_me {
+        bottom: 40px;
+    }
+
+    .first {
+        height: 92vh;
+    }
+
+    .third {
+        height: 111vh;
     }
 }
 
@@ -561,7 +763,7 @@
 
     #tools {
         right: 6px;
-        gap: 11px;
+        gap: 19px;
     }
 
     #simbol_mark {
@@ -574,11 +776,6 @@
 
     .language-title{
         left: 25%;
-    }
-
-    #language{
-        right: 6px;
-        gap: 7px;
     }
 
     .Information {
@@ -649,7 +846,7 @@
     }
 
     #row3{
-        width: 0px;
+        width: 0;
     }
 
     #ijse{
@@ -696,6 +893,8 @@
         flex-direction: column;
         right: 174px;
         top: 2130px;
+        gap: 8px;
+
     }
 
     #simbol_mark{
@@ -703,7 +902,7 @@
     }
 
     .third {
-        height: 235vh;
+        height: 242vh;
     }
 
     .Project_Flex{
@@ -718,13 +917,11 @@
 
     .Project_Flex figure {
         height: 58vh;
-        width: 83vw;
-
+        width: 73vw;
     }
 
     .Project_Flex figure div {
-        width: 76vw;
-
+        width: 64vw;
     }
 
 
@@ -761,12 +958,12 @@
 
     .Assignment_Flex figure {
         height: 58vh;
-        width: 83vw;
+        width: 73vw;
 
     }
 
     .Assignment_Flex figure div {
-        width: 76vw;
+        width: 64vw;
 
     }
 
@@ -801,6 +998,30 @@
 
     #DownloadButton{
         left: 1px;
+    }
+
+    .btn_assignment{
+        top: 1095px;
+    }
+
+    #contact_details div img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .btn_assignment {
+        top: 1095px;
+        height: 50px;
+    }
+
+    .soft{
+        top: 135px;
+    }
+
+    #form_content {
+        left: 79px;
+        top: 491px;
+        width: 267px;
     }
 
 }
@@ -938,7 +1159,7 @@
     }
 
     #row3{
-        width: 0px;
+        width: 0;
     }
 
     #ijse{
@@ -959,12 +1180,6 @@
 
     .second {
         height: 570vh;
-    }
-
-    .gallery {
-        top: 489vh;
-        right: 0px;
-
     }
 
     .gallery-title {
@@ -1005,7 +1220,6 @@
         width: 71vw;
         height: 201vh;
         top: 21vh;
-        left: 0px;
     }
 
     .Project_Flex figure {
@@ -1049,7 +1263,6 @@
         width: 71vw;
         height: 201vh;
         top: 21vh;
-        left: 0px;
     }
 
     .Assignment_Flex figure {
@@ -1128,6 +1341,61 @@
         height: 50px;
         width: 50px;
 
+    }
+
+    .btn_assignment {
+        top: 1570px;
+    }
+
+    .fifth {
+        height: 82vh;
+    }
+
+    .second {
+        height: 431vh;
+    }
+
+    .first {
+        height: 54vh;
+    }
+
+    .second {
+        height: 566vh;
+    }
+
+    .gallery {
+        top: 488vh;
+    }
+
+    .Project_Flex figure figcaption {
+        top: 44vh;
+        width: 69vw;
+    }
+
+    .btn_assignment {
+        top: 1086px;
+        height: 50px;
+    }
+
+    .fifth {
+        height: 113vh;
+    }
+
+    .footer {
+        height: 188vh;
+    }
+
+    .soft {
+        font-size: 20px;
+        left: 13px;
+        top: 123px;
+    }
+
+    #form_content {
+        right: 2px;
+        top: 478px;
+        width: 303px;
+        left: 25px;
     }
 }
 
@@ -1318,7 +1586,6 @@
         width: 71vw;
         height: 201vh;
         top: 19vh;
-        left: 0px;
         flex-direction: column;
     }
 
@@ -1338,25 +1605,7 @@
         width: 71vw;
         height: 201vh;
         top: 21vh;
-        left: 0px;
 
-    }
-
-
-    .btn_assignment {
-        position: absolute;
-        top: 1109px;
-        width: 100px;
-        height: 45px;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        background-color: #000000;
-        color: #fff;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0px 0px 2px 2px rgb(255, 255, 255);
     }
 
     .gallery-title {
@@ -1364,12 +1613,6 @@
         top: 2737px;
         font-size: 35px;
     }
-
-    .gallery {
-        top: 514vh;
-        right: 0px;
-    }
-
 
     .title_bar_photo {
         top: 2697px;
@@ -1396,11 +1639,6 @@
         left: 26%;
     }
 
-    #form_content {
-        right: 22px;
-        top: 546px;
-    }
-
     #contact_details > div:nth-child(5) > span {
         font-size: 10px;
     }
@@ -1425,6 +1663,37 @@
     #contact_details img{
         height: 50px;
         width: 50px;
+    }
+
+    .gallery {
+        top: 515vh;
+    }
+
+    .second {
+        height: 598vh;
+    }
+
+    #form_content {
+        right: 22px;
+        top: 488px;
+        width: 265px;
+    }
+
+    .first {
+        height: 52vh;
+    }
+
+    .Assignment_Flex {
+        width: 28vw;
+        height: 201vh;
+        top: 21vh;
+        left: 0;
+    }
+
+    .btn_assignment {
+        top: 1112px;
+        width: 158px;
+        left: -33px;
     }
 }
 
