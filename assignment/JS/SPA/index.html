@@ -78,7 +78,7 @@
                 <img alt="slide 3" class="d-block w-100 h-100" src="img/veg_5.jpg">
             </div>
             <div class="carousel-item h-100">
-                <img alt="slide 4" class="d-block w-100 h-100" src="img/veg_4.png">
+                <img alt="slide 4" class="d-block w-200 h-100" src="img/veg_4.png">
             </div>
             <div class="carousel-item h-100">
                 <img alt="slide 5" class="d-block w-100 h-100" src="img/veg_7.jpg">
@@ -98,168 +98,159 @@
 </section>
 
 <section id="customer">
-    <div  class="mt-5">
 
-        <form>
-            <div class="mb-3" >
-                <label for="Customer_Id" class="form-label">Customer ID</label>
-                <input type="text" class="form-control" id="Customer_Id">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <h1 class="title">Customer Registration</h1>
+                <div class="row">
+                    <div class="mb-3">
+                        <label for="cus_id" class="form-label"></label>
+                        <input type="text" class="form-control" id="cus_id" placeholder="Customer_ID">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cus_name" class="form-label"></label>
+                        <input type="text" class="form-control" id="cus_name" placeholder="Customer Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cus_address" class="form-label"></label>
+                        <input type="text" class="form-control" id="cus_address" placeholder="Customer Address">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cus_salary" class="form-label"></label>
+                        <input type="text" class="form-control" id="cus_salary" placeholder="E mail">
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-primary" id="btnCustomer">Save Customer</button>
+                        <button class="btn btn-danger" id="btnCusDelete">Remove</button>
+                        <button class="btn btn-warning" id="btnUpdate">Update</button>
+                        <button class="btn btn-success" id="btnGetAll">Get All</button>
+                        <button class="btn btn-danger" id="btn-clear1">Clear All</button>
+                    </div>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="Customer_Name" class="form-label">Customer Name</label>
-                <input type="text" class="form-control" id="Customer_Name">
+            <div class="col">
+                <table class="mt-5 table table-hover table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Customer Name</th>
+                        <th>Customer Address</th>
+                        <th>Customer Email</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tbl-body_cus">
+
+                    </tbody>
+                </table>
             </div>
-            <div class="mb-3">
-                <label for="Customer_Address" class="form-label">Customer Address</label>
-                <input type="text" class="form-control" id="Customer_Address">
-            </div>
-            <div class="mb-3">
-                <label for="Customer_Email" class="form-label">Customer Email</label>
-                <input type="email" class="form-control" id="Customer_Email">
-            </div>
-            <button type="button" class="btn btn-primary">Save Customer</button>
-            <button type="button" class="btn btn-danger">Unregister</button>
-            <button type="button" class="btn btn-warning">Update</button>
-            <button type="button" class="btn btn-success">Get All</button>
-        </form>
+        </div>
     </div>
-    <table class="mt-5 table table-hover table-bordered">
-        <thead>
-        <tr>
-            <th>Customer ID</th>
-            <th>Customer Name</th>
-            <th>Customer Address</th>
-            <th>Customer Email</th>
-            <th>Edit</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>C001</td>
-            <td>Dasun</td>
-            <td>Galle</td>
-            <td>ijse@ijse.lk</td>
-            <td>
-                <button class="btn btn-danger">Edit</button>
-            </td>
-        </tr>
-        <tr>
-            <td>C001</td>
-            <td>Dasun</td>
-            <td>Galle</td>
-            <td>ijse@ijse.lk</td>
-            <td>
-                <button class="btn btn-danger">Edit</button>
-            </td>
-        </tr>
-        </tbody>
-    </table>
+
 </section>
 
 <section id="item">
-    <div  class="mt-5">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <h1 class="title">Item Section</h1>
+                <div class="row">
+                    <div class="mb-3">
+                        <label for="item_id" class="form-label"></label>
+                        <input type="text" class="form-control" id="item_id" placeholder="Item_ID">
+                    </div>
+                    <div class="mb-3">
+                        <label for="item_name" class="form-label"></label>
+                        <input type="text" class="form-control" id="item_name" placeholder="Item_Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="item_price" class="form-label"></label>
+                        <input type="text" class="form-control" id="item_price" placeholder="Unit_price">
+                    </div>
 
-        <form>
-            <div class="mb-3" >
-                <label for="Item_Id" class="form-label">Item ID</label>
-                <input type="text" class="form-control" id="Item_Id">
-            </div>
-            <div class="mb-3">
-                <label for="Item_Name" class="form-label">Item Name</label>
-                <input type="text" class="form-control" id="Item_Name">
-            </div>
-            <div class="mb-3">
-                <label for="Item_Description" class="form-label">Item Description</label>
-                <input type="text" class="form-control" id="Item_Description">
-            </div>
+                    <div class="mb-3">
+                        <label for="item_Quantity" class="form-label"></label>
+                        <input type="number" class="form-control" id="item_Quantity" placeholder="Quantity">
+                    </div>
 
-            <button type="button" class="btn btn-primary">Save Item</button>
-            <button type="button" class="btn btn-danger">Unregister</button>
-            <button type="button" class="btn btn-warning">Update</button>
-            <button type="button" class="btn btn-success">Get All</button>
-        </form>
+                    <div class="btn-group">
+                        <button class="btn btn-primary" id="btnItem">Save Item</button>
+                        <button class="btn btn-danger" id="btnItemDelete">Remove</button>
+                        <button class="btn btn-warning" id="btnItemUpdate">Update</button>
+                        <button class="btn btn-success" id="btnItemGetAll">Get All</button>
+                        <button class="btn btn-danger" id="btn-clearItem">Clear All</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <table class="mt-5 table table-hover table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Item ID</th>
+                        <th>Item Name</th>
+                        <th>Item Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                    </thead>
+                    <tbody id="T_body_Item">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-    <table class="mt-5 table table-hover table-bordered">
-        <thead>
-        <tr>
-            <th>Item ID</th>
-            <th>Item Name</th>
-            <th>Item Description</th>
-            <th>Edit</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>I001</td>
-            <td>Mouse</td>
-            <td>xxxxx</td>
-            <td>
-                <button class="btn btn-danger">Edit</button>
-            </td>
-        </tr>
-        <tr>
-            <td>I002</td>
-            <td>Key board</td>
-            <td>xxxx</td>
-            <td>
-                <button class="btn btn-danger">Edit</button>
-            </td>
-        </tr>
-        </tbody>
-    </table>
 </section>
 
 <section id="order">
-    <div  class="mt-5">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <h1 class="title">Order Section</h1>
+                <div class="row">
+                    <div class="mb-3">
+                        <label for="order_id" class="form-label"></label>
+                        <input type="text" class="form-control" id="order_id" placeholder="Order_ID">
+                    </div>
+                    <div class="mb-3">
+                        <label for="order_name" class="form-label"></label>
+                        <input type="text" class="form-control" id="order_name" placeholder="Customer_Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="order_Time" class="form-label"></label>
+                        <input type="time" class="form-control" id="order_Time" placeholder="Order_Time">
+                    </div>
+                    <div class="mb-3">
+                        <label for="order_date" class="form-label"></label>
+                        <input type="date" class="form-control" id="order_date" placeholder="Order_Date">
+                    </div>
 
-        <form>
-            <div class="mb-3" >
-                <label for="Order_Id" class="form-label">Order ID</label>
-                <input type="text" class="form-control" id="Order_Id">
-            </div>
-            <div class="mb-3">
-                <label for="Order_Name" class="form-label">Order Name</label>
-                <input type="text" class="form-control" id="Order_Name">
-            </div>
-            <div class="mb-3">
-                <label for="Order_Description" class="form-label">Order QTY</label>
-                <input type="text" class="form-control" id="Order_Description">
-            </div>
 
-            <button type="button" class="btn btn-primary">Save Order</button>
-            <button type="button" class="btn btn-danger">Unregister</button>
-            <button type="button" class="btn btn-warning">Update</button>
-            <button type="button" class="btn btn-success">Get All</button>
-        </form>
+                    <div class="btn-group">
+                        <button class="btn btn-primary" id="btnOrder">Save Order</button>
+                        <button class="btn btn-danger" id="btnOrderDelete">Remove</button>
+                        <button class="btn btn-warning" id="btnOrderUpdate">Update</button>
+                        <button class="btn btn-success" id="btnOrderGetAll">Get All</button>
+                        <button class="btn btn-danger" id="btnOrderClear">Clear All</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <table class="mt-5 table table-hover table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Order Name</th>
+                        <th>Order Time</th>
+                        <th>Order Date</th>
+                    </tr>
+                    </thead>
+                    <tbody id="T_body_Order">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-    <table class="mt-5 table table-hover table-bordered">
-        <thead>
-        <tr>
-            <th>Order ID</th>
-            <th>Order Name</th>
-            <th>Order QTY</th>
-            <th>Edit</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>O001</td>
-            <td>Mouse</td>
-            <td>5</td>
-            <td>
-                <button class="btn btn-danger">Edit</button>
-            </td>
-        </tr>
-        <tr>
-            <td>O002</td>
-            <td>Key board</td>
-            <td>2</td>
-            <td>
-                <button class="btn btn-danger">Edit</button>
-            </td>
-        </tr>
-        </tbody>
-    </table>
 </section>
 
 <section id="place_Order">
@@ -437,6 +428,7 @@
 
 <script>
 
+    /*---------------------Nav options----------------------------------*/
     document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("home").style.display='inline-block';
         document.getElementById("customer").style.display='none';
@@ -444,8 +436,7 @@
         document.getElementById("order").style.display='none';
         document.getElementById("place_Order").style.display='none';
 
-    })
-
+    });
 
     document.getElementById("home_page").addEventListener("click", function () {
         document.getElementById("home").style.display='inline-block';
@@ -491,6 +482,102 @@
         document.getElementById("place_Order").style.display='inline-block';
 
     });
+
+    /*---------------------------CRUD Operations--------------------------------*/
+
+    /*--------------customer----------------*/
+    document.getElementById("btnCustomer").addEventListener("click",function () {
+
+        let cus_id = document.getElementById("cus_id").value;
+        let cus_name = document.getElementById("cus_name").value;
+        let cus_address = document.getElementById("cus_address").value;
+        let cus_salary = document.getElementById("cus_salary").value;
+
+        let tbl_body = document.getElementById("tbl-body_cus");
+
+        let tbl_row = document.createElement("tr");
+
+        let col1 = document.createElement("td");
+        let col2 = document.createElement("td");
+        let col3 = document.createElement("td");
+        let col4 = document.createElement("td");
+
+        col1.textContent=cus_id;
+        col2.textContent=cus_name;
+        col3.textContent=cus_address;
+        col4.textContent=cus_salary;
+
+        tbl_row.appendChild(col1);
+        tbl_row.appendChild(col2);
+        tbl_row.appendChild(col3);
+        tbl_row.appendChild(col4);
+
+        tbl_body.appendChild(tbl_row);
+    });
+
+    /*--------------item----------------*/
+
+    document.getElementById("btnItem").addEventListener("click",function () {
+
+        let cus_id = document.getElementById("item_id").value;
+        let cus_name = document.getElementById("item_name").value;
+        let cus_address = document.getElementById("item_price").value;
+        let cus_salary = document.getElementById("item_Quantity").value;
+
+        let tbl_body = document.getElementById("T_body_Item");
+
+        let tbl_row = document.createElement("tr");
+
+        let col1 = document.createElement("td");
+        let col2 = document.createElement("td");
+        let col3 = document.createElement("td");
+        let col4 = document.createElement("td");
+
+        col1.textContent=cus_id;
+        col2.textContent=cus_name;
+        col3.textContent=cus_address;
+        col4.textContent=cus_salary;
+
+        tbl_row.appendChild(col1);
+        tbl_row.appendChild(col2);
+        tbl_row.appendChild(col3);
+        tbl_row.appendChild(col4);
+
+        tbl_body.appendChild(tbl_row);
+    });
+
+    /*--------------order---------------*/
+
+    document.getElementById("btnOrder").addEventListener("click",function () {
+
+        let cus_id = document.getElementById("order_id").value;
+        let cus_name = document.getElementById("order_name").value;
+        let cus_address = document.getElementById("order_Time").value;
+        let cus_salary = document.getElementById("order_date").value;
+
+        let tbl_body = document.getElementById("T_body_Order");
+
+        let tbl_row = document.createElement("tr");
+
+        let col1 = document.createElement("td");
+        let col2 = document.createElement("td");
+        let col3 = document.createElement("td");
+        let col4 = document.createElement("td");
+
+        col1.textContent=cus_id;
+        col2.textContent=cus_name;
+        col3.textContent=cus_address;
+        col4.textContent=cus_salary;
+
+        tbl_row.appendChild(col1);
+        tbl_row.appendChild(col2);
+        tbl_row.appendChild(col3);
+        tbl_row.appendChild(col4);
+
+        tbl_body.appendChild(tbl_row);
+    });
+
+
 
 </script>
 

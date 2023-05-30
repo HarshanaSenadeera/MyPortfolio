@@ -65,9 +65,14 @@
     margin: auto;
 }
 
-
-
 .btn-primary{
     background-color: red;
 }
+
+/*--------------------customer form-----------------*/
+.title{
+    color: red;
+}
+
+
 
