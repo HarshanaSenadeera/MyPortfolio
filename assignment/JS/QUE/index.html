@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUE</title>
+    <link rel="stylesheet" href="que.css">
+
+</head>
+<body>
+
+<style>
+    section{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:0;
+        bottom: 0;
+        margin: auto;
+        width: 1000px;
+        height: 300px;
+        display: flex;
+        grid-gap: 5px;
+        /*border:2px solid black;*/
+        align-items:center;
+    }
+    section div{
+        height: 80px;
+        flex-grow:1;
+        border-radius: 10px;
+       /* border: 1px solid black;*/
+    }
+
+    section> div:nth-child(1) {
+       align-self: start;
+        /*background-color: red;*/
+
+    }
+
+    section > div:nth-child(6) {
+        align-self: end;
+       /* background-color: deeppink;*/
+
+    }
+
+</style>
+<section id="main">
+<div id="1"></div>
+<div id="2"></div>
+<div id="3"></div>
+<div id="4"></div>
+<div id="5"></div>
+<div id="6"></div>
+</section>
+
+<script>
+
+    let colours=["red","green","blue","yellow","plum","deeppink"];
+    let divArray=document.querySelector("section").children;
+
+    setInterval(function () {
+        for (let i = 0; i < divArray.length; i++) {
+            /* console.log(divArray[i]);*/
+            divArray[i].style.background = colours[i];
+        }
+
+        let last_el = colours.pop();
+        colours.unshift(last_el);
+    },400);
+
+
+</script>
+</body>
+</html>
