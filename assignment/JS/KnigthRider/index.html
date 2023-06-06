@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knight_Rider</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../J_quary/jquery-3.7.0.min.js"></script>
+
+</head>
+<body>
+
+<style>
+
+    section {
+        display: flex;
+        width: 1000px;
+        height: 90px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+
+    }
+
+    section>div {
+        height: 100%;
+        width: 200px;
+        margin: 3px;
+
+    }
+
+    section>div:first-child {
+        border-radius: 100px 0 0 200px;
+    }
+
+    section>div:last-child {
+        border-radius: 0 100px 200px 0;
+    }
+
+    #start-btn {
+        background-color: #07a12b;
+        border-radius: 13px;
+    }
+
+    #start-btn, #stop-btn, #speed-btn {
+        position: relative;
+        top: 28rem;
+        left: 33rem;
+        margin-right: 30px;
+        font-size: 16px;
+        opacity: 1;
+        height: 30px;
+        width: 70px;
+    }
+
+    @keyframes btns {
+        0% {
+            left: 0;
+            width: 0px;
+            height: 0px;
+        }
+
+        100% {
+            opacity: 1;
+            width: 75px;
+            height: 35px;
+            color: white;
+        }
+    }
+
+    #start-btn {
+        background-color: #015184;
+        border-radius: 10px;
+        color: white;
+    }
+
+    #stop-btn {
+        background-color: #aa0018;
+        border-radius: 10px;
+        color: white;
+    }
+
+
+    h2 {
+        position: relative;
+        left: 520px;
+        top: 210px;
+        color: crimson;
+    }
+</style>
+
+<h2>JavaScript Knight Rider</h2>
+<div></div>
+<section>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+
+</section>
+<div>
+    <button id="start-btn">Start</button>
+    <button id="speed-btn">Speed</button>
+    <button id="stop-btn">Stop</button>
+</div>
+
+
+<script>
+
+    let colors = ["#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000",  '#400000', "#800000", "#bf0000", "#ff0000"];
+    let colors2 = ["#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000",  '#ff0000', "#bf0000", "#800000", "#400000"];
+
+    let section = document.querySelector("section");
+    let divArray = section.getElementsByTagName("div");
+    let mySound = new Audio("sound/Knight-Rider-Theme-Song.mp3")
+
+    let count = 0;
+    let reverse = true;
+    let interval;
+
+    function drive() {
+        mySound.play();
+        interval = setInterval(function () {
+
+            if (reverse) {
+                for (let i = 0; i < divArray.length; i++) {
+                    divArray[i].style.backgroundColor = colors[i];
+                }
+
+                let lastValue = colors.pop();
+                colors.unshift(lastValue);
+                count++;
+
+                if (count == 12) {
+                    reverse = false;
+                }
+
+            } if (reverse == false) {
+
+                let lastColor = colors2.shift();
+                colors2.push(lastColor);
+
+                for (let i = 0; i < divArray.length; i++) {
+                    divArray[i].style.backgroundColor = colors2[i];
+                }
+                count--;
+
+                if (count == 1) {
+                    reverse = true;
+                }
+            }
+
+        }, 150);
+
+    }
+
+    $(document).ready(function () {
+        clearInterval(interval);
+        drive();
+        mySound.play();
+
+        $("#start-btn").click(function () {
+            clearInterval(interval);
+            drive();
+            mySound.play();
+        });
+
+    });
+
+    document.querySelector("#stop-btn").addEventListener('click', function () {
+        clearInterval(interval);
+        mySound.pause();
+    });
+
+    document.querySelector("#start-btn").addEventListener('click', function () {
+        clearInterval(interval);
+        mySound.play();
+        drive();
+    });
+
+    document.querySelector("#speed-btn").addEventListener('click', function () {
+        drive();
+    });
+
+</script>
+
+</body>
+</html>
