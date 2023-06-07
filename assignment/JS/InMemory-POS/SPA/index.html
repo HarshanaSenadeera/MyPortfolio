@@ -431,7 +431,24 @@
 <script>
 
     /*---------------------Nav options----------------------------------*/
-    document.addEventListener("DOMContentLoaded", function () {
+    /*document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("home").style.display='inline-block';
+        document.getElementById("customer").style.display='none';
+        document.getElementById("item").style.display='none';
+        document.getElementById("order").style.display='none';
+        document.getElementById("place_Order").style.display='none';
+
+    });*/
+
+    $("DOMContentLoaded",function () {
+       $("#home").css("display",'inline-block');
+       $("#customer").css("display",'none');
+       $("#item").css("display",'none');
+       $("#order").css("display",'none');
+       $("#place_Order").css("display",'none');
+    });
+
+    /*document.getElementById("home_page").addEventListener("click", function () {
         document.getElementById("home").style.display='inline-block';
         document.getElementById("customer").style.display='none';
         document.getElementById("item").style.display='none';
@@ -439,50 +456,82 @@
         document.getElementById("place_Order").style.display='none';
 
     });
+*/
 
-    document.getElementById("home_page").addEventListener("click", function () {
-        document.getElementById("home").style.display='inline-block';
-        document.getElementById("customer").style.display='none';
-        document.getElementById("item").style.display='none';
-        document.getElementById("order").style.display='none';
-        document.getElementById("place_Order").style.display='none';
-
+    $("home_page",function () {
+        $("#home").css("display",'inline-block');
+        $("#customer").css("display",'none');
+        $("#item").css("display",'none');
+        $("#order").css("display",'none');
+        $("#place_Order").css("display",'none');
     });
 
-    document.getElementById("customer_page").addEventListener("click", function () {
+    /*document.getElementById("customer_page").addEventListener("click", function () {
         document.getElementById("home").style.display='none';
         document.getElementById("customer").style.display='inline-block';
         document.getElementById("item").style.display='none';
         document.getElementById("order").style.display='none';
         document.getElementById("place_Order").style.display='none';
 
+    });*/
+
+    $("#customer_page",function () {
+        $("#home").css("display",'none');
+        $("#customer").css("display",'inline-block');
+        $("#item").css("display",'none');
+        $("#order").css("display",'none');
+        $("#place_Order").css("display",'none');
     });
 
-    document.getElementById("item_page").addEventListener("click", function () {
+    /*document.getElementById("item_page").addEventListener("click", function () {
         document.getElementById("home").style.display='none';
         document.getElementById("customer").style.display='none';
         document.getElementById("item").style.display='inline-block';
         document.getElementById("order").style.display='none';
         document.getElementById("place_Order").style.display='none';
 
+    });*/
+
+    $("#item_page",function () {
+        $("#home").css("display",'none');
+        $("#customer").css("display",'none');
+        $("#item").css("display",'inline-block');
+        $("#order").css("display",'none');
+        $("#place_Order").css("display",'none');
     });
 
-    document.getElementById("order_page").addEventListener("click", function () {
+    /*document.getElementById("order_page").addEventListener("click", function () {
         document.getElementById("home").style.display='none';
         document.getElementById("customer").style.display='none';
         document.getElementById("item").style.display='none';
         document.getElementById("order").style.display='inline-block';
         document.getElementById("place_Order").style.display='none';
 
+    });*/
+
+    $("#order_page",function () {
+        $("#home").css("display",'none');
+        $("#customer").css("display",'none');
+        $("#item").css("display",'none');
+        $("#order").css("display",'inline-block');
+        $("#place_Order").css("display",'none');
     });
 
-    document.getElementById("place_order_page").addEventListener("click", function () {
+    /*document.getElementById("place_order_page").addEventListener("click", function () {
         document.getElementById("home").style.display='none';
         document.getElementById("customer").style.display='none';
         document.getElementById("item").style.display='none';
         document.getElementById("order").style.display='none';
         document.getElementById("place_Order").style.display='inline-block';
 
+    });*/
+
+    $("#place_order_page",function () {
+        $("#home").css("display",'none');
+        $("#customer").css("display",'none');
+        $("#item").css("display",'none');
+        $("#order").css("display",'none');
+        $("#place_Order").css("display",'inline-block');
     });
 
 
