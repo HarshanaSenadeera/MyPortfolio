@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="pos/css/bootstrap.css">
+    <link rel="stylesheet" href="CSS/pos.css">
+
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/trolli-removebg-preview.png" alt="">
+                Senadeera<span>Group</span> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+
+            </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#home" id="home_page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#customer" id="customer_page">Customer</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#item" id="item_page">Item</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order" id="order_page">Order</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#place_Order" id="place_order_page">Order details</a>
+                    </li>
+
+                </ul>
+
+                <form class="log" role="search">
+                    <button class="btn_outline_log" type="button">Login</button>
+                    <button class="btn_outline_logout" type="button">Logout</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section id="home">
+    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+        <div class="carousel-indicators">
+            <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                    data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators"
+                    type="button"></button>
+            <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators"
+                    type="button"></button>
+            <button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#carouselExampleIndicators"
+                    type="button"></button>
+            <button aria-label="Slide 5" data-bs-slide-to="4" data-bs-target="#carouselExampleIndicators"
+                    type="button"></button>
+        </div>
+        <div class="carousel-inner w-100" style="height: 92vh;">
+            <div class="carousel-item active h-100">
+                <img alt="welcome" class="d-block w-100 h-100" src="img/veg_6.jpg">
+            </div>
+            <div class="carousel-item h-100">
+                <img alt="slide 2" class="d-block w-100 h-100" src="img/veg_3.png">
+            </div>
+            <div class="carousel-item h-100">
+                <img alt="slide 3" class="d-block w-100 h-100" src="img/veg_5.jpg">
+            </div>
+            <div class="carousel-item h-100">
+                <img alt="slide 4" class="d-block w-200 h-100" src="img/veg_4.png">
+            </div>
+            <div class="carousel-item h-100">
+                <img alt="slide 5" class="d-block w-100 h-100" src="img/veg_7.jpg">
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators"
+                type="button">
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators"
+                type="button">
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<section id="customer">
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <h1 class="title">Customer Registration</h1>
+                <div class="row">
+                    <div class="mb-3">
+                        <label for="cus_id" class="form-label"></label>
+                        <input type="text" class="form-control" id="cus_id" placeholder="Customer_ID">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cus_name" class="form-label"></label>
+                        <input type="text" class="form-control" id="cus_name" placeholder="Customer Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cus_address" class="form-label"></label>
+                        <input type="text" class="form-control" id="cus_address" placeholder="Customer Address">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cus_salary" class="form-label"></label>
+                        <input type="text" class="form-control" id="cus_salary" placeholder="E mail">
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-primary" id="btnCustomer">Save Customer</button>
+                        <button class="btn btn-danger" id="btnCusDelete">Remove</button>
+                        <button class="btn btn-warning" id="btnUpdate">Update</button>
+                        <button class="btn btn-success" id="btnGetAll">Get All</button>
+                        <button class="btn btn-danger" id="btn-clear1">Clear All</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <table class="mt-5 table table-hover table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Customer Name</th>
+                        <th>Customer Address</th>
+                        <th>Customer Email</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tbl-body_cus">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="item">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <h1 class="title">Item Section</h1>
+                <div class="row">
+                    <div class="mb-3">
+                        <label for="item_id" class="form-label"></label>
+                        <input type="text" class="form-control" id="item_id" placeholder="Item_ID">
+                    </div>
+                    <div class="mb-3">
+                        <label for="item_name" class="form-label"></label>
+                        <input type="text" class="form-control" id="item_name" placeholder="Item_Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="item_price" class="form-label"></label>
+                        <input type="text" class="form-control" id="item_price" placeholder="Unit_price">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="item_Quantity" class="form-label"></label>
+                        <input type="number" class="form-control" id="item_Quantity" placeholder="Quantity">
+                    </div>
+
+                    <div class="btn-group">
+                        <button class="btn btn-primary" id="btnItem">Save Item</button>
+                        <button class="btn btn-danger" id="btnItemDelete">Remove</button>
+                        <button class="btn btn-warning" id="btnItemUpdate">Update</button>
+                        <button class="btn btn-success" id="btnItemGetAll">Get All</button>
+                        <button class="btn btn-danger" id="btn-clearItem">Clear All</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <table class="mt-5 table table-hover table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Item ID</th>
+                        <th>Item Name</th>
+                        <th>Item Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                    </thead>
+                    <tbody id="T_body_Item">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="order">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <h1 class="title">Order Section</h1>
+                <div class="row">
+                    <div class="mb-3">
+                        <label for="order_id" class="form-label"></label>
+                        <input type="text" class="form-control" id="order_id" placeholder="Order_ID">
+                    </div>
+                    <div class="mb-3">
+                        <label for="order_name" class="form-label"></label>
+                        <input type="text" class="form-control" id="order_name" placeholder="Customer_Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="order_Time" class="form-label"></label>
+                        <input type="time" class="form-control" id="order_Time" placeholder="Order_Time">
+                    </div>
+                    <div class="mb-3">
+                        <label for="order_date" class="form-label"></label>
+                        <input type="date" class="form-control" id="order_date" placeholder="Order_Date">
+                    </div>
+
+
+                    <div class="btn-group">
+                        <button class="btn btn-primary" id="btnOrder">Save Order</button>
+                        <button class="btn btn-danger" id="btnOrderDelete">Remove</button>
+                        <button class="btn btn-warning" id="btnOrderUpdate">Update</button>
+                        <button class="btn btn-success" id="btnOrderGetAll">Get All</button>
+                        <button class="btn btn-danger" id="btnOrderClear">Clear All</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <table class="mt-5 table table-hover table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Order Name</th>
+                        <th>Order Time</th>
+                        <th>Order Date</th>
+                    </tr>
+                    </thead>
+                    <tbody id="T_body_Order">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="place_Order">
+    <section class="row me-3" >
+        <p class="fs-2 text-center fw-semibold">Place Order Form</p>
+        <section  class="col-7 p-3 mb-2 bg-primary-subtle text-emphasis-primary border border-light-subtle rounded-3 shadow
+     p-3 mb-5 bg-body-tertiary rounded w-50 m-auto mt-4 m" style="background-color: #0a0a0a !important;">
+            <h2 style="color: white">Invoice Details</h2>
+            <form style="color: white" class="row g-3">
+                <div class="col-md-6">
+                    <label for="orderId" class="form-label">OrderId</label>
+                    <select id="orderId" class="form-select">
+                        <option selected>O001</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="date" class="form-label">Oder Date</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+                <div class="col-md-6">
+                    <label for="CusId" class="form-label">CustomerId</label>
+                    <select id="CusId" class="form-select">
+                        <option selected>C001</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="CusName" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="CusName" >
+                </div>
+                <div class="col-md-3">
+                    <label for="code" class="form-label">Code</label>
+                    <select id="code" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="dec" class="form-label">Description</label>
+                    <input type="text" class="form-control" id="dec">
+                </div>
+                <div class="col-md-3">
+                    <label for="qtyhl" class="form-label">Unit price</label>
+                    <input type="number" class="form-control" id="qtyhl">
+                </div>
+                <div class="col-md-2">
+                    <label for="qtyh" class="form-label">Qty. On Hand</label>
+                    <input type="number" class="form-control" id="qtyh">
+                </div>
+                <div class="col-md-1">
+                    <label for="qty" class="form-label">Qty</label>
+                    <input type="number" class="form-control" id="qty">
+                </div>
+
+                <div class="col-12">
+                    <button style="color: white" type="submit" class="btn btn-primary" >Add to cart</button>
+                </div>
+            </form>
+        </section>
+        <section class="col-5 mt-4 me-4 border border-primary rounded-3" >
+
+            <div class="row px-lg-0 px-sm-5 px-xxl-3 mt-2">
+                <div class="col-5">
+                    <div class="mb-2 ">
+                        <label for="total" class="form-label fs-5">Total(RS)</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-2">
+                        <input type="number" readonly class="form-control p-1 fs-6 fw-bolder " id="total" value="00000.00">
+                    </div>
+                </div>
+
+                <div class="row px-lg-0 px-sm-5 px-xxl-4">
+                    <div class="col-5">
+                        <div class="mb-2">
+                            <label for="subTotal" class="form-label fs-5">Sub Total(RS)</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-2">
+                            <input type="number" readonly class="form-control p-1 fs-6 fw-bolder " id="subTotal" value="00000.00">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gx-3 mt-4">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="cash" class="form-label">Cash</label>
+                            <input type="text" class="form-control" id="cash" placeholder="0000.00">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="mb-3 mb-xl-5 mb-xxl-4">
+                        <label for="balance" class="form-label">Balance</label>
+                        <input type="text" class="form-control" id="balance" placeholder="0000.00">
+                    </div>
+                    <div class="mt-1 d-grid col-6 mt-xl-2 mx-auto">
+                        <button style="background-color: #423ade; color: white" type="button" class="btn btn-success">Purchase</button>
+                    </div>
+                </div>
+
+                <div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <table class="table table-dark table-striped-columns" style="width: 100vw;
+    position: absolute;top: 54vw;">
+        <thead class="bg-primary">
+        <tr>
+            <th  scope="col">Order Id</th>
+            <th scope="col">Cus ID</th>
+            <th scope="col">Item Code</th>
+            <th scope="col">Description</th>
+            <th scope="col">Unit Price</th>
+            <th scope="col">QTY</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">0001</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">0002</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <th scope="row">0003</th>
+
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <th scope="row">0004</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <th scope="row">0005</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<script src="jquery-3.7.0.min.js"></script>
+<script>
+
+    /*---------------------Nav options----------------------------------*/
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("home").style.display='inline-block';
+        document.getElementById("customer").style.display='none';
+        document.getElementById("item").style.display='none';
+        document.getElementById("order").style.display='none';
+        document.getElementById("place_Order").style.display='none';
+
+    });
+
+    document.getElementById("home_page").addEventListener("click", function () {
+        document.getElementById("home").style.display='inline-block';
+        document.getElementById("customer").style.display='none';
+        document.getElementById("item").style.display='none';
+        document.getElementById("order").style.display='none';
+        document.getElementById("place_Order").style.display='none';
+
+    });
+
+    document.getElementById("customer_page").addEventListener("click", function () {
+        document.getElementById("home").style.display='none';
+        document.getElementById("customer").style.display='inline-block';
+        document.getElementById("item").style.display='none';
+        document.getElementById("order").style.display='none';
+        document.getElementById("place_Order").style.display='none';
+
+    });
+
+    document.getElementById("item_page").addEventListener("click", function () {
+        document.getElementById("home").style.display='none';
+        document.getElementById("customer").style.display='none';
+        document.getElementById("item").style.display='inline-block';
+        document.getElementById("order").style.display='none';
+        document.getElementById("place_Order").style.display='none';
+
+    });
+
+    document.getElementById("order_page").addEventListener("click", function () {
+        document.getElementById("home").style.display='none';
+        document.getElementById("customer").style.display='none';
+        document.getElementById("item").style.display='none';
+        document.getElementById("order").style.display='inline-block';
+        document.getElementById("place_Order").style.display='none';
+
+    });
+
+    document.getElementById("place_order_page").addEventListener("click", function () {
+        document.getElementById("home").style.display='none';
+        document.getElementById("customer").style.display='none';
+        document.getElementById("item").style.display='none';
+        document.getElementById("order").style.display='none';
+        document.getElementById("place_Order").style.display='inline-block';
+
+    });
+
+
+
+    /*---------------------------CRUD Operations--------------------------------*/
+
+    /*--------------customer----------------*/
+   /* document.getElementById("btnCustomer").addEventListener("click",function () {
+
+        /!*let cus_id = document.getElementById("cus_id").value;
+        let cus_name = document.getElementById("cus_name").value;
+        let cus_address = document.getElementById("cus_address").value;
+        let cus_salary = document.getElementById("cus_salary").value;*!/
+
+
+        let tbl_body = document.getElementById("tbl-body_cus");
+
+        let tbl_row = document.createElement("tr");
+
+        let col1 = document.createElement("td");
+        let col2 = document.createElement("td");
+        let col3 = document.createElement("td");
+        let col4 = document.createElement("td");
+
+        col1.textContent=cus_id;
+        col2.textContent=cus_name;
+        col3.textContent=cus_address;
+        col4.textContent=cus_salary;
+
+        tbl_row.appendChild(col1);
+        tbl_row.appendChild(col2);
+        tbl_row.appendChild(col3);
+        tbl_row.appendChild(col4);
+
+        tbl_body.appendChild(tbl_row);
+    });*/
+
+    $("#btnCustomer").click(function(){
+        let id= $("#cus_id").val();
+        let name=$("#cus_name").val();
+        let address=$("#cus_address").val();
+        let salary= $("#cus_salary").val();
+
+       let table=$("#tbl-body_cus");
+
+       let tr=$('<tr>');
+
+       let td1=$('<td>');
+       let td2=$('<td>');
+       let td3=$('<td>');
+       let td4=$('<td>');
+
+       td1.text(id);
+       td2.text(name);
+       td3.text(address);
+       td4.text(salary);
+
+       tr.append(td1);
+       tr.append(td2);
+       tr.append(td3);
+       tr.append(td4);
+
+       table.append(tr)
+
+
+    });
+
+
+    /*--------------item----------------*/
+
+    /*document.getElementById("btnItem").addEventListener("click",function () {
+
+        let cus_id = document.getElementById("item_id").value;
+        let cus_name = document.getElementById("item_name").value;
+        let cus_address = document.getElementById("item_price").value;
+        let cus_salary = document.getElementById("item_Quantity").value;
+
+        let tbl_body = document.getElementById("T_body_Item");
+
+        let tbl_row = document.createElement("tr");
+
+        let col1 = document.createElement("td");
+        let col2 = document.createElement("td");
+        let col3 = document.createElement("td");
+        let col4 = document.createElement("td");
+
+        col1.textContent=cus_id;
+        col2.textContent=cus_name;
+        col3.textContent=cus_address;
+        col4.textContent=cus_salary;
+
+        tbl_row.appendChild(col1);
+        tbl_row.appendChild(col2);
+        tbl_row.appendChild(col3);
+        tbl_row.appendChild(col4);
+
+        tbl_body.appendChild(tbl_row);
+    });*/
+
+    $("#btnItem").click(function(){
+        let id= $("#item_id").val();
+        let name=$("#item_name").val();
+        let price=$("#item_price").val();
+        let qty= $("#item_Quantity").val();
+
+        let table=$("#T_body_Item");
+
+        let tr=$('<tr>');
+
+        let td1=$('<td>');
+        let td2=$('<td>');
+        let td3=$('<td>');
+        let td4=$('<td>');
+
+        td1.text(id);
+        td2.text(name);
+        td3.text(price);
+        td4.text(qty);
+
+        tr.append(td1);
+        tr.append(td2);
+        tr.append(td3);
+        tr.append(td4);
+
+        table.append(tr)
+
+    });
+
+    /*--------------order---------------*/
+
+    /*document.getElementById("btnOrder").addEventListener("click",function () {
+
+        let cus_id = document.getElementById("order_id").value;
+        let cus_name = document.getElementById("order_name").value;
+        let cus_address = document.getElementById("order_Time").value;
+        let cus_salary = document.getElementById("order_date").value;
+
+        let tbl_body = document.getElementById("T_body_Order");
+
+        let tbl_row = document.createElement("tr");
+
+        let col1 = document.createElement("td");
+        let col2 = document.createElement("td");
+        let col3 = document.createElement("td");
+        let col4 = document.createElement("td");
+
+        col1.textContent=cus_id;
+        col2.textContent=cus_name;
+        col3.textContent=cus_address;
+        col4.textContent=cus_salary;
+
+        tbl_row.appendChild(col1);
+        tbl_row.appendChild(col2);
+        tbl_row.appendChild(col3);
+        tbl_row.appendChild(col4);
+
+        tbl_body.appendChild(tbl_row);
+    });*/
+
+    $("#btnOrder").click(function(){
+        let id= $("#order_id").val();
+        let name=$("#order_name").val();
+        let time=$("#order_Time").val();
+        let date= $("#order_date").val();
+
+        let table=$("#T_body_Order");
+
+        let tr=$('<tr>');
+
+        let td1=$('<td>');
+        let td2=$('<td>');
+        let td3=$('<td>');
+        let td4=$('<td>');
+
+        td1.text(id);
+        td2.text(name);
+        td3.text(time);
+        td4.text(date);
+
+        tr.append(td1);
+        tr.append(td2);
+        tr.append(td3);
+        tr.append(td4);
+
+        table.append(tr)
+
+    });
+
+</script>
+
+<script src="pos/js/bootstrap.js"></script>
+</body>
+</html>
