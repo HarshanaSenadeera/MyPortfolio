@@ -7,33 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="cal.css">
 
+
+
 </head>
 <body>
 
 <div class="calculator">
-    <button id="clear">C</button>
-    <div class="display"></div>
-    <div class="buttons">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>+</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>-</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>/</button>
-        <button>0</button>
-        <button>.</button>
-        <button id="equals">=</button>
-        <button>*</button>
+    <h1 id="content">Javascript</h1>
+    <input type="text" id="result" class="output" placeholder="0">
+    <div class="keys">
+        <input type="button" value="+" class="key key-op" onclick="display('+')">
+        <input type="button" value="-" class="key key-op" onclick="display('-')">
+        <input type="button" value="x" class="key key-op" onclick="display('*')">
+        <input type="button" value="/" class="key key-op" onclick="display('/')">
+        <input type="button" value="7" class="key" onclick="display('7')">
+        <input type="button" value="8" class="key" onclick="display('8')">
+        <input type="button" value="9" class="key" onclick="display('9')">
+        <input type="button" value="4" class="key" onclick="display('4')">
+        <input type="button" value="5" class="key" onclick="display('5')">
+        <input type="button" value="6" class="key" onclick="display('6')">
+        <input type="button" value="1" class="key" onclick="display('1')">
+        <input type="button" value="2" class="key" onclick="display('2')">
+        <input type="button" value="3" class="key" onclick="display('3')">
+        <input type="button" value="0" class="key" onclick="display('0')">
+        <input type="button" value="." class="key" onclick="display('.')">
+        <input type="button" value="C" class="key" onclick="clearScreen()">
+        <input type="button" value="=" class="key key-ent" onclick="solve()">
     </div>
-
 </div>
 
+<script src="js/cal_process.js"></script>
+<script src="j_quary/jquery-3.7.0.min.js"></script>
 <script src="js/bootstrap.js"></script>
 </body>
 </html>

@@ -1,61 +1,88 @@
-body{
-    display: flex;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
 
-.calculator {
+.calculator{
+    width: 370px;
+    background: #3b3f48;
+    color: #FFFFFF;
     position: absolute;
-    background-color: white;
-    border: 2px solid black;
-    padding: 4px;
-    border-radius: 16px;
-    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px #17181c,
+    -3px -3px 3px #676e7e;
+
 }
 
-.display {
-    position: relative;
-    width: 249px;
-    height: 104px;
-    top: -24px;
-    left: 14px;
-    border: 2px solid black;
-    font-size: 30px;
-    padding: 4px;
-    margin-bottom: 64px;
-    border-radius: 4px;
-    z-index: 4;
+.output{
+    font-size: 3.4rem;
     text-align: right;
-    right: 97px;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    border: none;
+    display: block;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    box-shadow: inset 3px 3px 3px #17181c,
+    inset -3px -3px 3px #676e7e;
 }
 
-#clear {
-    position: relative;
-    top: 158px;
-    left: 5px;
-    background-color: red;
-    border-color: red;
-    color:white;
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3px;
 }
 
-.buttons {
-    width: 277px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-}
-
-button{
-    background-color: #c7c6c6;
-    border: 1px solid #c7c6c6;
-    font-size: 20px;
-    height: 50px;
-    width: 50px;
-    margin: 4px;
-    top: auto;
+.key{
+    background: black;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    width: 70px;
+    height: 70px;
+    margin: 0.3rem;
+    cursor: pointer;
     border-radius: 100px;
+}
+
+
+.key-ent{
+    grid-column: 4 /5;
+    grid-row: 2 / span 4;
+    height: auto;
+    border-radius: 30px;
+    color: cyan;
+    background: black;
+}
+
+.key-op{
+    background-color:red;
+}
+
+.key-op:hover{
+    color:black;
+}
+
+.key-ent:hover{
+    color:black;
+}
+
+.key-ent{
+    background-color:red;
+}
+
+#content{
+    font-size:25px;
+    font-family:'Ubuntu', sans-serif;
+}
+
+#result{
+    background-color: #2c2b2b;
 }
 
