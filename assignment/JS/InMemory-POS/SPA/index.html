@@ -141,7 +141,12 @@
                     </tr>
                     </thead>
                     <tbody id="tbl-body_cus">
-
+                    <tr>
+                        <td>C001</td>
+                        <td>Dasun</td>
+                        <td>Galle</td>
+                        <td>100,000</td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
@@ -526,27 +531,25 @@
         tbl_body.appendChild(tbl_row);
     });*/
 
+    /*========================SAVE CUSTOMER=============================*/
     var customerArray=[];
-/*========================SAVE CUSTOMER=============================*/
+
     $("#btnCustomer").click(function(){
 
-        let id= $("#cus_id").val();
-        let name=$("#cus_name").val();
-        let address=$("#cus_address").val();
-        let salary= $("#cus_salary").val();
+        let Cus_id= $("#cus_id").val();
+        let Cus_name=$("#cus_name").val();
+        let Cus_address=$("#cus_address").val();
+        let Cus_salary= $("#cus_salary").val();
 
-        let customer=[id,name,address,salary];
+        let customer={
+            id:Cus_id,
+            name:Cus_name,
+            address:Cus_address,
+            salary:Cus_salary,
+        }
 
         customerArray.push(customer);
 
-        let row=`<tr>
-            <td>${id}</td>;
-            <td>${name}</td>;
-            <td>${address}</td>;
-            <td>${salary}</td>;
-        </tr>`;
-
-        $("#tbl-body_cus").append(row);
 
     });
 
@@ -556,10 +559,10 @@
         $("#tbl-body_cus").empty();
 
         for (let i=0 ;i<customerArray.length;i++){
-            let id=customerArray[i][0];
-            let name=customerArray[i][1];
-            let address=customerArray[i][2];
-            let salary=customerArray[i][3];
+            let id=customerArray[i].id;
+            let name=customerArray[i].name;
+            let address=customerArray[i].address;
+            let salary=customerArray[i].salary;
 
             let cus=`<tr>
                 <td>${id}</td>
@@ -603,27 +606,25 @@
         tbl_body.appendChild(tbl_row);
     });*/
 
+    /*========================SAVE ITEM=============================*/
+
     let itemArray=[];
 
-    /*========================SAVE ITEM=============================*/
-    $("#btnItem").click(function(){
-        let id= $("#item_id").val();
-        let name=$("#item_name").val();
-        let price=$("#item_price").val();
-        let qty= $("#item_Quantity").val();
 
-        let item=[id,name,price,qty];
+    $("#btnItem").click(function(){
+        let Item_id= $("#item_id").val();
+        let Item_name=$("#item_name").val();
+        let Item_price=$("#item_price").val();
+        let Item_qty= $("#item_Quantity").val();
+
+        let item={
+            id:Item_id,
+            name:Item_name,
+            price:Item_price,
+            qty:Item_qty
+        }
 
         itemArray.push(item);
-
-        let row=`<tr>
-            <td>${id}</td>
-            <td>${name}</td>
-            <td>${price}</td>
-            <td>${qty}</td>
-        </tr>`;
-
-        $("#T_body_Item").append(row);
 
     });
 
@@ -633,10 +634,10 @@
         $("#T_body_Item").empty();
 
         for (let i=0;i<itemArray.length;i++){
-            let id=itemArray[i][0];
-            let name=itemArray[i][1];
-            let price=itemArray[i][2];
-            let qty=itemArray[i][3];
+            let id=itemArray[i].id;
+            let name=itemArray[i].name;
+            let price=itemArray[i].price;
+            let qty=itemArray[i].qty;
 
             let row= `<tr>
                 <td>${id}</td>
@@ -685,23 +686,20 @@
 
     /*========================SAVE ORDER=============================*/
     $("#btnOrder").click(function(){
-        let id= $("#order_id").val();
-        let name=$("#order_name").val();
-        let time=$("#order_Time").val();
-        let date= $("#order_date").val();
+        let Order_id= $("#order_id").val();
+        let Order_name=$("#order_name").val();
+        let Order_time=$("#order_Time").val();
+        let Order_date= $("#order_date").val();
 
-        let order=[id,name,time,date];
+        let order={
+            id:Order_id,
+            name:Order_name,
+            time:Order_time,
+            date:Order_date
+        }
 
         orderArray.push(order);
 
-        let row= `<tr>
-            <td>${id}</td>
-            <td>${name}</td>
-            <td>${time}</td>
-            <td>${date}</td>
-        </tr>`;
-
-        $("#T_body_Order").append(row);
 
     });
 
@@ -711,10 +709,10 @@
         $("#T_body_Order").empty();
 
         for (let i=0;i<orderArray.length;i++){
-            let id=orderArray[i][0];
-            let name=orderArray[i][1];
-            let time=orderArray[i][2];
-            let date=orderArray[i][3];
+            let id=orderArray[i].id;
+            let name=orderArray[i].name;
+            let time=orderArray[i].time;
+            let date=orderArray[i].date;
 
             let row=`<tr>
                 <td>${id}</td>

@@ -4,10 +4,10 @@ function display(val){
 }
 
 function solve(){
-    let value = document.getElementById('result').value
-    let eval1 = eval(value);
-    document.getElementById('result').value = eval1
-    return eval1
+    let x = document.getElementById('result').value
+    let y = eval(x);
+    document.getElementById('result').value = y
+    return y
 }
 
 function clearScreen(){
