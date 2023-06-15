@@ -141,12 +141,7 @@
                     </tr>
                     </thead>
                     <tbody id="tbl-body_cus">
-                    <tr>
-                        <td>C001</td>
-                        <td>Dasun</td>
-                        <td>Galle</td>
-                        <td>100,000</td>
-                    </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -550,31 +545,84 @@
 
         customerArray.push(customer);
 
+        getDataToRow();
+        setTextfieldValues();
 
     });
 
     /*========================GET ALL CUSTOMER=============================*/
-    $("#btnGetAll").click(function () {
 
-        $("#tbl-body_cus").empty();
 
-        for (let i=0 ;i<customerArray.length;i++){
-            let id=customerArray[i].id;
-            let name=customerArray[i].name;
-            let address=customerArray[i].address;
-            let salary=customerArray[i].salary;
+        $("#btnGetAll").click(function () {
 
-            let cus=`<tr>
+            $("#tbl-body_cus").empty();
+
+            for (let i=0 ;i<customerArray.length;i++){
+                let id=customerArray[i].id;
+                let name=customerArray[i].name;
+                let address=customerArray[i].address;
+                let salary=customerArray[i].salary;
+
+                let cus=`<tr>
                 <td>${id}</td>
                 <td>${name}</td>
                 <td>${address}</td>
                 <td>${salary}</td>
             </tr>`;
 
-            $("#tbl-body_cus").append(cus);
-        }
+                $("#tbl-body_cus").append(cus);
+                getAllRowBindCustomer();
+            }
 
+        });
+
+
+    /*========================GET ALL CUSTOMER TO TEXT FIELD=============================*/
+
+    function getAllRowBindCustomer() {
+        $("#tbl-body_cus").on('click', 'tr', function() {
+
+            let id = $(this).children(":eq(0)").text();
+            let name = $(this).children(":eq(1)").text();
+            let address = $(this).children(":eq(2)").text();
+            let male = $(this).children(":eq(3)").text();
+
+            $("#cus_id").val(id);
+            $("#cus_name").val(name);
+            $("#cus_address").val(address);
+            $("#cus_salary").val(male);
+
+        });
+    }
+
+    /*========================DELETE CUSTOMER=============================*/
+    $("#btnCusDelete").click(function () {
+
+        let id = $("#CusId").val();
+
+        confirm("DO you want delete this customer")
+        let response = deleteCustomer(id);
+
+        if(response){
+            alert("Customer delete sucess")
+
+        }else {
+            alert("Somethin went wrong")
+        }
     });
+
+    function deleteCustomer(id) {
+        for (let i=0;i<customerArray.length;i++){
+            if(customerArray[i].id==id){
+                customerArray.splice(i,1);
+            }
+            return true
+        }
+    }
+
+    /*========================SEARCH CUSTOMER=============================*/
+
+
     /*--------------item----------------*/
 
     /*document.getElementById("btnItem").addEventListener("click",function () {
@@ -647,9 +695,31 @@
             </tr>`;
 
             $("#T_body_Item").append(row);
+            getAllRowBindItem();
 
         }
     });
+
+    /*========================GET ALL ITEM TO TEXT FIELD=============================*/
+
+
+    function getAllRowBindItem() {
+        $("#T_body_Item").on('click', 'tr', function() {
+
+            let id = $(this).children(":eq(0)").text();
+            let name = $(this).children(":eq(1)").text();
+            let price = $(this).children(":eq(2)").text();
+            let qty = $(this).children(":eq(3)").text();
+
+            $("#item_id").val(id);
+            $("#item_name").val(name);
+            $("#item_price").val(price);
+            $("#item_Quantity").val(qty);
+
+        });
+    }
+
+
 
     /*--------------order---------------*/
 
@@ -722,9 +792,31 @@
             </tr>`;
 
             $("#T_body_Order").append(row);
+            getAllRowBindOrder();
         }
 
     });
+
+
+    /*========================GET ALL ORDER TO TEXT FIELD=============================*/
+
+    function getAllRowBindOrder() {
+        $("#T_body_Order").on('click', 'tr', function() {
+
+            let id = $(this).children(":eq(0)").text();
+            let name = $(this).children(":eq(1)").text();
+            let time = $(this).children(":eq(2)").text();
+            let date = $(this).children(":eq(3)").text();
+
+            $("#order_id").val(id);
+            $("#order_name").val(name);
+            $("#order_Time").val(time);
+            $("#order_date").val(date);
+
+        });
+    }
+
+
 
 </script>
 <!--<script src="pos/customer.js"></script>-->
