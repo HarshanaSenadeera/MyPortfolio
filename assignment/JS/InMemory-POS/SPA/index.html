@@ -118,15 +118,15 @@
                         <input type="text" class="form-control" id="cus_address" placeholder="Customer Address">
                     </div>
                     <div class="mb-3">
-                        <label for="cus_salary" class="form-label"></label>
-                        <input type="text" class="form-control" id="cus_salary" placeholder="E mail">
+                        <label for="cus_email" class="form-label"></label>
+                        <input type="text" class="form-control" id="cus_email" placeholder="E mail">
                     </div>
                     <div class="btn-group">
                         <button class="btn btn-primary" id="btnCustomer">Save Customer</button>
                         <button class="btn btn-danger" id="btnCusDelete">Remove</button>
                         <button class="btn btn-warning" id="btnUpdate">Update</button>
                         <button class="btn btn-success" id="btnGetAll">Get All</button>
-                        <button class="btn btn-danger" id="btn-clear1">Clear All</button>
+                        <button class="btn btn-danger" id="btnClear">Clear</button>
                     </div>
                 </div>
             </div>
@@ -529,50 +529,65 @@
     /*========================SAVE CUSTOMER=============================*/
     var customerArray=[];
 
+    function saveCustomer() {
+        let customerID = $("#cus_id").val();
+        if (searchCustomer(customerID.trim()) == undefined) {
+            let customerName = $("#cus_name").val();
+            let customerAddress = $("#cus_address").val();
+            let customerEmail = $("#cus_email").val();
+
+            //set customer details to another array
+            // let customer=[customerID,customerName,customerAddress,customerSalary];
+
+            let customerOb = {
+                id: customerID,
+                name: customerName,
+                address: customerAddress,
+                salary: customerEmail
+            }
+
+            //add customer record to the customer array
+            customerArray.push(customerOb);
+            clearCustomerInputFields();
+            getAllCustomer();
+
+        } else {
+            alert("Customer already exits.!");
+            clearCustomerInputFields();
+        }
+    }
     $("#btnCustomer").click(function(){
 
-        let Cus_id= $("#cus_id").val();
-        let Cus_name=$("#cus_name").val();
-        let Cus_address=$("#cus_address").val();
-        let Cus_salary= $("#cus_salary").val();
-
-        let customer={
-            id:Cus_id,
-            name:Cus_name,
-            address:Cus_address,
-            salary:Cus_salary,
-        }
-
-        customerArray.push(customer);
-
-        getDataToRow();
-        setTextfieldValues();
+        saveCustomer();
 
     });
 
     /*========================GET ALL CUSTOMER=============================*/
 
+    function getAllCustomer() {
 
-        $("#btnGetAll").click(function () {
+        $("#tbl-body_cus").empty();
 
-            $("#tbl-body_cus").empty();
+        for (let i=0 ;i<customerArray.length;i++){
+            let id=customerArray[i].id;
+            let name=customerArray[i].name;
+            let address=customerArray[i].address;
+            let salary=customerArray[i].salary;
 
-            for (let i=0 ;i<customerArray.length;i++){
-                let id=customerArray[i].id;
-                let name=customerArray[i].name;
-                let address=customerArray[i].address;
-                let salary=customerArray[i].salary;
-
-                let cus=`<tr>
+            let cus=`<tr>
                 <td>${id}</td>
                 <td>${name}</td>
                 <td>${address}</td>
                 <td>${salary}</td>
             </tr>`;
 
-                $("#tbl-body_cus").append(cus);
-                getAllRowBindCustomer();
-            }
+            $("#tbl-body_cus").append(cus);
+            getAllRowBindCustomer();
+        }
+    }
+        $("#btnGetAll").click(function () {
+
+            getAllCustomer();
 
         });
 
@@ -590,7 +605,7 @@
             $("#cus_id").val(id);
             $("#cus_name").val(name);
             $("#cus_address").val(address);
-            $("#cus_salary").val(male);
+            $("#cus_email").val(male);
 
         });
     }
@@ -598,29 +613,172 @@
     /*========================DELETE CUSTOMER=============================*/
     $("#btnCusDelete").click(function () {
 
-        let id = $("#CusId").val();
+        let id = $("#cus_id").val();
 
-        confirm("DO you want delete this customer")
-        let response = deleteCustomer(id);
-
-        if(response){
-            alert("Customer delete sucess")
-
-        }else {
-            alert("Somethin went wrong")
+        let consent = confirm("Do you want to delete.?");
+        if (consent) {
+            let response = deleteCustomer(id);
+            if (response) {
+                alert("Customer Deleted");
+                clearCustomerInputFields();
+                getAllCustomer();
+            } else {
+                alert("Customer Not Removed..!");
+            }
         }
     });
 
     function deleteCustomer(id) {
-        for (let i=0;i<customerArray.length;i++){
-            if(customerArray[i].id==id){
-                customerArray.splice(i,1);
+        for (let i = 0; i < customerArray.length; i++) {
+            if (customerArray[i].id == id) {
+                customerArray.splice(i, 1);
+                return true;
             }
-            return true
         }
+        return false;
     }
 
+    /*========================UPDATE CUSTOMER=============================*/
+
+    $("#btnUpdate").click(function () {
+        let id = $("#cus_id").val();
+        updateCustomer(id);
+        clearCustomerInputFields();
+    });
+
+
+    function updateCustomer(id) {
+        if (searchCustomer(id) == undefined) {
+            alert("No such Customer..please check the ID");
+        } else {
+            let consent = confirm("Do you really want to update this customer.?");
+            if (consent) {
+                let customer = searchCustomer(id);
+                //if the customer available can we update.?
+
+                let customerName = $("#cus_name").val();
+                let customerAddress = $("#cus_address").val();
+                let customerSalary = $("#cus_email").val();
+
+                customer.name = customerName;
+                customer.address = customerAddress;
+                customer.salary = customerSalary;
+
+                getAllCustomer();
+            }
+        }
+
+    }
+
+
     /*========================SEARCH CUSTOMER=============================*/
+
+    function searchCustomer(id) {
+        return customerArray.find(function (customer) {
+            //if the search id match with customer record
+            //then return that object
+            return customer.id == id;
+        });
+    }
+
+
+    /*========================CLEAR CUSTOMER TEXT FIELD=============================*/
+
+    $("#btnClear").click(function () {
+        clearCustomerInputFields();
+    });
+    function clearCustomerInputFields() {
+        $("#cus_id,#cus_name,#cus_address,#cus_email").val("");
+        $("#cus_id").focus();
+    }
+
+    /*========================CUSTOMER REGEX=============================*/
+    $("#cus_id").keyup(function (e) {
+        const pattern = /^(C00-)[0-9]{3}$/;
+        if (pattern.test($("#cus_id").val())){
+            $("#cus_id").css('border','2px solid green');
+        }else{
+            $("#cus_id").css('border','2px solid red')
+            if (e.key==='Enter'){
+                console.log(e);
+                e.preventDefault();
+            }
+        }
+    });
+    $("#cus_name").keyup(function (e) {
+        const pattern = /^[a-zA-Z\s']+$/u;
+        if (pattern.test($("#cus_name").val())){
+            $("#cus_name").css('border','2px solid green');
+        }else{
+            $("#cus_name").css('border','2px solid red')
+            if (e.key==='Enter'){
+                console.log(e);
+                e.preventDefault();
+            }
+        }
+    });
+    $("#cus_address").keyup(function (e) {
+        const pattern = /^[a-zA-Z\s']+$/u;
+        if (pattern.test($("#cus_address").val())){
+            $("#cus_address").css('border','2px solid green');
+        }else{
+            $("#cus_address").css('border','2px solid red')
+            if (e.key==='Enter'){
+                console.log(e);
+                e.preventDefault();
+            }
+        }
+    });
+    $("#cus_email").keyup(function (e) {
+        const pattern =/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (pattern.test($("#cus_email").val())){
+            $("#cus_email").css('border','2px solid green');
+        }else{
+            $("#cus_email").css('border','2px solid red')
+            if (e.key==='Enter'){
+                console.log(e);
+                e.preventDefault();
+            }
+        }
+    });
+
+    /*========================ENTER BUTTON ACTION=============================*/
+
+    $('#cus_id, #cus_name , #cus_address , #cus_email').keydown(function (e){
+
+        if (e.key == "Tab") {
+            e.preventDefault();
+        }
+    });
+
+    //focus name
+    $('#cus_id').keydown(function (e){
+        if (e.key=="Enter"){
+            $('#cus_name').focus();
+        }
+    });
+
+    //focus Address
+    $('#cus_name').keydown(function (e){
+        if (e.key=="Enter"){
+            $('#cus_address').focus();
+        }
+    });
+
+    //focus Contact
+    $('#cus_address').keydown(function (e){
+        if (e.key=="Enter"){
+            $('#cus_email').focus();
+        }
+    });
+
+    $('#cus_email').keydown(function (e){
+        if (e.key=="Enter"){
+            saveCustomer();
+            clearCustomerInputFields();
+        }
+    });
+
 
 
     /*--------------item----------------*/
