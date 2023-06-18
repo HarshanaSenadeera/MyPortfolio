@@ -717,6 +717,11 @@
     .third {
         height: 111vh;
     }
+
+    .btn_projects{
+        top:356px
+
+    }
 }
 
 /*-------------------------------425---------------------------*/
@@ -1022,6 +1027,10 @@
         left: 79px;
         top: 491px;
         width: 267px;
+    }
+
+    .btn_projects{
+        top: 1115px;
     }
 
 }
@@ -1694,6 +1703,12 @@
         top: 1112px;
         width: 158px;
         left: -33px;
+    }
+
+    .btn_projects {
+        top: 1112px;
+        width: 100px;
+        left: 0;
     }
 }
 

@@ -908,3 +908,20 @@ header span{
 
 }
 
+.btn_projects{
+    position: absolute;
+    top: 420px;
+    width: 100px;
+    height: 58px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #000000;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    box-shadow: 0px 0px 2px 2px rgb(255, 255, 255);
+
+}
+
