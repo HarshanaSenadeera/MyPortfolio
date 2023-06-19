@@ -816,27 +816,48 @@
 
     let itemArray=[];
 
-
-    $("#btnItem").click(function(){
+    function saveItem() {
         let Item_id= $("#item_id").val();
-        let Item_name=$("#item_name").val();
-        let Item_price=$("#item_price").val();
-        let Item_qty= $("#item_Quantity").val();
+        if (searchItem(Item_id.trim()) == undefined) {
+            let Item_name=$("#item_name").val();
+            let Item_price=$("#item_price").val();
+            let Item_qty= $("#item_Quantity").val();
 
-        let item={
-            id:Item_id,
-            name:Item_name,
-            price:Item_price,
-            qty:Item_qty
+            let item={
+                id:Item_id,
+                name:Item_name,
+                price:Item_price,
+                qty:Item_qty
+            }
+
+            itemArray.push(item);
+            clearItemInputFields();
+            getAllItem()
+
+        }else {
+            alert("Item already exits.!");
+            clearItemInputFields();
         }
 
-        itemArray.push(item);
+    }
 
+    $("#btnItem").click(function(){
+
+        saveItem();
     });
 
-    /*=========================GET ALL ITEM============================*/
-    $("#btnItemGetAll").click(function () {
+    /*=========================SEARCH ITEM============================*/
 
+    function searchItem(id) {
+        return itemArray.find(function (item) {
+            //if the search id match with customer record
+            //then return that object
+            return item.id == id;
+        });
+    }
+
+    /*=========================GET ALL ITEM============================*/
+    function getAllItem() {
         $("#T_body_Item").empty();
 
         for (let i=0;i<itemArray.length;i++){
@@ -856,7 +877,12 @@
             getAllRowBindItem();
 
         }
+    }
+
+    $("#btnItemGetAll").click(function () {
+        getAllItem();
     });
+
 
     /*========================GET ALL ITEM TO TEXT FIELD=============================*/
 
@@ -876,6 +902,155 @@
 
         });
     }
+
+
+    /*========================DELETE ITEM=============================*/
+    $("#btnItemDelete").click(function () {
+
+        let id = $("#item_id").val();
+
+        let consent = confirm("Do you want to delete.?");
+        if (consent) {
+            let response = deleteItem(id);
+            if (response) {
+                alert("Item Deleted");
+                clearItemInputFields();
+                getAllItem();
+            } else {
+                alert("Item Not Removed..!");
+            }
+        }
+    });
+
+    function deleteItem(id) {
+        for (let i = 0; i < itemArray.length; i++) {
+            if (itemArray[i].id == id) {
+                itemArray.splice(i, 1);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /*========================CLEAR ITEM TEXT FIELD=============================*/
+
+    $("#btn-clearItem").click(function () {
+        clearItemInputFields();
+    });
+    function clearItemInputFields() {
+        $("#item_id,#item_name,#item_price,#item_Quantity").val("");
+        $("#item_id").focus();
+    }
+
+
+    /*========================UPDATE ITEM=============================*/
+
+    $("#btnItemUpdate").click(function () {
+        let id = $("#item_id").val();
+        updateItem(id);
+        clearItemInputFields();
+    });
+
+
+    function updateItem(id) {
+        if (searchItem(id) == undefined) {
+            alert("No such Item..please check the ID");
+        } else {
+            let consent = confirm("Do you really want to update this item.?");
+            if (consent) {
+                let item = searchItem(id);
+                //if the customer available can we update.?
+
+                let itemName = $("#item_name").val();
+                let itemPrice = $("#item_price").val();
+                let itemQTY = $("#item_Quantity").val();
+
+                item.name = itemName;
+                item.price = itemPrice;
+                item.qty = itemQTY;
+
+                getAllItem();
+            }
+        }
+
+    }
+
+
+    /*========================ITEM REGEX=============================*/
+    $("#item_id").keyup(function (e) {
+        const pattern = /^(I00-)[0-9]{3}$/;
+        if (pattern.test($("#item_id").val())){
+            $("#item_id").css('border','2px solid green');
+        }else{
+            $("#item_id").css('border','2px solid red')
+            if (e.key==='Enter'){
+                console.log(e);
+                e.preventDefault();
+            }
+        }
+    });
+    $("#item_name").keyup(function (e) {
+        const pattern = /^[a-zA-Z\s']+$/u;
+        if (pattern.test($("#item_name").val())){
+            $("#item_name").css('border','2px solid green');
+        }else{
+            $("#item_name").css('border','2px solid red')
+            if (e.key==='Enter'){
+                console.log(e);
+                e.preventDefault();
+            }
+        }
+    });
+    $("#item_price").keyup(function (e) {
+        const pattern = /^(?:\d{1,3}(?:,?\d{3})*(?:\.\d{2})?|\d{1,3}(?:,?\d{3})*)$/;
+        if (pattern.test($("#item_price").val())){
+            $("#item_price").css('border','2px solid green');
+        }else{
+            $("#item_price").css('border','2px solid red')
+            if (e.key==='Enter'){
+                console.log(e);
+                e.preventDefault();
+            }
+        }
+    });
+
+    /*========================ENTER BUTTON ACTION=============================*/
+
+    $('#item_id, #item_name , #item_price , #item_Quantity').keydown(function (e){
+
+        if (e.key == "Tab") {
+            e.preventDefault();
+        }
+    });
+
+    //focus name
+    $('#item_id').keydown(function (e){
+        if (e.key=="Enter"){
+            $('#item_name').focus();
+        }
+    });
+
+    //focus Address
+    $('#item_name').keydown(function (e){
+        if (e.key=="Enter"){
+            $('#item_price').focus();
+        }
+    });
+
+    //focus Contact
+    $('#item_price').keydown(function (e){
+        if (e.key=="Enter"){
+            $('#item_Quantity').focus();
+        }
+    });
+
+    $('#item_Quantity').keydown(function (e){
+        if (e.key=="Enter"){
+            saveItem();
+            clearItemInputFields();
+        }
+    });
+
 
 
 
@@ -913,36 +1088,58 @@
     let orderArray=[];
 
     /*========================SAVE ORDER=============================*/
-    $("#btnOrder").click(function(){
+
+    function saveOrder() {
         let Order_id= $("#order_id").val();
-        let Order_name=$("#order_name").val();
-        let Order_time=$("#order_Time").val();
-        let Order_date= $("#order_date").val();
+        if(searchOrder(Order_id.trim())== undefined){
+            let Order_name=$("#order_name").val();
+            let Order_time=$("#order_Time").val();
+            let Order_date= $("#order_date").val();
 
-        let order={
-            id:Order_id,
-            name:Order_name,
-            time:Order_time,
-            date:Order_date
+            let order={
+                id:Order_id,
+                name:Order_name,
+                time:Order_time,
+                date:Order_date
+            }
+
+            orderArray.push(order);
+            clearOrderInputFields();
+            getAllOrder();
+        }else {
+            alert("Order already exits.!");
         }
+    }
 
-        orderArray.push(order);
 
-
+    $("#btnOrder").click(function () {
+       saveOrder();
     });
 
-    /*=========================GET ALL ORDER============================*/
-    $("#btnOrderGetAll").click(function () {
 
+    /*========================SEARCH ORDER=============================*/
+
+    function searchOrder(id) {
+        return orderArray.find(function (order) {
+            //if the search id match with customer record
+            //then return that object
+            return order.id == id;
+        });
+    }
+
+
+    /*=========================GET ALL ORDER============================*/
+
+    function getAllOrder() {
         $("#T_body_Order").empty();
 
-        for (let i=0;i<orderArray.length;i++){
-            let id=orderArray[i].id;
-            let name=orderArray[i].name;
-            let time=orderArray[i].time;
-            let date=orderArray[i].date;
+        for (let i = 0; i < orderArray.length; i++) {
+            let id = orderArray[i].id;
+            let name = orderArray[i].name;
+            let time = orderArray[i].time;
+            let date = orderArray[i].date;
 
-            let row=`<tr>
+            let row = `<tr>
                 <td>${id}</td>
                 <td>${name}</td>
                 <td>${time}</td>
@@ -952,7 +1149,10 @@
             $("#T_body_Order").append(row);
             getAllRowBindOrder();
         }
+    }
 
+    $("#btnOrderGetAll").click(function () {
+        getAllOrder();
     });
 
 
@@ -973,6 +1173,114 @@
 
         });
     }
+
+    /*========================DELETE ORDER=============================*/
+    $("#btnOrderDelete").click(function () {
+
+        let id = $("#order_id").val();
+
+        let consent = confirm("Do you want to delete.?");
+        if (consent) {
+            let response = deleteOrder(id);
+            if (response) {
+                alert("Order Deleted");
+                clearOrderInputFields();
+                getAllOrder();
+            } else {
+                alert("Order Not Removed..!");
+            }
+        }
+    });
+
+    function deleteOrder(id) {
+        for (let i = 0; i < orderArray.length; i++) {
+            if (orderArray[i].id == id) {
+                orderArray.splice(i, 1);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /*========================CLEAR ORDER TEXT FIELD=============================*/
+
+    $("#btnOrderClear").click(function () {
+        clearOrderInputFields();
+    });
+
+    function clearOrderInputFields() {
+        $("#order_id,#order_name,#order_Time,#order_date").val("");
+        $("#order_id").focus();
+    }
+
+    /*========================UPDATE ORDER=============================*/
+
+    $("#btnOrderUpdate").click(function () {
+        let id = $("#order_id").val();
+        updateOrder(id);
+        clearOrderInputFields();
+    });
+
+
+    function updateOrder(id) {
+        if (searchOrder(id) == undefined) {
+            alert("No such Order..please check the ID");
+        } else {
+            let consent = confirm("Do you really want to update this order.?");
+            if (consent) {
+                let order = searchOrder(id);
+                //if the customer available can we update.?
+
+                let OrderName = $("#order_name").val();
+                let OrderTime = $("#order_Time").val();
+                let OrderDate = $("#order_date").val();
+
+                order.name = OrderName;
+                order.time = OrderTime;
+                order.date = OrderDate;
+
+                getAllOrder();
+            }
+        }
+
+    }
+
+    /*========================ENTER BUTTON ACTION=============================*/
+
+    $('#order_id, #order_name , #order_Time , #order_date').keydown(function (e){
+
+        if (e.key == "Tab") {
+            e.preventDefault();
+        }
+    });
+
+    //focus name
+    $('#order_id').keydown(function (e){
+        if (e.key=="Enter"){
+            $('#order_name').focus();
+        }
+    });
+
+    //focus Address
+    $('#order_name').keydown(function (e){
+        if (e.key=="Enter"){
+            $('#order_Time').focus();
+        }
+    });
+
+    //focus Contact
+    $('#order_Time').keydown(function (e){
+        if (e.key=="Enter"){
+            $('#order_date').focus();
+        }
+    });
+
+    $('#order_date').keydown(function (e){
+        if (e.key=="Enter"){
+            saveOrder();
+            clearOrderInputFields();
+        }
+    });
 
 
 
