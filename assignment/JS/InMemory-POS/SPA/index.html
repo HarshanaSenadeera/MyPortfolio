@@ -461,7 +461,7 @@
         $("#item").css("display",'none');
         $("#order").css("display",'inline-block');
         $("#place_Order").css("display",'none');
-        setCurrentDate();
+
     });
 
     /*document.getElementById("place_order_page").addEventListener("click", function () {
@@ -479,6 +479,8 @@
         $("#item").css("display",'none');
         $("#order").css("display",'none');
         $("#place_Order").css("display",'inline-block');
+        loadAllOrders();
+        loadAllOrderDetails();
     });
 
 
@@ -1153,9 +1155,7 @@
 
 
 
-    /**
-     * Items Details
-     * */
+   /*------------Item details-------------*/
 
     let itemCode;
     let itemName;
@@ -1167,10 +1167,8 @@
     let discount = 0;
     let subTotal = 0;
 
-    /**
-     * Items Details
-     * Item Select Combo
-     * */
+
+    /*------------Item details to combo-------------*/
     function loadAllItemsForOption() {
         $("#cmbItemCode").empty();
         for (let item of itemArray) {
@@ -1187,10 +1185,7 @@
 
 
 
-    /**
-     * Logics
-     * Place order
-     * */
+    /*------------Place holder-------------*/
 
     let tableRow = [];
 
@@ -1219,11 +1214,8 @@
 
         }
 
-        /**
-         * Logics
-         * Place order
-         * Table Add logic
-         * */
+        /*------------Place holder table add-------------*/
+
         $("#tblAddToCart>tr").click('click', function () {
 
             tableRow = $(this);
@@ -1242,11 +1234,8 @@
         });
     });
 
-    /**
-     * Logics
-     * Place order
-     * Table Load
-     * */
+    /*------------Place holder table load-------------*/
+
     $("#tblAddToCart").empty();
 
     function loadCartTableDetail() {
@@ -1263,11 +1252,7 @@
 
     }
 
-    /**
-     * Logics
-     * Place order
-     * Reduce QtyOnHand
-     * */
+    /*------------Place holder reduce qty-------------*/
     function reduceQty(orderQty) {
         let minQty = parseInt(orderQty);
         let reduceQty = parseInt($("#qtyOnHand").val());
@@ -1275,22 +1260,14 @@
         $("#qtyOnHand").val(reduceQty);
     }
 
-    /**
-     * Logics
-     * Place order
-     * Calculate Total
-     * */
+    /*------------Place holder generate total-------------*/
 
     function calcTotal(amount) {
         total += amount;
         $("#txtTotal").val(total);
     }
 
-    /**
-     * Logics
-     * Place order
-     * Manage Available Qty
-     * */
+    /*------------Place holder manage qty-------------*/
     function manageQtyOnHand(preQty, nowQty) {
         var preQty = parseInt(preQty);
         var nowQty = parseInt(nowQty);
@@ -1303,11 +1280,7 @@
     }
 
 
-    /**
-     * Logics
-     * Place order
-     * Manage Total
-     * */
+    /*------------Place holder manage total-------------*/
 
     function manageTotal(preTotal, nowTotal) {
         total -= preTotal;
@@ -1316,11 +1289,7 @@
         $("#txtTotal").val(total);
     }
 
-    /**
-     * Logics
-     * Place order
-     * Enter Discount and sub Total display
-     * */
+    /*------------Place holder generate discount-------------*/
 
     $(document).on("change keyup blur", "#txtDiscount", function () {
         discount = $("#txtDiscount").val();
@@ -1331,11 +1300,7 @@
     });
 
 
-    /**
-     * Logics
-     * Place order
-     * Enter Cash and Balance display
-     * */
+    /*------------Place holder Cash & balance-------------*/
 
     $(document).on("change keyup blur", "#txtCash", function () {
         let cash = $("#txtCash").val();
@@ -1350,53 +1315,53 @@
         }
     });
 
-    /**
-     * Logics
-     * Place order
-     * placeOrder to Order Array
-     * method
-     * */
+   /*-------place order to array for table 01------------*/
     function placeOrder() {
         //create object
-        let orderArrayList = new order(
-            $("#orderId").val(),
-            $("#cmbCustomerId").val(),
-            $("#orderDate").val(),
-            $("#txtSubTotal").val(),
-            $("#txtDiscount").val()
-        );
 
-        orderArray.push(orderArrayList);
-        console.log(orderArrayList);
+            let orderID = $("#orderId").val();
+            let customerId = $("#cmbCustomerId").val();
+            let orderDate = $("#orderDate").val();
+            let subTotal = $("#txtSubTotal").val();
+            let discount = $("#txtDiscount").val();
+
+        let newOrder= Object.assign({},orderObject);
+        newOrder.oId=orderID;
+        newOrder.cId=customerId;
+        newOrder.oDate=orderDate;
+        newOrder.subTotal=subTotal;
+        newOrder.discount=discount;
+
+        orderArray.push(newOrder);
 
     }
 
-    /**
-     * Logics
-     * Place order
-     * placeOrder to Order Details Array
-     * method
-     * */
+
+    /*-------place order to array for table 02------------*/
+
     function pushOrderDetails() {
         for (let i = 0; i < $("#tblAddToCart tr").length; i++) {
             let orderId = $("#orderId").val();
             let cusId = $("#cmbCustomerId").val();
+
+            /*------------get values form cart table--------------------*/
             let itemId = $("#tblAddToCart tr").children(':nth-child(1)')[i].innerText;
             let qty = $("#tblAddToCart tr").children(':nth-child(4)')[i].innerText;
             let total = $("#tblAddToCart tr").children(':nth-child(5)')[i].innerText;
 
-            let orderDetailArrayList = new orderDetail(orderId, cusId, itemId, qty, total);
+            let newOrder= Object.assign({},placeOrderObject);
+            newOrder.orderId=orderId;
+            newOrder.cusId=cusId;
+            newOrder.itemId=itemId;
+            newOrder.qty=qty;
+            newOrder.total=total;
 
-            orderDetails.push(orderDetailArrayList);
-            console.log(orderDetailArrayList);
+            orderDetails.push(newOrder);
+
         }
     }
 
-    /**
-     * Logics
-     * Place order
-     * Purchase Order button
-     * */
+   /*----------purchase order action------------*/
 
     $("#btnPurchase").click(function () {
         placeOrder();
@@ -1404,96 +1369,23 @@
         $("#orderId").val( generateOrderID());
         clearDetails();
         $("#tblAddToCart").empty();
+        setCurrentDate();
+        loadAllOrderDetails();
 
     });
 
-    /**
-     * Logics
-     * Place order
-     * Clear Method
-     * */
+    /*----------clear rows------------------*/
     function clearDetails() {
         $('#cmbCustomerId,#customerName,#customerAddress,#customerSalary,#cmbItemCode,#itemName,#itemPrice,#qtyOnHand,#buyQty,#txtDiscount,#txtTotal,#txtDiscount,#txtSubTotal,#txtCash,#txtBalance').val("");
 
     }
 
-    /**
-     * Logics
-     * Place order
-     * Clear Button
-     * */
     $("#btnClearAll").click(function () {
         clearDetails();
     });
 
-    /**
-     * Logics
-     * Place order
-     * Remove Row
-     * */
 
-    $("#tblAddToCart").dblclick(function () {
-        Swal.fire({
-            title: 'Do you want to Delete the Select row?',
-            showDenyButton: true,
-            showCancelButton: true,
-            confirmButtonText: 'Yes',
-            denyButtonText: 'No',
-            customClass: {
-                actions: 'my-actions',
-                cancelButton: 'order-1 right-gap',
-                confirmButton: 'order-2',
-                denyButton: 'order-3',
-            }
-        }).then((result) => {
-            if (result.isConfirmed) {
-                $(this).children('tr').eq(0).remove();
-                Swal.fire('Delete!', '', 'success')
-            } else if (result.isDenied) {
-                Swal.fire('Select row are not Delete', '', 'info')
-            }
-        })
-
-    });
-
-
-    /**
-     * Logics
-     * Place order
-     * Update Items in buy Qty
-     * */
-    $("#btnAddToCart").click(function () {
-        let itemIdQ = $("#cmbItemCode").val();
-        let response = updateItemQty(itemIdQ);
-        if (response) {
-        }
-    });
-
-    function updateItemQty(itemIdQ) {
-        let itemQ = searchItemQty(itemIdQ);
-        if (itemQ != null) {
-            itemQ.qty = $("#qtyOnHand").val();
-            loadAllItems();
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    function searchItemQty(itemIdQ) {
-        for (let itemQ of items) {
-            if (itemQ.code === itemIdQ) {
-                return itemQ;
-            }
-        }
-        return null;
-    }
-
-    /**
-     * Logics
-     * Place order
-     * Enter BuyQty and Check Qty On Hand
-     * */
+    /*------------Check qty allow------------*/
 
     $(document).on("change keyup blur", "#buyQty", function () {
         let qtyOnHand = $("#qtyOnHand").val();
@@ -1509,8 +1401,29 @@
     });
 
 
-   /* ------------------place Order-----------------------*/
-    /*=========================ORDER TO COMBO============================*/
+   /* ------------------Order details-----------------------*/
+
+    function loadAllOrders() {
+
+        $("#T_body_Place_Order_detail1").empty();
+
+        for (var order of orderArray) {
+            console.log(order);
+            var row = `<tr><td>${order.oId}</td><td>${order.cId}</td><td>${order.oDate}</td><td>${order.subTotal}</td><td>${order.discount}</td></tr>`;
+            $("#T_body_Place_Order_detail1").append(row);
+        }
+    }
+
+    function loadAllOrderDetails() {
+
+        $("#T_body_Place_Order_detail2").empty();
+
+        for (var orderDetail of orderDetails) {
+            console.log(orderDetail);
+            var row = `<tr><td>${orderDetail.orderId}</td><td>${orderDetail.cusId}</td><td>${orderDetail.itemId}</td><td>${orderDetail.qty}</td><td>${orderDetail.total}</td></tr>`;
+            $("#T_body_Place_Order_detail2").append(row);
+        }
+    }
 
 
 </script>
