@@ -70,19 +70,19 @@
         </div>
         <div class="carousel-inner w-100" style="height: 92vh;">
             <div class="carousel-item active h-100">
-                <img alt="welcome" class="d-block w-100 h-100" src="img/veg_6.jpg">
+                <img alt="welcome" class="d-block w-100 h-100" src="img/back1.jpg">
             </div>
             <div class="carousel-item h-100">
-                <img alt="slide 2" class="d-block w-100 h-100" src="img/veg_3.png">
+                <img alt="slide 2" class="d-block w-100 h-100" src="img/back2.jpg">
             </div>
             <div class="carousel-item h-100">
-                <img alt="slide 3" class="d-block w-100 h-100" src="img/veg_5.jpg">
+                <img alt="slide 3" class="d-block w-100 h-100" src="img/back3.jpg">
             </div>
             <div class="carousel-item h-100">
-                <img alt="slide 4" class="d-block w-200 h-100" src="img/veg_4.png">
+                <img alt="slide 4" class="d-block w-200 h-100" src="img/back4.jpg">
             </div>
             <div class="carousel-item h-100">
-                <img alt="slide 5" class="d-block w-100 h-100" src="img/veg_7.jpg">
+                <img alt="slide 5" class="d-block w-100 h-100" src="img/back5.jpg">
             </div>
         </div>
         <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators"
@@ -132,12 +132,12 @@
             </div>
             <div class="col">
                 <table class="mt-5 table table-hover table-bordered">
-                    <thead>
+                    <thead id="cus_th">
                     <tr>
-                        <th>Customer ID</th>
-                        <th>Customer Name</th>
-                        <th>Customer Address</th>
-                        <th>Customer Email</th>
+                        <th class="cus_th_data_head" >Customer ID</th>
+                        <th class="cus_th_data_head">Customer Name</th>
+                        <th class="cus_th_data_head">Customer Address</th>
+                        <th class="cus_th_data_head">Customer Email</th>
                     </tr>
                     </thead>
                     <tbody id="tbl-body_cus">
@@ -185,12 +185,12 @@
             </div>
             <div class="col">
                 <table class="mt-5 table table-hover table-bordered">
-                    <thead>
+                    <thead id="item_th">
                     <tr>
-                        <th>Item ID</th>
-                        <th>Item Name</th>
-                        <th>Item Price</th>
-                        <th>Quantity</th>
+                        <th class="item_th_data">Item ID</th>
+                        <th class="item_th_data">Item Name</th>
+                        <th class="item_th_data">Item Price</th>
+                        <th class="item_th_data">Quantity</th>
                     </tr>
                     </thead>
                     <tbody id="T_body_Item">
@@ -203,184 +203,173 @@
 </section>
 
 <section id="order">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                <h1 class="title">Order Section</h1>
-                <div class="row">
-                    <div class="mb-3">
-                        <label for="order_id" class="form-label"></label>
-                        <input type="text" class="form-control" id="order_id" placeholder="Order_ID">
-                    </div>
-                    <div class="mb-3">
-                        <label for="order_name" class="form-label"></label>
-                        <input type="text" class="form-control" id="order_name" placeholder="Customer_Name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="order_Time" class="form-label"></label>
-                        <input type="time" class="form-control" id="order_Time" placeholder="Order_Time">
-                    </div>
-                    <div class="mb-3">
-                        <label for="order_date" class="form-label"></label>
-                        <input type="date" class="form-control" id="order_date" placeholder="Order_Date">
-                    </div>
+    <div class="row justify-content-around" style="height: min-content">
 
-
-                    <div class="btn-group">
-                        <button class="btn btn-primary" id="btnOrder">Save Order</button>
-                        <button class="btn btn-danger" id="btnOrderDelete">Remove</button>
-                        <button class="btn btn-warning" id="btnOrderUpdate">Update</button>
-                        <button class="btn btn-success" id="btnOrderGetAll">Get All</button>
-                        <button class="btn btn-danger" id="btnOrderClear">Clear All</button>
-                    </div>
+        <div class="col-10 col-md-5 col-lg-4 p-3 mt-3 rounded-3" style="background-color: white">
+            <h5 class="text-center p-2 text-light rounded-3" style="background: #16A085">Invoice Details</h5>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="orderId">Order ID :</label>
+                    <input class="form-control border-dark" disabled id="orderId" value="ODI-1001" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="orderDate">Order Date :</label>
+                    <input class="form-control border-dark" disabled id="orderDate" type="text">
                 </div>
             </div>
-            <div class="col">
-                <table class="mt-5 table table-hover table-bordered">
-                    <thead>
-                    <tr>
-                        <th>Order ID</th>
-                        <th>Order Name</th>
-                        <th>Order Time</th>
-                        <th>Order Date</th>
-                    </tr>
-                    </thead>
-                    <tbody id="T_body_Order">
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="cmbCustomerId">Customer ID :</label>
+                    <select aria-label="Default select example" class="form-select border-dark" id="cmbCustomerId">
+                    </select>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="customerName">Name :</label>
+                    <input class="form-control border-dark" disabled id="customerName" type="text">
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="customerAddress">Address :</label>
+                    <input class="form-control border-dark" disabled id="customerAddress" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="customerSalary">E-mail :</label>
+                    <input class="form-control border-dark" disabled id="customerSalary" type="text">
+                </div>
+            </div>
+        </div>
 
-                    </tbody>
-                </table>
+        <div class="col-10 col-md-5 col-lg-4 p-3 mt-3 rounded-3" style="background-color: white">
+            <h5 class="text-center p-2 text-light rounded-3" style="background: #16A085">Item Details</h5>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="cmbItemCode">Item Code :</label>
+                    <select aria-label="Default select example" class="form-select border-dark" id="cmbItemCode">
+                    </select>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="itemName">Item Name :</label>
+                    <input class="form-control border-dark" disabled id="itemName" type="text">
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="itemPrice">Unit Price :</label>
+                    <input class="form-control border-dark" disabled id="itemPrice" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="qtyOnHand">Qty On Hand :</label>
+                    <input class="form-control border-dark" disabled id="qtyOnHand" type="text">
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="buyQty">Buy Qty :</label>
+                    <input class="form-control border-dark" id="buyQty" type="text">
+                    <strong class="control-error" id="lblCheckQty"></strong>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 mt-4 ">
+                    <button class="btn btn-primary rounded-2" id="btnAddToCart" type="button">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-10 col-md-5 col-lg-3 p-3 mt-3 rounded-3" style="background-color: white">
+            <h5 class="text-center bg-secondary p-2 text-light rounded-3">Payment Details</h5>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="txtTotal">Total :</label>
+                    <input class="form-control border-dark" disabled id="txtTotal" type="number">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="txtDiscount">Discount :</label>
+                    <input class="form-control border-dark" id="txtDiscount" role="spinbutton" type="number">
+                </div>
+            </div>
+
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="txtSubTotal">Sub Total :</label>
+                    <input class="form-control border-dark" disabled id="txtSubTotal" type="number">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="txtCash">Cash :</label>
+                    <input class="form-control border-dark" id="txtCash" type="text">
+                    <strong class="control-error" id="lblCheckSubtotal"></strong>
+                </div>
+            </div>
+
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="txtBalance">Balance :</label>
+                    <input class="form-control border-dark" disabled id="txtBalance" type="number">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 mt-4">
+                    <button class="btn btn-success rounded-2" id="btnPurchase" type="submit">Purchase</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-grid col-12 col-md-2 mt-4">
+            <button class="btn btn-danger rounded-2 bold" type="button" id="btnClearAll">Clear All</button>
+        </div>
+
+        <div class="row mt-1 mt-md-2 mt-lg-3 justify-content-around" style="height: 160px;">
+            <div class="col-10">
+                <div class="PlaceOrderTableDiv overflow-auto" style="height: 150px;">
+                    <table class="table table-success table-striped table-bordered table-hover">
+                        <thead class="text-light table-dark text-center  table-bordered sticky-top">
+                        <tr>
+                            <th>Item Code</th>
+                            <th>Item Name</th>
+                            <th>Price</th>
+                            <th>Order Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tblAddToCart"></tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <section id="place_Order">
-    <section class="row me-3" >
-        <p class="fs-2 text-center fw-semibold">Place Order Form</p>
-        <section  class="col-7 p-3 mb-2 bg-primary-subtle text-emphasis-primary border border-light-subtle rounded-3 shadow
-     p-3 mb-5 bg-body-tertiary rounded w-50 m-auto mt-4 m" style="background-color: #0a0a0a !important;">
-            <h2 style="color: white">Invoice Details</h2>
-            <form style="color: white" class="row g-3">
-                <div class="col-md-6">
-                    <label for="orderId" class="form-label">OrderId</label>
-                    <select id="orderId" class="form-select">
-                        <option selected>O001</option>
-                        <option>...</option>
-                    </select>
-                </div>
-                <div class="col-md-6">
-                    <label for="date" class="form-label">Oder Date</label>
-                    <input type="date" class="form-control" id="date">
-                </div>
-                <div class="col-md-6">
-                    <label for="CusId" class="form-label">CustomerId</label>
-                    <select id="CusId" class="form-select">
-                        <option selected>C001</option>
-                        <option>...</option>
-                    </select>
-                </div>
-                <div class="col-md-6">
-                    <label for="CusName" class="form-label">Customer Name</label>
-                    <input type="text" class="form-control" id="CusName" >
-                </div>
-                <div class="col-md-3">
-                    <label for="code" class="form-label">Code</label>
-                    <select id="code" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <label for="dec" class="form-label">Description</label>
-                    <input type="text" class="form-control" id="dec">
-                </div>
-                <div class="col-md-3">
-                    <label for="qtyhl" class="form-label">Unit price</label>
-                    <input type="number" class="form-control" id="qtyhl">
-                </div>
-                <div class="col-md-2">
-                    <label for="qtyh" class="form-label">Qty. On Hand</label>
-                    <input type="number" class="form-control" id="qtyh">
-                </div>
-                <div class="col-md-1">
-                    <label for="qty" class="form-label">Qty</label>
-                    <input type="number" class="form-control" id="qty">
-                </div>
 
-                <div class="col-12">
-                    <button style="color: white" type="submit" class="btn btn-primary" >Add to cart</button>
-                </div>
-            </form>
-        </section>
-        <section class="col-5 mt-4 me-4 border border-primary rounded-3" >
+    <table class="table table-dark table-striped-columns" style="width: 100vw">
+        <thead class="bg-primary">
+        <tr>
+            <th  scope="col">Order Id</th>
+            <th scope="col">Cus ID</th>
+            <th scope="col">Order_Date</th>
+            <th scope="col">Sub Total</th>
+            <th scope="col">Discount</th>
 
-            <div class="row px-lg-0 px-sm-5 px-xxl-3 mt-2">
-                <div class="col-5">
-                    <div class="mb-2 ">
-                        <label for="total" class="form-label fs-5">Total(RS)</label>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="mb-2">
-                        <input type="number" readonly class="form-control p-1 fs-6 fw-bolder " id="total" value="00000.00">
-                    </div>
-                </div>
+        </tr>
+        </thead>
+        <tbody id="T_body_Place_Order_detail1">
 
-                <div class="row px-lg-0 px-sm-5 px-xxl-4">
-                    <div class="col-5">
-                        <div class="mb-2">
-                            <label for="subTotal" class="form-label fs-5">Sub Total(RS)</label>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="mb-2">
-                            <input type="number" readonly class="form-control p-1 fs-6 fw-bolder " id="subTotal" value="00000.00">
-                        </div>
-                    </div>
-                </div>
+        </tbody>
+    </table>
 
-                <div class="row gx-3 mt-4">
-                    <div class="col">
-                        <div class="mb-3">
-                            <label for="cash" class="form-label">Cash</label>
-                            <input type="text" class="form-control" id="cash" placeholder="0000.00">
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="mb-3 mb-xl-5 mb-xxl-4">
-                        <label for="balance" class="form-label">Balance</label>
-                        <input type="text" class="form-control" id="balance" placeholder="0000.00">
-                    </div>
-                    <div class="mt-1 d-grid col-6 mt-xl-2 mx-auto">
-                        <button style="background-color: #423ade; color: white" type="button" class="btn btn-success">Purchase</button>
-                    </div>
-                </div>
-
-                <div>
-                </div>
-            </div>
-        </section>
-
-    </section>
-
-    <table class="table table-dark table-striped-columns" style="width: 100vw;
-    position: absolute;top: 54vw;">
+    <table class="table table-dark table-striped-columns" style="width: 100vw ;
+    position: absolute;top: 30vw;">
         <thead class="bg-primary">
         <tr>
             <th  scope="col">Order Id</th>
             <th scope="col">Cus ID</th>
             <th scope="col">Item Code</th>
-            <th scope="col">Description</th>
-            <th scope="col">Unit Price</th>
             <th scope="col">QTY</th>
+            <th scope="col">Total</th>
         </tr>
         </thead>
-        <tbody id="T_body_Place_Order">
+        <tbody id="T_body_Place_Order_detail2">
 
         </tbody>
     </table>
+
 </section>
 
 
@@ -472,6 +461,7 @@
         $("#item").css("display",'none');
         $("#order").css("display",'inline-block');
         $("#place_Order").css("display",'none');
+        setCurrentDate();
     });
 
     /*document.getElementById("place_order_page").addEventListener("click", function () {
@@ -527,29 +517,35 @@
     });*/
 
     /*========================SAVE CUSTOMER=============================*/
-    var customerArray=[];
 
     function saveCustomer() {
+
         let customerID = $("#cus_id").val();
         if (searchCustomer(customerID.trim()) == undefined) {
             let customerName = $("#cus_name").val();
             let customerAddress = $("#cus_address").val();
             let customerEmail = $("#cus_email").val();
 
-            //set customer details to another array
-            // let customer=[customerID,customerName,customerAddress,customerSalary];
 
+/*
             let customerOb = {
                 id: customerID,
                 name: customerName,
                 address: customerAddress,
                 salary: customerEmail
-            }
+            }*/
+
+            let newCustomer= Object.assign({},customerObject);
+            newCustomer.id=customerID;
+            newCustomer.name=customerName;
+            newCustomer.address=customerAddress;
+            newCustomer.e_mail=customerEmail;
 
             //add customer record to the customer array
-            customerArray.push(customerOb);
+            customerArray.push(newCustomer);
             clearCustomerInputFields();
             getAllCustomer();
+            loadAllCustomersForOption();
 
         } else {
             alert("Customer already exits.!");
@@ -562,6 +558,7 @@
 
     });
 
+
     /*========================GET ALL CUSTOMER=============================*/
 
     function getAllCustomer() {
@@ -572,13 +569,13 @@
             let id=customerArray[i].id;
             let name=customerArray[i].name;
             let address=customerArray[i].address;
-            let salary=customerArray[i].salary;
+            let e_mail=customerArray[i].e_mail;
 
             let cus=`<tr>
                 <td>${id}</td>
                 <td>${name}</td>
                 <td>${address}</td>
-                <td>${salary}</td>
+                <td>${e_mail}</td>
             </tr>`;
 
             $("#tbl-body_cus").append(cus);
@@ -588,6 +585,7 @@
         $("#btnGetAll").click(function () {
 
             getAllCustomer();
+            loadAllCustomersForOption();
 
         });
 
@@ -780,7 +778,6 @@
     });
 
 
-
     /*--------------item----------------*/
 
     /*document.getElementById("btnItem").addEventListener("click",function () {
@@ -814,7 +811,7 @@
 
     /*========================SAVE ITEM=============================*/
 
-    let itemArray=[];
+
 
     function saveItem() {
         let Item_id= $("#item_id").val();
@@ -823,16 +820,24 @@
             let Item_price=$("#item_price").val();
             let Item_qty= $("#item_Quantity").val();
 
-            let item={
+           /* let item={
                 id:Item_id,
                 name:Item_name,
                 price:Item_price,
                 qty:Item_qty
-            }
+            }*/
 
-            itemArray.push(item);
+            let newItems=Object.assign({},itemObject);
+            newItems.itemId=Item_id;
+            newItems.descriptions=Item_name;
+            newItems.unitprice=Item_price;
+            newItems.qty=Item_qty;
+
+            itemArray.push(newItems);
             clearItemInputFields();
-            getAllItem()
+            getAllItem();
+
+            loadAllItemsForOption();
 
         }else {
             alert("Item already exits.!");
@@ -843,6 +848,7 @@
 
     $("#btnItem").click(function(){
 
+        loadAllCustomersForOption();
         saveItem();
     });
 
@@ -861,9 +867,9 @@
         $("#T_body_Item").empty();
 
         for (let i=0;i<itemArray.length;i++){
-            let id=itemArray[i].id;
-            let name=itemArray[i].name;
-            let price=itemArray[i].price;
+            let id=itemArray[i].itemId;
+            let name=itemArray[i].descriptions;
+            let price=itemArray[i].unitprice;
             let qty=itemArray[i].qty;
 
             let row= `<tr>
@@ -875,6 +881,7 @@
 
             $("#T_body_Item").append(row);
             getAllRowBindItem();
+            loadAllItemsForOption();
 
         }
     }
@@ -1048,6 +1055,7 @@
         if (e.key=="Enter"){
             saveItem();
             clearItemInputFields();
+            loadAllCustomersForOption();
         }
     });
 
@@ -1085,207 +1093,433 @@
         tbl_body.appendChild(tbl_row);
     });*/
 
-    let orderArray=[];
+
 
     /*========================SAVE ORDER=============================*/
 
-    function saveOrder() {
-        let Order_id= $("#order_id").val();
-        if(searchOrder(Order_id.trim())== undefined){
-            let Order_name=$("#order_name").val();
-            let Order_time=$("#order_Time").val();
-            let Order_date= $("#order_date").val();
+    $("#btnPurchase").attr('disabled', true);
+    $("#btnAddToCart").attr('disabled', true);
 
-            let order={
-                id:Order_id,
-                name:Order_name,
-                time:Order_time,
-                date:Order_date
-            }
+    /**
+     * Invoice Details
+     * */
 
-            orderArray.push(order);
-            clearOrderInputFields();
-            getAllOrder();
-        }else {
-            alert("Order already exits.!");
-        }
-    }
-
-
-    $("#btnOrder").click(function () {
-       saveOrder();
-    });
-
-
-    /*========================SEARCH ORDER=============================*/
-
-    function searchOrder(id) {
-        return orderArray.find(function (order) {
-            //if the search id match with customer record
-            //then return that object
-            return order.id == id;
-        });
-    }
-
-
-    /*=========================GET ALL ORDER============================*/
-
-    function getAllOrder() {
-        $("#T_body_Order").empty();
-
-        for (let i = 0; i < orderArray.length; i++) {
-            let id = orderArray[i].id;
-            let name = orderArray[i].name;
-            let time = orderArray[i].time;
-            let date = orderArray[i].date;
-
-            let row = `<tr>
-                <td>${id}</td>
-                <td>${name}</td>
-                <td>${time}</td>
-                <td>${date}</td>
-            </tr>`;
-
-            $("#T_body_Order").append(row);
-            getAllRowBindOrder();
-        }
-    }
-
-    $("#btnOrderGetAll").click(function () {
-        getAllOrder();
-    });
-
-
-    /*========================GET ALL ORDER TO TEXT FIELD=============================*/
-
-    function getAllRowBindOrder() {
-        $("#T_body_Order").on('click', 'tr', function() {
-
-            let id = $(this).children(":eq(0)").text();
-            let name = $(this).children(":eq(1)").text();
-            let time = $(this).children(":eq(2)").text();
-            let date = $(this).children(":eq(3)").text();
-
-            $("#order_id").val(id);
-            $("#order_name").val(name);
-            $("#order_Time").val(time);
-            $("#order_date").val(date);
-
-        });
-    }
-
-    /*========================DELETE ORDER=============================*/
-    $("#btnOrderDelete").click(function () {
-
-        let id = $("#order_id").val();
-
-        let consent = confirm("Do you want to delete.?");
-        if (consent) {
-            let response = deleteOrder(id);
-            if (response) {
-                alert("Order Deleted");
-                clearOrderInputFields();
-                getAllOrder();
-            } else {
-                alert("Order Not Removed..!");
-            }
-        }
-    });
-
-    function deleteOrder(id) {
-        for (let i = 0; i < orderArray.length; i++) {
-            if (orderArray[i].id == id) {
-                orderArray.splice(i, 1);
-                return true;
-            }
-        }
-        return false;
-    }
-
-    /*========================CLEAR ORDER TEXT FIELD=============================*/
-
-    $("#btnOrderClear").click(function () {
-        clearOrderInputFields();
-    });
-
-    function clearOrderInputFields() {
-        $("#order_id,#order_name,#order_Time,#order_date").val("");
-        $("#order_id").focus();
-    }
-
-    /*========================UPDATE ORDER=============================*/
-
-    $("#btnOrderUpdate").click(function () {
-        let id = $("#order_id").val();
-        updateOrder(id);
-        clearOrderInputFields();
-    });
-
-
-    function updateOrder(id) {
-        if (searchOrder(id) == undefined) {
-            alert("No such Order..please check the ID");
+    /**
+     * Invoice Details
+     * Order ID
+     * */
+    function generateOrderID() {
+        if (orderArray.length > 0) {
+            let lastId = orderArray[orderArray.length - 1].oId;
+            let digit = lastId.substring(6);
+            let number = parseInt(digit) + 1;
+            return lastId.replace(digit, number);
         } else {
-            let consent = confirm("Do you really want to update this order.?");
-            if (consent) {
-                let order = searchOrder(id);
-                //if the customer available can we update.?
+            return "ODI-001";
+        }
+    }
 
-                let OrderName = $("#order_name").val();
-                let OrderTime = $("#order_Time").val();
-                let OrderDate = $("#order_date").val();
+    /**
+     * Invoice Details
+     * Order Date
+     * */
+    function setCurrentDate() {
+        let orderDate = $("#orderDate");
+        let today = new Date();
+        let dd = String(today.getDate()).padStart(2, '0');
+        let mm = String(today.getMonth() + 1).padStart(2, '0');
+        let yyyy = today.getFullYear();
+        today = dd + '/' + mm + '/' + yyyy;
+        orderDate.val(today);
+    }
 
-                order.name = OrderName;
-                order.time = OrderTime;
-                order.date = OrderDate;
+    /**
+     * Invoice Details
+     * Customer Select Combo
+     * */
+    function loadAllCustomersForOption() {
+        $("#cmbCustomerId").empty();
+        for (let cus of customerArray) {
+            $("#cmbCustomerId").append(`<option>${cus.id}</option>`);
+        }
+    }
 
-                getAllOrder();
+    $("#cmbCustomerId").click(function () {
+        let rCmbC = customerArray.find(({id}) => id === $("#cmbCustomerId").val());
+        $("#customerName").val(rCmbC.name);
+        $("#customerAddress").val(rCmbC.address);
+        $("#customerSalary").val(rCmbC.e_mail);
+    });
+
+
+
+    /**
+     * Items Details
+     * */
+
+    let itemCode;
+    let itemName;
+    let itemPrice;
+    let itemQty;
+    let itemOrderQty;
+
+    let total = 0;
+    let discount = 0;
+    let subTotal = 0;
+
+    /**
+     * Items Details
+     * Item Select Combo
+     * */
+    function loadAllItemsForOption() {
+        $("#cmbItemCode").empty();
+        for (let item of itemArray) {
+            $("#cmbItemCode").append(`<option>${item.itemId}</option>`);
+        }
+    }
+
+    $("#cmbItemCode").click(function () {
+        let rCmbI = itemArray.find(({itemId}) => itemId === $("#cmbItemCode").val());
+        $("#itemName").val(rCmbI.descriptions);
+        $("#itemPrice").val(rCmbI.unitprice);
+        $("#qtyOnHand").val(rCmbI.qty);
+    });
+
+
+
+    /**
+     * Logics
+     * Place order
+     * */
+
+    let tableRow = [];
+
+    $("#btnAddToCart").click(function () {
+        let duplicate = false;
+
+        for (let i = 0; i < $("#tblAddToCart tr").length; i++) {
+            if ($("#cmbItemCode option:selected").text() === $("#tblAddToCart tr").children(':nth-child(1)')[i].innerText) {
+                duplicate = true;
+
             }
         }
+        if (duplicate !== true) {
+
+            loadCartTableDetail();
+            reduceQty($("#buyQty").val());
+            calcTotal($("#buyQty").val() * $("#itemPrice").val());
+
+        } else if (duplicate === true) {
+
+            manageQtyOnHand(tableRow.children(':nth-child(4)').text(), $("#buyQty").val());
+            $(tableRow).children(':nth-child(4)').text($("#buyQty").val());
+
+            manageTotal(tableRow.children(':nth-child(5)').text(), $("#buyQty").val() * $("#itemPrice").val());
+            $(tableRow).children(':nth-child(5)').text($("#buyQty").val() * $("#itemPrice").val());
+
+        }
+
+        /**
+         * Logics
+         * Place order
+         * Table Add logic
+         * */
+        $("#tblAddToCart>tr").click('click', function () {
+
+            tableRow = $(this);
+            let itemCode = $(this).children(":eq(0)").text();
+            let itemName = $(this).children(":eq(1)").text();
+            let unitPrice = $(this).children(":eq(2)").text();
+            let qty = $(this).children(":eq(3)").text();
+            let total = $(this).children(":eq(4)").text();
+
+            $("#cmbItemCode").val(itemCode);
+            $("#itemName").val(itemName);
+            $("#itemPrice").val(unitPrice);
+            $("#buyQty").val(qty);
+            $("#txtTotal").val(total);
+
+        });
+    });
+
+    /**
+     * Logics
+     * Place order
+     * Table Load
+     * */
+    $("#tblAddToCart").empty();
+
+    function loadCartTableDetail() {
+        itemCode = $("#cmbItemCode").val();
+        itemName = $("#itemName").val();
+        itemPrice = $("#itemPrice").val();
+        itemQty = $("#qtyOnHand").val();
+        itemOrderQty = $("#buyQty").val();
+
+        let total = itemPrice * itemOrderQty;
+        let row = `<tr><td>${itemCode}</td><td>${itemName}</td><td>${itemPrice}</td><td>${itemOrderQty}</td><td>${total}</td></tr>`;
+
+        $("#tblAddToCart").append(row);
 
     }
 
-    /*========================ENTER BUTTON ACTION=============================*/
+    /**
+     * Logics
+     * Place order
+     * Reduce QtyOnHand
+     * */
+    function reduceQty(orderQty) {
+        let minQty = parseInt(orderQty);
+        let reduceQty = parseInt($("#qtyOnHand").val());
+        reduceQty = reduceQty - minQty;
+        $("#qtyOnHand").val(reduceQty);
+    }
 
-    $('#order_id, #order_name , #order_Time , #order_date').keydown(function (e){
+    /**
+     * Logics
+     * Place order
+     * Calculate Total
+     * */
 
-        if (e.key == "Tab") {
-            e.preventDefault();
+    function calcTotal(amount) {
+        total += amount;
+        $("#txtTotal").val(total);
+    }
+
+    /**
+     * Logics
+     * Place order
+     * Manage Available Qty
+     * */
+    function manageQtyOnHand(preQty, nowQty) {
+        var preQty = parseInt(preQty);
+        var nowQty = parseInt(nowQty);
+        let avaQty = parseInt($("#qtyOnHand").val());
+
+        avaQty = avaQty + preQty;
+        avaQty = avaQty - nowQty;
+
+        $("#qtyOnHand").val(avaQty);
+    }
+
+
+    /**
+     * Logics
+     * Place order
+     * Manage Total
+     * */
+
+    function manageTotal(preTotal, nowTotal) {
+        total -= preTotal;
+        total += nowTotal;
+
+        $("#txtTotal").val(total);
+    }
+
+    /**
+     * Logics
+     * Place order
+     * Enter Discount and sub Total display
+     * */
+
+    $(document).on("change keyup blur", "#txtDiscount", function () {
+        discount = $("#txtDiscount").val();
+        discount = (total / 100) * discount;
+        subTotal = total - discount;
+
+        $("#txtSubTotal").val(subTotal);
+    });
+
+
+    /**
+     * Logics
+     * Place order
+     * Enter Cash and Balance display
+     * */
+
+    $(document).on("change keyup blur", "#txtCash", function () {
+        let cash = $("#txtCash").val();
+        let balance = cash - subTotal;
+        $("#txtBalance").val(balance);
+        if (balance < 0) {
+            $("#lblCheckSubtotal").parent().children('strong').text(balance + " : plz enter valid Balance");
+            $("#btnPurchase").attr('disabled', true);
+        } else {
+            $("#lblCheckSubtotal").parent().children('strong').text("");
+            $("#btnPurchase").attr('disabled', false);
         }
     });
 
-    //focus name
-    $('#order_id').keydown(function (e){
-        if (e.key=="Enter"){
-            $('#order_name').focus();
+    /**
+     * Logics
+     * Place order
+     * placeOrder to Order Array
+     * method
+     * */
+    function placeOrder() {
+        //create object
+        let orderArrayList = new order(
+            $("#orderId").val(),
+            $("#cmbCustomerId").val(),
+            $("#orderDate").val(),
+            $("#txtSubTotal").val(),
+            $("#txtDiscount").val()
+        );
+
+        orderArray.push(orderArrayList);
+        console.log(orderArrayList);
+
+    }
+
+    /**
+     * Logics
+     * Place order
+     * placeOrder to Order Details Array
+     * method
+     * */
+    function pushOrderDetails() {
+        for (let i = 0; i < $("#tblAddToCart tr").length; i++) {
+            let orderId = $("#orderId").val();
+            let cusId = $("#cmbCustomerId").val();
+            let itemId = $("#tblAddToCart tr").children(':nth-child(1)')[i].innerText;
+            let qty = $("#tblAddToCart tr").children(':nth-child(4)')[i].innerText;
+            let total = $("#tblAddToCart tr").children(':nth-child(5)')[i].innerText;
+
+            let orderDetailArrayList = new orderDetail(orderId, cusId, itemId, qty, total);
+
+            orderDetails.push(orderDetailArrayList);
+            console.log(orderDetailArrayList);
+        }
+    }
+
+    /**
+     * Logics
+     * Place order
+     * Purchase Order button
+     * */
+
+    $("#btnPurchase").click(function () {
+        placeOrder();
+        pushOrderDetails();
+        $("#orderId").val( generateOrderID());
+        clearDetails();
+        $("#tblAddToCart").empty();
+
+    });
+
+    /**
+     * Logics
+     * Place order
+     * Clear Method
+     * */
+    function clearDetails() {
+        $('#cmbCustomerId,#customerName,#customerAddress,#customerSalary,#cmbItemCode,#itemName,#itemPrice,#qtyOnHand,#buyQty,#txtDiscount,#txtTotal,#txtDiscount,#txtSubTotal,#txtCash,#txtBalance').val("");
+
+    }
+
+    /**
+     * Logics
+     * Place order
+     * Clear Button
+     * */
+    $("#btnClearAll").click(function () {
+        clearDetails();
+    });
+
+    /**
+     * Logics
+     * Place order
+     * Remove Row
+     * */
+
+    $("#tblAddToCart").dblclick(function () {
+        Swal.fire({
+            title: 'Do you want to Delete the Select row?',
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: 'Yes',
+            denyButtonText: 'No',
+            customClass: {
+                actions: 'my-actions',
+                cancelButton: 'order-1 right-gap',
+                confirmButton: 'order-2',
+                denyButton: 'order-3',
+            }
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $(this).children('tr').eq(0).remove();
+                Swal.fire('Delete!', '', 'success')
+            } else if (result.isDenied) {
+                Swal.fire('Select row are not Delete', '', 'info')
+            }
+        })
+
+    });
+
+
+    /**
+     * Logics
+     * Place order
+     * Update Items in buy Qty
+     * */
+    $("#btnAddToCart").click(function () {
+        let itemIdQ = $("#cmbItemCode").val();
+        let response = updateItemQty(itemIdQ);
+        if (response) {
         }
     });
 
-    //focus Address
-    $('#order_name').keydown(function (e){
-        if (e.key=="Enter"){
-            $('#order_Time').focus();
+    function updateItemQty(itemIdQ) {
+        let itemQ = searchItemQty(itemIdQ);
+        if (itemQ != null) {
+            itemQ.qty = $("#qtyOnHand").val();
+            loadAllItems();
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function searchItemQty(itemIdQ) {
+        for (let itemQ of items) {
+            if (itemQ.code === itemIdQ) {
+                return itemQ;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Logics
+     * Place order
+     * Enter BuyQty and Check Qty On Hand
+     * */
+
+    $(document).on("change keyup blur", "#buyQty", function () {
+        let qtyOnHand = $("#qtyOnHand").val();
+        let buyQty = $("#buyQty").val();
+        let buyOnHand = qtyOnHand - buyQty;
+        if (buyOnHand < 0) {
+            $("#lblCheckQty").parent().children('strong').text(qtyOnHand + " : Empty On Stock..!!");
+            $("#btnAddToCart").attr('disabled', true);
+        } else {
+            $("#lblCheckQty").parent().children('strong').text("");
+            $("#btnAddToCart").attr('disabled', false);
         }
     });
 
-    //focus Contact
-    $('#order_Time').keydown(function (e){
-        if (e.key=="Enter"){
-            $('#order_date').focus();
-        }
-    });
 
-    $('#order_date').keydown(function (e){
-        if (e.key=="Enter"){
-            saveOrder();
-            clearOrderInputFields();
-        }
-    });
-
+   /* ------------------place Order-----------------------*/
+    /*=========================ORDER TO COMBO============================*/
 
 
 </script>
-<!--<script src="pos/customer.js"></script>-->
+
+<script src="db/Db.js"></script>
+<script src="model/CustomerDTO.js"></script>
+<script src="model/ItemDTO.js"></script>
+<script src="model/OrderDTO.js"></script>
+<script src="model/PlaceOrderDTO.js"></script>
 <script src="jquery-3.7.0.min.js"></script>
 <script src="pos/js/bootstrap.js"></script>
 </body>

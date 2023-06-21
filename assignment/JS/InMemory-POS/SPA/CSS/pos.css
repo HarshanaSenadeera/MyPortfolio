@@ -74,5 +74,20 @@
     color: red;
 }
 
+#cus_th{
+    background-color: #1e1d1d;
+}
+
+.cus_th_data_head{
+    color:white;
+}
 
 
+/*--------------------customer form-----------------*/
+#item_th{
+    background-color: #1e1d1d;
+}
+
+.item_th_data{
+    color:white;
+}
