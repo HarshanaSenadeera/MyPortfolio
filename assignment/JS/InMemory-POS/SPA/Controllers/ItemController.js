@@ -70,6 +70,7 @@ $("#btnItem").click(function(){
 
     loadAllCustomersForOption();
     saveItem();
+    $("#item_id").val(generateItemID());
 });
 
 /*=========================GENERATE ITEM ID============================*/
@@ -90,7 +91,7 @@ function searchItem(id) {
     return itemArray.find(function (item) {
         //if the search id match with customer record
         //then return that object
-        return item.id == id;
+        return item.itemId == id;
     });
 }
 
@@ -120,6 +121,7 @@ function getAllItem() {
 
 $("#btnItemGetAll").click(function () {
     getAllItem();
+    $("#item_id").val(generateItemID());
 });
 
 
@@ -155,6 +157,7 @@ $("#btnItemDelete").click(function () {
             alert("Item Deleted");
             clearItemInputFields();
             getAllItem();
+            $("#item_id").val(generateItemID());
         } else {
             alert("Item Not Removed..!");
         }
@@ -163,7 +166,7 @@ $("#btnItemDelete").click(function () {
 
 function deleteItem(id) {
     for (let i = 0; i < itemArray.length; i++) {
-        if (itemArray[i].id == id) {
+        if (itemArray[i].itemId == id) {
             itemArray.splice(i, 1);
             return true;
         }
@@ -175,6 +178,7 @@ function deleteItem(id) {
 
 $("#btn-clearItem").click(function () {
     clearItemInputFields();
+    $("#item_id").val(generateItemID());
 });
 function clearItemInputFields() {
     $("#item_id,#item_name,#item_price,#item_Quantity").val("");
@@ -188,6 +192,7 @@ $("#btnItemUpdate").click(function () {
     let id = $("#item_id").val();
     updateItem(id);
     clearItemInputFields();
+    $("#item_id").val(generateItemID());
 });
 
 
@@ -204,8 +209,8 @@ function updateItem(id) {
             let itemPrice = $("#item_price").val();
             let itemQTY = $("#item_Quantity").val();
 
-            item.name = itemName;
-            item.price = itemPrice;
+            item.descriptions = itemName;
+            item.unitprice = itemPrice;
             item.qty = itemQTY;
 
             getAllItem();

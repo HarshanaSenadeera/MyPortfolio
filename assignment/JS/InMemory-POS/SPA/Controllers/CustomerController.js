@@ -108,6 +108,7 @@ function getAllCustomer() {
 
         $("#tbl-body_cus").append(cus);
         getAllRowBindCustomer();
+
     }
 }
 $("#btnGetAll").click(function () {
@@ -148,6 +149,7 @@ $("#btnCusDelete").click(function () {
             alert("Customer Deleted");
             clearCustomerInputFields();
             getAllCustomer();
+            $("#cus_id").val(generateCustomerID());
         } else {
             alert("Customer Not Removed..!");
         }
@@ -170,6 +172,8 @@ $("#btnUpdate").click(function () {
     let id = $("#cus_id").val();
     updateCustomer(id);
     clearCustomerInputFields();
+    $("#cus_id").val(generateCustomerID());
+
 });
 
 
@@ -191,6 +195,7 @@ function updateCustomer(id) {
             customer.salary = customerSalary;
 
             getAllCustomer();
+
         }
     }
 
@@ -212,10 +217,12 @@ function searchCustomer(id) {
 
 $("#btnClear").click(function () {
     clearCustomerInputFields();
+    $("#cus_id").val(generateCustomerID());
 });
 function clearCustomerInputFields() {
     $("#cus_id,#cus_name,#cus_address,#cus_email").val("");
     $("#cus_id").focus();
+
 }
 
 /*========================CUSTOMER REGEX=============================*/
