@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assests/CSS/normalize.css">
     <link rel="stylesheet" href="assests/CSS/MainStyle2.css">
     <link rel="stylesheet" href="assests/CSS/Main_Responsive.css">
+    <link rel="stylesheet" href="assests/CSS/bubbles.css">
 
 </head>
 
@@ -54,11 +55,26 @@
         </header>
 
         <main>
-        <!-- 1 -->
+
+            <!-- 1 -->
         <section class="first" id="home">
             <img id="mainImg" src="assests/img/img.png" >
 
+            <section class="sticky">
+                <div class="bubbles1">
+                    <div class="bubble1"></div>
+                    <div class="bubble1"></div>
+                    <div class="bubble1"></div>
+                    <div class="bubble1"></div>
+                    <div class="bubble1"></div>
+                    <div class="bubble1"></div>
+                    <div class="bubble1"></div>
+                    <div class="bubble1"></div>
+                    <div class="bubble1"></div>
+                    <div class="bubble1"></div>
 
+                </div>
+            </section>
             <P class="soft">
                 IM
                 <span class="name_span">
@@ -239,6 +255,10 @@
     </main>
 
 
+        <div id="loader">
+            <div></div>
+        </div>
+
         <section id="Contact" class="footer">
             <h1 class="title_footer">Cont<span>act</span> </h1>
 
@@ -330,5 +350,14 @@
             </div>
         </section>
     </footer>
+
+        <script>
+            let loader = document.getElementById("loader");
+            window.addEventListener("load", function () {
+                console.log("This message will print just after fully loading the website")
+                loader.style.display = 'none';
+            });
+        </script>
+
 </body>
 </html>
