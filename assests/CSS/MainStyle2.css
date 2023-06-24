@@ -12,7 +12,7 @@ header{
     color: #14192B;
     top: 0;
     /*position: relative;*/
-    z-index: 999;
+    z-index: 5;
 
 }
 
@@ -925,8 +925,8 @@ header span{
 }
 
 #loader > div {
-    width: 290px;
-    height: 290px;
+    width:auto;
+    height: auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -936,6 +936,7 @@ header span{
     background: url("../../assests/annimation/progress-bar.gif");
     background-size: cover;
     background-position: center;
+    z-index:1;
 }
 
 
