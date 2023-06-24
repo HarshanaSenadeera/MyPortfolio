@@ -19,6 +19,32 @@
     <link rel="stylesheet" href="assests/CSS/Main_Responsive.css">
     <link rel="stylesheet" href="assests/CSS/bubbles.css">
 
+    <style>
+        #loader {
+            transition: opacity 1s;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: #000000;
+        }
+        #loader>div {
+            width: 290px;
+            height: 290px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            background: url("assests/annimation/progress-bar.gif");
+            background-size: cover;
+            background-position: center;
+
+        }
+    </style>
+
 </head>
 
 <style>
@@ -36,7 +62,7 @@
 </style>
 
 <body>
-        <header>
+        <header id="heder">
 
             <div class="top_name">My Portfo<span>lio.</span></div>
             <nav class="navbar">
@@ -252,6 +278,7 @@
                 </div>
         </section>
 
+
             <div id="loader">
                 <div></div>
             </div>
@@ -353,13 +380,16 @@
     </footer>
 
 
+
         <script>
             let loader = document.getElementById("loader");
             window.addEventListener("load", function () {
                 console.log("This message will print just after fully loading the website")
                 loader.style.display = 'none';
+                //document.getElementById("heder").style.display='none';
             });
         </script>
+
 
 </body>
 </html>
