@@ -14,10 +14,12 @@
 
 
 
+
     <link rel="stylesheet" href="assests/CSS/normalize.css">
     <link rel="stylesheet" href="assests/CSS/MainStyle2.css">
     <link rel="stylesheet" href="assests/CSS/Main_Responsive.css">
     <link rel="stylesheet" href="assests/CSS/bubbles.css">
+    <script src="assests/jQuery/jquery-3.6.1.min.js"></script>
 
     <style>
         #loader {
@@ -45,6 +47,7 @@
         }
     </style>
 
+
 </head>
 
 <style>
@@ -62,7 +65,7 @@
 </style>
 
 <body>
-        <header id="heder">
+        <header id="he">
 
             <div class="top_name">My Portfo<span>lio.</span></div>
             <nav class="navbar">
@@ -386,8 +389,9 @@
             window.addEventListener("load", function () {
                 console.log("This message will print just after fully loading the website")
                 loader.style.display = 'none';
-                //document.getElementById("heder").style.display='none';
+               /*$(".navbar").css("display","none");*/
             });
+
         </script>
 
 
