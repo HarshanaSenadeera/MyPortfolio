@@ -202,228 +202,173 @@
 </section>
 
 <section id="order">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                <h1 class="title">Order Section</h1>
-                <div class="row">
-                    <div class="mb-3">
-                        <label for="order_id" class="form-label"></label>
-                        <input type="text" class="form-control" id="order_id" placeholder="Order_ID">
-                    </div>
-                    <div class="mb-3">
-                        <label for="order_name" class="form-label"></label>
-                        <input type="text" class="form-control" id="order_name" placeholder="Customer_Name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="order_Time" class="form-label"></label>
-                        <input type="time" class="form-control" id="order_Time" placeholder="Order_Time">
-                    </div>
-                    <div class="mb-3">
-                        <label for="order_date" class="form-label"></label>
-                        <input type="date" class="form-control" id="order_date" placeholder="Order_Date">
-                    </div>
+    <div class="row justify-content-around" style="height: min-content">
 
-
-                    <div class="btn-group">
-                        <button class="btn btn-primary" id="btnOrder">Save Order</button>
-                        <button class="btn btn-danger" id="btnOrderDelete">Remove</button>
-                        <button class="btn btn-warning" id="btnOrderUpdate">Update</button>
-                        <button class="btn btn-success" id="btnOrderGetAll">Get All</button>
-                        <button class="btn btn-danger" id="btnOrderClear">Clear All</button>
-                    </div>
+        <div class="col-10 col-md-5 col-lg-4 p-3 mt-3 rounded-3" style="background-color: white">
+            <h5 class="text-center p-2 text-light rounded-3" style="background: #16A085">Invoice Details</h5>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="orderId">Order ID :</label>
+                    <input class="form-control border-dark" disabled id="orderId" value="ODI-001" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="orderDate">Order Date :</label>
+                    <input class="form-control border-dark" disabled id="orderDate" type="text">
                 </div>
             </div>
-            <div class="col">
-                <table class="mt-5 table table-hover table-bordered">
-                    <thead>
-                    <tr>
-                        <th>Order ID</th>
-                        <th>Order Name</th>
-                        <th>Order Time</th>
-                        <th>Order Date</th>
-                    </tr>
-                    </thead>
-                    <tbody id="T_body_Order">
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="cmbCustomerId">Customer ID :</label>
+                    <select aria-label="Default select example" class="form-select border-dark" id="cmbCustomerId">
+                    </select>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="customerName">Name :</label>
+                    <input class="form-control border-dark" disabled id="customerName" type="text">
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="customerAddress">Address :</label>
+                    <input class="form-control border-dark" disabled id="customerAddress" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="customerSalary">E-mail :</label>
+                    <input class="form-control border-dark" disabled id="customerSalary" type="text">
+                </div>
+            </div>
+        </div>
 
-                    </tbody>
-                </table>
+        <div class="col-10 col-md-5 col-lg-4 p-3 mt-3 rounded-3" style="background-color: white">
+            <h5 class="text-center p-2 text-light rounded-3" style="background: #16A085">Item Details</h5>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="cmbItemCode">Item Code :</label>
+                    <select aria-label="Default select example" class="form-select border-dark" id="cmbItemCode">
+                    </select>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="itemName">Item Name :</label>
+                    <input class="form-control border-dark" disabled id="itemName" type="text">
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="itemPrice">Unit Price :</label>
+                    <input class="form-control border-dark" disabled id="itemPrice" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="qtyOnHand">Qty On Hand :</label>
+                    <input class="form-control border-dark" disabled id="qtyOnHand" type="text">
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="buyQty">Buy Qty :</label>
+                    <input class="form-control border-dark" id="buyQty" type="text">
+                    <strong class="control-error" id="lblCheckQty"></strong>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 mt-4 ">
+                    <button class="btn btn-primary rounded-2" id="btnAddToCart" type="button">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-10 col-md-5 col-lg-3 p-3 mt-3 rounded-3" style="background-color: white">
+            <h5 class="text-center bg-secondary p-2 text-light rounded-3">Payment Details</h5>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="txtTotal">Total :</label>
+                    <input class="form-control border-dark" disabled id="txtTotal" type="number">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="txtDiscount">Discount :</label>
+                    <input class="form-control border-dark" id="txtDiscount" role="spinbutton" type="number">
+                </div>
+            </div>
+
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="txtSubTotal">Sub Total :</label>
+                    <input class="form-control border-dark" disabled id="txtSubTotal" type="number">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="txtCash">Cash :</label>
+                    <input class="form-control border-dark" id="txtCash" type="text">
+                    <strong class="control-error" id="lblCheckSubtotal"></strong>
+                </div>
+            </div>
+
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label class="fw-bold" for="txtBalance">Balance :</label>
+                    <input class="form-control border-dark" disabled id="txtBalance" type="number">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 mt-4">
+                    <button class="btn btn-success rounded-2" id="btnPurchase" type="submit">Purchase</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-grid col-12 col-md-2 mt-4">
+            <button class="btn btn-danger rounded-2 bold" type="button" id="btnClearAll">Clear All</button>
+        </div>
+
+        <div class="row mt-1 mt-md-2 mt-lg-3 justify-content-around" style="height: 160px;">
+            <div class="col-10">
+                <div class="PlaceOrderTableDiv overflow-auto" style="height: 150px;">
+                    <table class="table table-success table-striped table-bordered table-hover">
+                        <thead class="text-light table-dark text-center  table-bordered sticky-top">
+                        <tr>
+                            <th>Item Code</th>
+                            <th>Item Name</th>
+                            <th>Price</th>
+                            <th>Order Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tblAddToCart"></tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <section id="place_Order">
-    <section class="row me-3" >
-        <p class="fs-2 text-center fw-semibold">Place Order Form</p>
-        <section  class="col-7 p-3 mb-2 bg-primary-subtle text-emphasis-primary border border-light-subtle rounded-3 shadow
-     p-3 mb-5 bg-body-tertiary rounded w-50 m-auto mt-4 m" style="background-color: #0a0a0a !important;">
-            <h2 style="color: white">Invoice Details</h2>
-            <form style="color: white" class="row g-3">
-                <div class="col-md-6">
-                    <label for="orderId" class="form-label">OrderId</label>
-                    <select id="orderId" class="form-select">
-                        <option selected>O001</option>
-                        <option>...</option>
-                    </select>
-                </div>
-                <div class="col-md-6">
-                    <label for="date" class="form-label">Oder Date</label>
-                    <input type="date" class="form-control" id="date">
-                </div>
-                <div class="col-md-6">
-                    <label for="CusId" class="form-label">CustomerId</label>
-                    <select id="CusId" class="form-select">
-                        <option selected>C001</option>
-                        <option>...</option>
-                    </select>
-                </div>
-                <div class="col-md-6">
-                    <label for="CusName" class="form-label">Customer Name</label>
-                    <input type="text" class="form-control" id="CusName" >
-                </div>
-                <div class="col-md-3">
-                    <label for="code" class="form-label">Code</label>
-                    <select id="code" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <label for="dec" class="form-label">Description</label>
-                    <input type="text" class="form-control" id="dec">
-                </div>
-                <div class="col-md-3">
-                    <label for="qtyhl" class="form-label">Unit price</label>
-                    <input type="number" class="form-control" id="qtyhl">
-                </div>
-                <div class="col-md-2">
-                    <label for="qtyh" class="form-label">Qty. On Hand</label>
-                    <input type="number" class="form-control" id="qtyh">
-                </div>
-                <div class="col-md-1">
-                    <label for="qty" class="form-label">Qty</label>
-                    <input type="number" class="form-control" id="qty">
-                </div>
 
-                <div class="col-12">
-                    <button style="color: white" type="submit" class="btn btn-primary" >Add to cart</button>
-                </div>
-            </form>
-        </section>
-        <section class="col-5 mt-4 me-4 border border-primary rounded-3" >
+    <table class="table table-dark table-striped-columns" style="width: 100vw">
+        <thead class="bg-primary">
+        <tr>
+            <th  scope="col">Order Id</th>
+            <th scope="col">Cus ID</th>
+            <th scope="col">Order_Date</th>
+            <th scope="col">Sub Total</th>
+            <th scope="col">Discount</th>
 
-            <div class="row px-lg-0 px-sm-5 px-xxl-3 mt-2">
-                <div class="col-5">
-                    <div class="mb-2 ">
-                        <label for="total" class="form-label fs-5">Total(RS)</label>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="mb-2">
-                        <input type="number" readonly class="form-control p-1 fs-6 fw-bolder " id="total" value="00000.00">
-                    </div>
-                </div>
+        </tr>
+        </thead>
+        <tbody id="T_body_Place_Order_detail1">
 
-                <div class="row px-lg-0 px-sm-5 px-xxl-4">
-                    <div class="col-5">
-                        <div class="mb-2">
-                            <label for="subTotal" class="form-label fs-5">Sub Total(RS)</label>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="mb-2">
-                            <input type="number" readonly class="form-control p-1 fs-6 fw-bolder " id="subTotal" value="00000.00">
-                        </div>
-                    </div>
-                </div>
+        </tbody>
+    </table>
 
-                <div class="row gx-3 mt-4">
-                    <div class="col">
-                        <div class="mb-3">
-                            <label for="cash" class="form-label">Cash</label>
-                            <input type="text" class="form-control" id="cash" placeholder="0000.00">
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="mb-3 mb-xl-5 mb-xxl-4">
-                        <label for="balance" class="form-label">Balance</label>
-                        <input type="text" class="form-control" id="balance" placeholder="0000.00">
-                    </div>
-                    <div class="mt-1 d-grid col-6 mt-xl-2 mx-auto">
-                        <button style="background-color: #423ade; color: white" type="button" class="btn btn-success">Purchase</button>
-                    </div>
-                </div>
-
-                <div>
-                </div>
-            </div>
-        </section>
-
-    </section>
-
-    <table class="table table-dark table-striped-columns" style="width: 100vw;
-    position: absolute;top: 54vw;">
+    <table class="table table-dark table-striped-columns" style="width: 100vw ;
+    position: absolute;top: 30vw;">
         <thead class="bg-primary">
         <tr>
             <th  scope="col">Order Id</th>
             <th scope="col">Cus ID</th>
             <th scope="col">Item Code</th>
-            <th scope="col">Description</th>
-            <th scope="col">Unit Price</th>
             <th scope="col">QTY</th>
+            <th scope="col">Total</th>
         </tr>
         </thead>
-        <tbody>
-        <tr>
-            <th scope="row">0001</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">0002</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+        <tbody id="T_body_Place_Order_detail2">
 
-        </tr>
-        <tr>
-            <th scope="row">0003</th>
-
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-        <tr>
-            <th scope="row">0004</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-        <tr>
-            <th scope="row">0005</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
         </tbody>
     </table>
+
 </section>
 
 
