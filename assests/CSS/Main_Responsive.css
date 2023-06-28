@@ -263,6 +263,7 @@
     .second {
         height: 367vh;
     }
+
 }
 
 /*-------------------------------1024---------------------------*/
@@ -520,6 +521,11 @@
 
     .second {
         height: 2674px;
+    }
+
+    .btn_assignment {
+        top: 347px;
+        height: 50px;
     }
 }
 
@@ -782,6 +788,15 @@
 
     .footer {
         height: 137vh;
+    }
+
+    .btn_projects {
+        top: 350px;
+    }
+
+    .btn_assignment {
+        top: 340px;
+        height: 50px;
     }
 }
 
@@ -1125,6 +1140,19 @@
 
     .footer {
         height: 211vh;
+    }
+
+    .btn_assignment {
+        top: 1109px;
+        height: 50px;
+    }
+
+    .btn_projects {
+        top: 1118px;
+    }
+
+    .gallery {
+        top: 426vh;
     }
 }
 
@@ -1540,6 +1568,15 @@
     .gallery {
         top: 429vh;
     }
+
+    .btn_projects {
+        top: 1097px;
+    }
+
+    .btn_assignment {
+        top: 1093px;
+        height: 50px;
+    }
 }
 
 /*-------------------------------320---------------------------*/
@@ -1873,6 +1910,18 @@
 
     #mainImg{
         top: 39px;
+    }
+
+    .btn_projects {
+        top: 1119px;
+        width: 100px;
+        left: 0;
+    }
+
+    .btn_assignment {
+        top: 1106px;
+        width: 158px;
+        left: -33px;
     }
 }
 
