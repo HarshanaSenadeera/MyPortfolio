@@ -19,11 +19,8 @@ Desktop View
 
 ![Desktop - 1]![image](https://github.com/HarshanaSenadeera/MyPortfolio/assets/116424581/adc1d2ef-ee95-49fc-965a-8d99f8d19bc7)
 ![Desktop - 2]![image](https://github.com/HarshanaSenadeera/MyPortfolio/assets/116424581/5cf34625-2429-4461-a746-67edcc0dcc80)
+![Desktop - 3]![image](https://github.com/HarshanaSenadeera/MyPortfolio/assets/116424581/f6a1df58-c5d1-44f4-be62-0dbbefc54988)
+![Desktop - 4]![image](https://github.com/HarshanaSenadeera/MyPortfolio/assets/116424581/2a8496dc-5ded-4d4b-bf01-68b5d7eb5f85)
+![Desktop - 4]![image](https://github.com/HarshanaSenadeera/MyPortfolio/assets/116424581/2a8496dc-5ded-4d4b-bf01-68b5d7eb5f85)
 
-Tablet View
 
-![iPad mini 8 3 - 1](https://user-images.githubusercontent.com/101160326/190048152-0b4bb418-f612-42b5-b25f-4b0ccbd0ae56.png)
-
-Mobile View
-
-![iPhone 13 Pro Max - 1](https://user-images.githubusercontent.com/101160326/190048176-1f99002d-c2af-4df9-9166-479b6b014257.png)
