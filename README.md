@@ -20,7 +20,8 @@ GitHub Pages : [https://derickferdinands.github.io/My-Portfolio/](https://harsha
 Desktop View
 
 ![Desktop - 1]![image](https://github.com/HarshanaSenadeera/MyPortfolio/assets/116424581/adc1d2ef-ee95-49fc-965a-8d99f8d19bc7)
-![Desktop - 2]![image](https://github.com/HarshanaSenadeera/MyPortfolio/assets/116424581/adc1d2ef-ee95-49fc-965a-8d99f8d19bc7)
+![Desktop - 2]![image](https://github.com/HarshanaSenadeera/MyPortfolio/assets/116424581/5cf34625-2429-4461-a746-67edcc0dcc80)
+
 Tablet View
 
 ![iPad mini 8 3 - 1](https://user-images.githubusercontent.com/101160326/190048152-0b4bb418-f612-42b5-b25f-4b0ccbd0ae56.png)
