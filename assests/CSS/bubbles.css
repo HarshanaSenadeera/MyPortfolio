@@ -44,49 +44,49 @@
 .bubble1:nth-child(3){
     width:50px;
     height:50px;
-    left:35%;
+    left:25%;
     animation-duration:7s;
     animation-delay:2s;
 }
 .bubble1:nth-child(4){
     width:80px;
     height:80px;
-    left:50%;
+    left:20%;
     animation-duration:11s;
     animation-delay:0s;
 }
 .bubble1:nth-child(5){
     width:35px;
     height:35px;
-    left:55%;
+    left:25%;
     animation-duration:6s;
     animation-delay:1s;
 }
 .bubble1:nth-child(6){
     width:45px;
     height:45px;
-    left:65%;
+    left:25%;
     animation-duration:8s;
     animation-delay:3s;
 }
 .bubble1:nth-child(7){
     width:90px;
     height:90px;
-    left:70%;
+    left:20%;
     animation-duration:12s;
     animation-delay:2s;
 }
 .bubble1:nth-child(8){
     width:25px;
     height:25px;
-    left:80%;
+    left:20%;
     animation-duration:6s;
     animation-delay:2s;
 }
 .bubble1:nth-child(9){
     width:15px;
     height:15px;
-    left:70%;
+    left:20%;
     animation-duration:5s;
     animation-delay:1s;
 }
