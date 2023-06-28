@@ -14,17 +14,12 @@ Mockup : https://www.figma.com/file/uabNiTys9FrN69ldSg3Olk/Portfolio?node-id=0%3
 
 <h3>Deployment</h3>
 <!-- InfinityFree : http://ferdfolio.epizy.com <br> -->
-GitHub Pages : https://derickferdinands.github.io/My-Portfolio/ <br>
+GitHub Pages : [https://derickferdinands.github.io/My-Portfolio/](https://harshanasenadeera.github.io/MyPortfolio/) <br>
 
-<h3> Web POS Using CSS FrameWorks</h3>
- Site-Map : https://www.gloomaps.com/zxx4GxZRAF <br>
- WireFrame : https://wireframe.cc/rscMG4 <br>
- Mockup : [https://www.figma.com/file/cIj3btZnkIvPes2Dw89Kph/Untitled?node-id=0%3A1](https://www.figma.com/file/6VZr25U9P05YHDWqC0qCu4/Mock-Up?type=design&node-id=0-1&mode=design) <br>
-<h3>Developed By Derick Andrew Ferdinands</h3>
 
 Desktop View
 
-![Desktop - 1](https://user-images.githubusercontent.com/101160326/190047547-8df35f03-2431-4e23-b141-0944e95b7daf.png)
+![Desktop - 1]![image](https://github.com/HarshanaSenadeera/MyPortfolio/assets/116424581/adc1d2ef-ee95-49fc-965a-8d99f8d19bc7)
 
 Tablet View
 
