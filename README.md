@@ -14,9 +14,7 @@ Mockup : https://www.figma.com/file/uabNiTys9FrN69ldSg3Olk/Portfolio?node-id=0%3
 
 <h3>Deployment</h3>
 <!-- InfinityFree : http://ferdfolio.epizy.com <br> -->
-GitHub Pages : [[https://derickferdinands.github.io/My-Portfolio/](https://harshanasenadeera.github.io/MyPortfolio/)](https://harshanasenadeera.github.io/MyPortfolio/) <br>
-
-
+GitHub Pages : https://harshanasenadeera.github.io/MyPortfolio/ <br>
 Desktop View
 
 ![Desktop - 1]![image](https://github.com/HarshanaSenadeera/MyPortfolio/assets/116424581/adc1d2ef-ee95-49fc-965a-8d99f8d19bc7)
