@@ -10,7 +10,7 @@
 <h3>References</h3>
 Site Map : [https://www.gloomaps.com/GypYZW6Jv6](https://app.diagrams.net/#G1JNky2TvPS-AG-12LdJePECYt1VyN0V3f) <br>
 Wirefram : [https://wireframe.cc/zS4vUh](https://app.diagrams.net/#G1Hu8X2UEuHXt6mKYVs_Zb-feSkO7jDD1k)<br>
-Mockup : https://www.figma.com/file/uabNiTys9FrN69ldSg3Olk/Portfolio?node-id=0%3A1
+Mockup : https://www.figma.com/file/uabNiTys9FrN69ldSg3Olk/Portfolio?node-id=0%
 
 <h3>Deployment</h3>
 <!-- InfinityFree : http://ferdfolio.epizy.com <br> -->
